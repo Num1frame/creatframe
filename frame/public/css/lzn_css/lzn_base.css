@@ -1,0 +1,57 @@
+h1,h2,h3,h4,h5,h6,p,ul,li,ol,dl,dd,dt,form,input,textarea,pre,figure{
+    margin:0;
+    padding: 0;
+    list-style:none;
+}
+a, input, form, button {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: none; }
+
+* {
+    -webkit-text-size-adjust: 100%;
+    -webkit-user-select: none;
+    -user-select: none;
+    max-height: 9999999px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+button, input {
+    border: none;
+    outline: none; }
+
+img {
+    border: none; }
+
+a {
+    text-decoration: none; }
+html, body {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box; }
+
+body {
+    -webkit-ovflow-scrolling: touch;
+    ovflow-scrolling: touch;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    overflow: scroll;
+    color: #fff;
+    background: #f3f3f5;
+}
+.header{
+    z-index: 100;
+}
+.footer{
+    z-index: 10000;
+}
+.neikuan{
+    width: 100%;
+    height: auto;
+    padding-left: .24rem;
+    padding-right: .24rem;
+}

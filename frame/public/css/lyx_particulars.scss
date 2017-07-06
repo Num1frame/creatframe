@@ -1,0 +1,144 @@
+@import "lyx_com.scss";
+
+.main .cont .fontcon{
+  h2{
+    margin-bottom: 0.2rem;
+  }
+  p{
+    margin-bottom: 0.08rem;
+  }
+}
+.ping{
+  width: 100%;
+  height: auto;
+  border-radius: 0.1rem;
+  background: #fcfcfc;
+  box-shadow: 0 0rem 0.06rem 0 #7a7b80;
+  margin-top: 0.4rem;
+  overflow: hidden;
+  .tit{
+    .left{
+      width: 1.3rem;
+      height: 100%;
+      float: left;
+      img{
+        width: 0.47rem;
+        display: block;
+        float: left;
+        margin: 0.23rem 0.1rem 0 0.12rem;
+      }
+      span{
+        font-size: 0.3rem;
+        float: left;
+        color: #292928;
+        margin-top: 0.2rem;
+      }
+    }
+    .right{
+      width: 1.13rem;
+      height: 100%;
+      float: right;
+      img{
+        width: 0.16rem;
+        display: block;
+        float: left;
+        margin: 0.23rem 0.06rem 0 0rem;
+      }
+      span{
+        font-size: 0.24rem;
+        float: left;
+        color: #99999d;
+        margin-top: 0.2rem;
+      }
+    }
+    height: 0.6rem;
+  }
+
+  .pingcon{
+    width: 95%;
+    margin: 0 auto;
+    li{
+      width: 100%;
+      height: auto;
+      .fen{
+        width: 6.85rem;
+        margin-left: -0.08rem;
+        display: block
+      }
+      .p_img{
+        width: 0.78rem;
+        height: 0.78rem;
+        border: 1px solid #a2a2a2;
+        box-shadow: 0 0rem 0.05rem 0 #1e243b;
+        border-radius:50% ;
+        background: #a2a2a2;
+        margin-top:0.2rem ;
+        float: left;
+        img{
+          width: 0.78rem;
+          border-radius:50% ;
+          display: block;
+        }
+      }
+      .p_con{
+        margin-top: 0.2rem;
+        float: left;
+        margin-left: 0.12rem;
+        width: 5.1rem;
+        h1{
+          font-size: 0.26rem;
+          color: #1B1C1F;
+          font-weight: normal;
+          margin-bottom: 0.06rem;
+        }
+        h2{
+          font-size: 0.2rem;
+          color: #B3B1B1;
+          font-weight: normal;
+          margin-bottom: 0.09rem;
+        }
+        p{
+          font-size: 0.26rem;
+          color: #1B1C1F;
+          margin-bottom: 0.3rem;
+        }
+      }
+      .p_xiaoxi{
+        width: 0.47rem;
+        margin-top: 0.45rem;
+        float: right;
+      }
+    }
+  }
+}
+.p_di{
+  width: 100%;
+  height: 0.98rem;
+  background: #1e243b;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  div{
+    margin-top: 0.18rem;
+    height: 0.6rem;
+    margin-left: 0.24rem;
+    img{
+      height: 0.6rem;
+      display: block;
+      float: left;
+    }
+    input{
+      width: 4.35rem;
+      height: 0.56rem;
+      border-radius: 0.28rem;
+      border: 2px solid #4a4444;
+      float: left;
+      margin: 0 0.28rem 0 0.22rem;
+      padding-left: 0.2rem;
+      font-size: 0.26rem;
+    }
+    .p_more{
+      margin-left: 0.15rem;
+    }
+  }
+}

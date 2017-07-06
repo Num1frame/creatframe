@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="<?php echo CSS_PATH ;?>wtflogin.css">
+    <script src="<?php echo JS_PATH ;?>jquery-3.2.1.js"></script>
+    <script src="<?php echo JS_PATH ;?>wtf_reg.js"></script>
+    <title>注册</title>
+</head>
+<body>
+    <div class="wtf_registerbg">
+        <a class="wtf_back" href="javascript:history.go(-1)"></a>
+        <div class="wtf_registermain active">
+            <h2>用户名</h2>
+            <input class="wtf_reguser wtf_regadmin" type="text" maxlength="20">
+            <p class="wtf_regusertext wtf_usertxt">用户名只能由字母开头,6-20个字符(可以包括数字,字母，下划线)</p>
+            <div class="wtf_usernext wtf_usergo"></div>
+        </div>
+        <div class="wtf_registermain">
+            <h2>密码</h2>
+            <input class="wtf_reguser wtf_regpswd" type="password"  maxlength="12">
+            <div class="wtf_eye wtf_eye1"></div>
+            <p class="wtf_regusertext wtf_regpswdtext">请设置6-12位密码(必须包含字母,数字) 字符</p>
+            <div class="wtf_usernext wtf_pswdgo"></div>
+        </div>
+        <div class="wtf_registermain">
+            <h2>确认密码</h2>
+            <input class="wtf_reguser wtf_aginpswd" type="password"  maxlength="12">
+            <div class="wtf_eye wtf_eye2"></div>
+            <p class="wtf_regusertext wtf_aginpswdtext">请设置6-12位密码(必须包含字母,数字) 字符</p>
+            <div class="wtf_usernext wtf_lastgo"></div>
+        </div>
+    </div>
+    <div class="wtf_mask">
+        <div class="wtf_maskgo">
+            <p>注册成功！<br>是否立即登录</p>
+            <a class="wtf_nowlog" href="<?php echo PHP_PATH;?>wtflogin/wtflogin1">立即登录</a>
+            <a class="wtf_nowreturn" href="<?php echo PHP_PATH;?>wtflogin">取消</a>
+        </div>
+    </div>
+</body>
+</html>

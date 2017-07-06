@@ -1,0 +1,326 @@
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.6777px; } }
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 385px) {
+  html {
+    font-size: 51.33333px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px; } }
+a, input, form, button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-appearance: none;
+}
+
+* {
+  -webkit-text-size-adjust: 100%;
+  -webkit-user-select: none;
+  -user-select: none;
+  max-height: 9999999px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+button, input {
+  border: none;
+  outline: none;
+}
+
+img {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color:#000000;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-ovflow-scrolling: touch;
+  ovflow-scrolling: touch;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  overflow: scroll;
+  background: #BBAE82;
+}
+.wtfloginmain{
+  height: 100%;
+  width: 100%;
+  background: url("../img/wtflogin1.png") center center no-repeat/cover;
+}
+.wtfloginbtn,.wtfregisterbtn{
+  height: 1.8rem;
+  width: 3.1rem;
+  display: block;
+  background: url("../img/wtfloginright.png") center center no-repeat/cover;
+  position: absolute;
+  top:8.7rem;
+  right:0;
+  text-align: center;
+  line-height: 2.2rem;
+  font-size:0.45rem;
+  color:#736E6E;
+  padding-right:0.4rem;
+}
+.wtfloginbtn{
+  left:0;
+  background: url("../img/wtfloginleft.png") center center no-repeat/cover;
+  padding-right:0;
+  padding-left:0.4rem;
+}
+/*登录注册首页*/
+
+
+.wtf_back{
+  display: block;
+  height: 0.44rem;
+  width: 0.44rem;
+  background:url("../img/wtf_back.png")center center no-repeat/cover;
+  position: absolute;
+  left:0.24rem;
+  top:0.24rem;
+  border-radius: 50%;
+}
+
+
+
+
+.wtf_login1bg{
+  height: 100%;
+  width: 100%;
+  background: url("../img/wtflogin2.png") center center no-repeat/cover;
+}
+.wtf_loginprompt{
+  width: 100%;
+  height: 0.4rem;
+  text-align: center;
+  color:red;
+}
+.wtf_login1user{
+  font-size: 0.34rem;
+  font-weight: normal;
+  margin-top:0.1rem;
+}
+.wtf_plasewrite{
+  margin-top:0.2rem;
+  width: 5.4rem;
+  height: 0.5rem;
+  background: rgba(0,0,0,0);
+  border-bottom: 0.02rem solid #CFAF7E;
+}
+.wtf_password .active{
+
+}
+.wtf_login1content{
+  position: absolute;
+  top:5.2rem;
+  right:0;
+  height: 5.7rem;
+  width: 5.43rem;
+  font-size: 0.25rem;
+}
+.wtf_eye{
+  display: block;
+  position: absolute;
+  right:0.28rem;
+  width: 0.28rem;
+  height: 0.16rem;
+  top:0.1rem;
+  background: url("../img/wtf_eye.png") center center no-repeat/cover;
+}
+.wtf_eye.active{
+  background: url("../img/wtf_eye1.jpg") center center no-repeat/cover;
+}
+.wtflogindominate{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top:0.44rem;
+  padding-right:0.4rem;
+}
+.wtf_remenberme{
+  height: 0.3rem;
+  width: 0.3rem;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius:50%;
+}
+.wtf_remenberbtn{
+  height: 0.17rem;
+  width: 0.17rem;
+  background: #b0b0b0;
+  border-radius:50%;
+}
+.wtf_remenberme .active{
+  background: red;
+}
+.wtf_loginsing{
+  position: absolute;
+  left:0.5rem;
+}
+.wtf_forgetme{
+  color:#E2383F;
+  display: block;
+}
+.wtf_gogogo{
+  display: block;
+  display: flex;
+  height: 1.3rem;
+  width: 1.3rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-left:0.1rem;
+  color:#ffffff;
+  font-size: 0.4rem;
+}
+.wtf_nowregister{
+  margin-top:0.3rem;
+  display: block;
+}
+/*登录页*/
+
+
+
+
+
+
+
+.wtf_registerbg{
+  height: 100%;
+  width: 100%;
+  background: url("../img/wtf_registerbg.png") center center no-repeat/cover;
+}
+.wtf_regpd{
+  height: 0.26rem;
+  width: 0.26rem;
+}
+.wtf_registermain{
+  height: 3.3rem;
+  width: 5.65rem;
+  position: absolute;
+  left:0;
+  right:0;
+  margin:0 auto;
+  top:7rem;
+  font-size: 0.25rem;
+  display: none;
+}
+.wtf_eye1,.wtf_eye2{
+  top:0.9rem;
+}
+.wtf_registerbg .active{
+  display: block;
+}
+.wtf_reguser{
+  background: none;
+  border-bottom: 0.02rem solid #787A7C;
+  margin-top:0.3rem;
+  margin-left:0.2rem;
+  width: 5.2rem;
+  font-size: 0.3rem;
+  padding-left:0.1rem;
+  box-sizing: border-box;
+}
+.wtf_regusertext{
+  margin-top:0.2rem;
+  padding-left:0.2rem;
+  box-sizing: border-box;
+  color:#9B9CA1;
+  line-height: 0.4rem;
+}
+.wtf_usernext{
+  height: 0.52rem;
+  width: 0.52rem;
+  position: absolute;
+  bottom:0.2rem;
+  left:0;
+  right:0;
+  margin:0 auto;
+  background: url("../img/wtf_next.png") center center no-repeat/cover;
+  border-radius: 50%;
+}
+.wtf_useractive{
+  background: url("../img/wtf_next1.png") center center no-repeat/cover;
+}
+.wtf_pswdactive{
+  background: url("../img/wtf_next1.png") center center no-repeat/cover;
+}
+.wtf_aginpswdactive{
+  background: url("../img/wtf_next1.png") center center no-repeat/cover;
+}
+.wtf_mask{
+  height: 0;
+  width: 0;
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+  background: rgba(0,0,0,0.3);
+  overflow: hidden;
+}
+.wtf_maskgo{
+  height: 6rem;
+  width: 5rem;
+  position: absolute;
+  left:0;
+  top:0;
+  bottom:0;
+  right:0;
+  margin:auto;
+  font-size: 0.5rem;
+  background: url("../img/wtf_maskgo.png")  center center no-repeat/cover;
+}
+.wtf_maskgo p{
+  text-align: center;
+  margin-top:2rem;
+}
+.wtf_maskgo a{
+  display: block;
+  height: 0.8rem;
+  width: 2.14rem;
+  position: absolute;
+  bottom:0.25rem;
+  font-size: 0.4rem;
+  text-align: center;
+  line-height: 0.8rem;
+  color:#ffffff;
+}
+.wtf_nowlog{
+  left:0.3rem;
+}
+.wtf_nowreturn{
+  right:0.3rem;
+}

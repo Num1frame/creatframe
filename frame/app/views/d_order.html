@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="<?php echo CSS_PATH?>base.css">
+    <!--<link rel="stylesheet" href="<?php echo CSS_PATH?>swiper-3.4.2.min.css">-->
+    <link rel="stylesheet" href="<?php echo CSS_PATH?>d_order.css">
+    <!--<script src="<?php echo JS_PATH?>swiper-3.4.2.min.js"></script>-->
+    <script src="<?php echo JS_PATH?>jquery.min.js"></script>
+</head>
+<body>
+<div class="header">
+    <div class="left"><a href="javascript:history.back()"><img src="<?php echo IMG_PATH?>d_back.png" alt=""></a></div>
+    <div class="middle">· 订单详情 ·</div>
+    <div></div>
+</div>
+<div class="pay_list">
+    <div class="top">
+        <div class="sofa" style="background: url(<?php echo IMG_PATH?>d_18.png) no-repeat center/75%"></div>
+        <div class="sofo_right">
+            <ul>
+                <li>新中式奢华沙发</li>
+                <li>Contracted and loose structure</li>
+                <li style="background: url(<?php echo IMG_PATH?>d_19.png) no-repeat center/100%"></li>
+                <li>
+                    <span>COLOR<i>绿色</i></span>
+                    <span>SIZE<i style="color: #464646;font-weight: 400">180*200</i></span>
+                    <span style="color: #ed2029;font-weight: 500">01</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content_left">
+            <ul>
+                <li>订单编号</li>
+                <li>收货人</li>
+                <li>收货地址</li>
+                <li>物流公司</li>
+            </ul>
+        </div>
+        <div class="content_middle" style="background: url(<?php echo IMG_PATH?>d_20.png) no-repeat center/100%"></div>
+        <div class="content_right">
+            <ul>
+                <li>88888888888888</li>
+                <li>杜帅<span>18435106215</span></li>
+                <li>太原市小店区平阳路学府街 凯通大厦309<span style="background: url(<?php echo IMG_PATH?>d_17.png) no-repeat center/100%"></span></li>
+                <li>顺丰快递</li>
+            </ul>
+        </div>
+    </div>
+    <div class="message">
+        <form action="">
+            <textarea style="resize: none" name="" id="" cols="30" rows="10" placeholder="买家留言"></textarea>
+        </form>
+    </div>
+    <div class="zhifu"><a href="<?php echo PHP_PATH?>lyx_state/lyx_pay">确认订单并支付</a></div>
+
+
+
+
+    <div class="circle"></div>
+    <ul class="huabian" style="background: url(<?php echo IMG_PATH?>d_huabian.png) no-repeat center/100%"></ul>
+</div>
+<div class="jiesuan" style="background: url(<?php echo IMG_PATH?>d_21.png) no-repeat center/100%">
+    <span>8888.88</span>
+    <span>已优惠66元</span>
+</div>
+</body>
+<script>
+$(window).on('load',function () {
+    $('.pay_list').css({left:'-0.1rem'});
+    $('.jiesuan').css({left:0});
+})
+
+</script>
+</html>

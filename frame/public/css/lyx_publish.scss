@@ -1,0 +1,86 @@
+@import "lyx_com.scss";
+
+.header .middle img:nth-child(1){
+  padding-left: 0.25rem;
+}
+.header .right a {
+  width: 0.67rem;
+  span {
+    display: inline-block;
+    width: 0.67rem;
+    font-size: 0.32rem;
+    color: #fff;
+  }
+}
+.main{
+  height: auto;
+  overflow: hidden;
+  padding-left: 0.24rem;
+  padding-right: 0.24rem;
+  padding-top: 0.88rem;
+}
+.publish{
+  width: 100%;
+  height: 4rem;
+  background: #FFFFFF;
+  box-shadow: 0 0rem 0.12rem 0 #7a7b80;
+  margin-top: 0.3rem;
+  border-radius: 0.1rem;
+  position: relative;
+  .text{
+    width:6.45rem;
+    height: 2rem;
+    margin: 0.15rem 0.25rem;
+    border: none;
+    resize: none;
+    outline:none;
+    font-size: 0.26rem;
+    color: #181616;
+  }
+  a{
+    width: 1.7rem;
+    height: 1.7rem;
+    display: block;
+    position: absolute;
+    left: 0.25rem;
+    bottom: 0.15rem;
+    img{
+      width: 1.7rem;
+    }
+  }
+}
+p{
+  font-size: 0.24rem;
+  color: #1E243B;
+  text-align: right;
+  padding-right: 0.15rem;
+  margin: 0.05rem 0 0.15rem 0;
+}
+.pu_a{
+  width: 100%;
+  display: block;
+  height:0.8rem ;
+}
+.a{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 1px solid #A1999A;
+  border-radius: 0.1rem;
+  background: #ffffff;
+  span{
+    font-size: 0.2rem;
+    color: #181616;
+    display: block;
+    float: left;
+    padding-left: 0.25rem;
+    margin-top: 0.2rem;
+  }
+  img{
+    width: 0.23rem;
+    display: block;
+    float: right;
+    padding-right: 0.25rem;
+    margin-top: 0.2rem;
+  }
+}

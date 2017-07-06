@@ -1,0 +1,272 @@
+@keyframes drop {
+  0% {
+    background: red;
+    transform: translate3d(-1000px, 0, 0);
+  }
+  /* 100%{ transform: translate3d(0,0,0); }*/
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 80px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 102.4px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 136.53333px;
+  }
+}
+
+a, input, form, button {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+}
+
+* {
+  -webkit-text-size-adjust: 100%;
+  -webkit-user-select: none;
+  -user-select: none;
+  max-height: 9999999px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button, input {
+  border: none;
+  outline: none;
+}
+
+img {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+html, body {
+  background: #ececec;
+}
+
+.main .cont .fontcon h2 {
+  margin-bottom: 0.2rem;
+}
+
+.main .cont .fontcon p {
+  margin-bottom: 0.08rem;
+}
+
+.ping {
+  width: 100%;
+  height: auto;
+  border-radius: 0.1rem;
+  background: #fcfcfc;
+  box-shadow: 0 0rem 0.06rem 0 #7a7b80;
+  margin-top: 0.4rem;
+  overflow: hidden;
+}
+
+.ping .tit {
+  height: 0.6rem;
+}
+
+.ping .tit .left {
+  width: 1.3rem;
+  height: 100%;
+  float: left;
+}
+
+.ping .tit .left img {
+  width: 0.47rem;
+  display: block;
+  float: left;
+  margin: 0.23rem 0.1rem 0 0.12rem;
+}
+
+.ping .tit .left span {
+  font-size: 0.3rem;
+  float: left;
+  color: #292928;
+  margin-top: 0.2rem;
+}
+
+.ping .tit .right {
+  width: 1.13rem;
+  height: 100%;
+  float: right;
+}
+
+.ping .tit .right img {
+  width: 0.16rem;
+  display: block;
+  float: left;
+  margin: 0.23rem 0.06rem 0 0rem;
+}
+
+.ping .tit .right span {
+  font-size: 0.24rem;
+  float: left;
+  color: #99999d;
+  margin-top: 0.2rem;
+}
+
+.ping .pingcon {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.ping .pingcon li {
+  width: 100%;
+  height: auto;
+}
+
+.ping .pingcon li .fen {
+  width: 6.85rem;
+  margin-left: -0.08rem;
+  display: block;
+}
+
+.ping .pingcon li .p_img {
+  width: 0.78rem;
+  height: 0.78rem;
+  border: 1px solid #a2a2a2;
+  box-shadow: 0 0rem 0.05rem 0 #1e243b;
+  border-radius: 50%;
+  background: #a2a2a2;
+  margin-top: 0.2rem;
+  float: left;
+}
+
+.ping .pingcon li .p_img img {
+  width: 0.78rem;
+  border-radius: 50%;
+  display: block;
+}
+
+.ping .pingcon li .p_con {
+  margin-top: 0.2rem;
+  float: left;
+  margin-left: 0.12rem;
+  width: 5.1rem;
+}
+
+.ping .pingcon li .p_con h1 {
+  font-size: 0.26rem;
+  color: #1B1C1F;
+  font-weight: normal;
+  margin-bottom: 0.06rem;
+}
+
+.ping .pingcon li .p_con h2 {
+  font-size: 0.2rem;
+  color: #B3B1B1;
+  font-weight: normal;
+  margin-bottom: 0.09rem;
+}
+
+.ping .pingcon li .p_con p {
+  font-size: 0.26rem;
+  color: #1B1C1F;
+  margin-bottom: 0.3rem;
+}
+
+.ping .pingcon li .p_xiaoxi {
+  width: 0.47rem;
+  margin-top: 0.45rem;
+  float: right;
+}
+
+.p_di {
+  width: 100%;
+  height: 0.98rem;
+  background: #1e243b;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.p_di div {
+  margin-top: 0.18rem;
+  height: 0.6rem;
+  margin-left: 0.24rem;
+}
+
+.p_di div img {
+  height: 0.6rem;
+  display: block;
+  float: left;
+}
+
+.p_di div input {
+  width: 4.35rem;
+  height: 0.56rem;
+  border-radius: 0.28rem;
+  border: 2px solid #4a4444;
+  float: left;
+  margin: 0 0.28rem 0 0.22rem;
+  padding-left: 0.2rem;
+  font-size: 0.26rem;
+}
+
+.p_di div .p_more {
+  margin-left: 0.15rem;
+}

@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="<?php echo CSS_PATH?>lyx_state.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH?>lyx_particulars.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH?>base.css">
+    <!--<script src="<?php echo JS_PATH?>jquery-3.2.1.js"></script>-->
+    <!--<script src="<?php echo JS_PATH?>lyx_state.js"></script>-->
+</head>
+<body>
+<?php include VIEW_PATH.'header.html'?>
+<style>
+    body{
+        width: 100%;
+        background-image:url('<?php echo IMG_PATH?>lyximg/lyx_back.png');
+        background-repeat:no-repeat;
+        background-size:100%;
+        background-position: 0 0.88rem;
+    }
+</style>
+<div class="header">
+    <div class="left"><a href="<?php echo PHP_PATH?>lyx_state/lyx_state"><img src="<?php echo IMG_PATH?>lyximg/lyx_head.png" alt=""></a></div>
+    <div class="middle">
+        <img src="<?php echo IMG_PATH?>lj_header8.png" alt="" style="width:0.16rem;height:0.08rem">
+        <?php echo $title?>
+        <img src="<?php echo IMG_PATH?>lj_header9.png" alt=""  style="width:0.16rem;height:0.08rem">
+    </div>
+    <div class="right"><a href="#"><img src="<?php echo IMG_PATH?>lj_header2.png" alt=""></a></div>
+</div>
+<div class="main">
+    <div class="cont">
+        <div class="peo">
+            <div class="peoimg">
+                <img src="<?php echo IMG_PATH?>lyximg/lyx_peoimg.png" class="pimg">
+            </div>
+            <h1>胡艳Silvia</h1>
+        </div>
+        <img src="<?php echo IMG_PATH?>lyximg/lyx_fen.png" class="fen">
+        <div class="fontcon">
+            <h2>适合小户型的“新中式”装修风格到底应该怎么搭配</h2>
+            <div class="box">
+                <p>首先卧室不宜放太多家具,夜里起床容易磕着.题主所说的十平米带飘窗卧室是时下非常典型的卧室布局,如果是以软装饰、小家具出发,可以重点着手的就是两个区域...</p>
+                <img src="<?php echo IMG_PATH?>lyximg/lyx_one.png" class="one">
+            </div>
+        </div>
+        <ul class="bot">
+            <li>
+                <img src="<?php echo IMG_PATH?>lyximg/lyx_bot1.png" alt="">
+                <span>12138</span>
+            </li>
+            <li>
+                <img src="<?php echo IMG_PATH?>lyximg/lyx_bot2.png" alt="">
+                <span>13580</span>
+            </li>
+            <li>
+                <img src="<?php echo IMG_PATH?>lyximg/lyx_bot3.png" alt="">
+                <span>17580</span>
+            </li>
+            <li><span>2013-05-30</span></li>
+        </ul>
+    </div>
+
+    <!--评论-->
+    <div class="ping">
+        <div class="tit">
+            <div class="left">
+                <img src="<?php echo IMG_PATH?>lyximg/lyx_ping.png" alt="">
+                <span>评论</span>
+            </div>
+            <div class="right">
+                <img src="<?php echo IMG_PATH?>lyximg/lyx_up.png" alt="">
+                <span>按热度</span>
+            </div>
+        </div>
+        <ul class="pingcon">
+            <li>
+                <img src="<?php echo IMG_PATH?>lyximg/lyx_fen.png" class="fen">
+                <div class="p_img"><img src="<?php echo IMG_PATH?>lyximg/lyx_p_img1.png" alt=""></div>
+                <div class="p_con">
+                    <h1>风继续吹</h1>
+                    <h2>2017-5-30</h2>
+                    <p>视频时间有点短啊！</p>
+                </div>
+                <img src="<?php echo IMG_PATH?>lyximg/lyx_ping.png" class="p_xiaoxi">
+            </li>
+            <li>
+                <img src="<?php echo IMG_PATH?>lyximg/lyx_fen.png" class="fen">
+                <div class="p_img"><img src="<?php echo IMG_PATH?>lyximg/lyx_p_img2.png" alt=""></div>
+                <div class="p_con">
+                    <h1>匠艺</h1>
+                    <h2>2017-5-30</h2>
+                    <p>好久不见你更新作品了</p>
+                </div>
+                <img src="<?php echo IMG_PATH?>lyximg/lyx_ping.png" class="p_xiaoxi">
+            </li>
+            <li>
+                <img src="<?php echo IMG_PATH?>lyximg/lyx_fen.png" class="fen">
+                <div class="p_img"><img src="<?php echo IMG_PATH?>lyximg/lyx_p_img3.png" alt=""></div>
+                <div class="p_con">
+                    <h1>KILIM</h1>
+                    <h2>2017-5-30</h2>
+                    <p>不太明白，求详解！</p>
+                </div>
+                <img src="<?php echo IMG_PATH?>lyximg/lyx_ping.png" class="p_xiaoxi">
+            </li>
+        </ul>
+    </div>
+
+
+    <!--底部-->
+    <div class="p_di">
+        <div>
+            <img src="<?php echo IMG_PATH?>lyximg/lyx_p_di1.png" class="yuyin">
+            <input type="text" name="con">
+            <img src="<?php echo IMG_PATH?>lyximg/lyx_p_di2.png" alt="">
+            <img src="<?php echo IMG_PATH?>lyximg/lyx_p_di3.png" class="p_more">
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>

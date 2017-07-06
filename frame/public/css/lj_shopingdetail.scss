@@ -1,0 +1,386 @@
+@import "mixin";
+
+@include rem();
+
+a, input, form, button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-appearance: none;
+}
+
+* {
+  -webkit-text-size-adjust: 100%;
+  -webkit-user-select: none;
+  -user-select: none;
+  max-height: 9999999px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+button, input {
+  border: none;
+  outline: none;
+}
+
+img {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.header {
+  z-index: 13;
+}
+
+body {
+  -webkit-ovflow-scrolling: touch;
+  ovflow-scrolling: touch;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  background: #ECECEC;
+}
+
+.banner {
+  margin-top: 0.88rem;
+  @include rect(100%, 4.9rem);
+  .swiper-container {
+    @include rect(100%, 100%);
+    .swiper-wrapper {
+      @include rect(100%, 100%);
+      .swiper-slide {
+        @include rect(100%, 100%);
+        @include flex1;
+        img {
+          @include rect(5.2rem, 2.64rem);
+        }
+      }
+    }
+  }
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: red;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+
+  bottom: -15px;
+}
+
+.content {
+  width: 100%;
+  margin-top:-0.5rem;
+  @include flex1;
+  flex-direction: column;
+  .sofa {
+    @include flex1;
+    @include rect(5rem, 0.9rem);
+    span {
+      font-size: 0.4rem;
+    }
+    .c1 {
+      @include circle(0.09rem);
+      background: #435262;
+    }
+    .c2 {
+      @include circle(0.05rem);
+      background: #435262;
+      margin:0.06rem;
+    }
+  }
+  .font2 {
+    font-size: 0.26rem;
+  }
+  .add {
+    font-size: 0.26rem;
+    color: #C5BA97;
+  }
+  p {
+    width: 80%;
+    text-align: center;
+    font-size: 0.24rem;
+    color: #9D9EA3;
+  }
+  .color {
+    @include flex1;
+    width:100%;
+    margin-top:0.5rem;
+    flex-direction: column;
+    span {
+      font-size: 0.24rem;
+    }
+    ul {
+      margin-top:0.26rem;
+      @include flex1;
+      li {
+        @include flex1;
+        margin:0 0.13rem;
+        flex-direction: column;
+        .circle{
+          @include circle(0.62rem);
+          border-radius: 50%;
+          border:0.02rem solid #B7B7B7;
+          margin-bottom: 0.18rem;
+        }
+      }
+    }
+  }
+}
+
+.product{
+  width: 100%;
+  @include flex1;
+  flex-direction: column;
+  margin-bottom:2rem;
+  .sofa {
+    @include flex1;
+    @include rect(5rem, 0.9rem);
+    span {
+      font-size: 0.4rem;
+      color: #435262;
+    }
+    .c1 {
+      @include circle(0.09rem);
+      background: #435262;
+    }
+    .c2 {
+      @include circle(0.05rem);
+      background: #435262;
+      margin:0.06rem;
+    }
+  }
+  div.main{
+    width:100%;
+    position: relative;
+    @include flex1;
+    flex-direction: column;
+    img{
+      position: absolute;
+      top:0;
+      left:0;
+      z-index: 10;
+      @include rect(100%,2.83rem);
+    }
+    span{
+      margin-top: 0.24rem;
+      margin-bottom: 0.13rem;
+      font-size: 0.32rem;
+      z-index: 14;
+    }
+    p{
+      margin:0.2rem 0;
+      width:75%;
+      color: #DADADA;
+      font-size: 0.24rem;
+      z-index: 14;
+      text-align: center;
+    }
+  }
+}
+
+.foot{
+  position: fixed;
+  bottom:0;
+  left:0;
+  background: #F7F7F7;
+  @include rect(100%,1rem);
+  @include flex1;
+  justify-content: space-between;
+  z-index: 15;
+  padding:0 0.24rem;
+  li{
+    height: 100%;
+    @include flex1;
+    img{
+      @include rect(0.56rem,0.56rem);
+    }
+  }
+  .shops{
+    img{
+      @include rect(0.61rem,0.57rem);
+    }
+  }
+  a{
+    @include rect(3rem,0.6rem);
+    margin-left: 0.7rem;
+    span{
+      @include rect(100%,100%);
+      color: #fff;
+      background: red;
+      font-size: 0.32rem;
+      @include flex1;
+    }
+  }
+
+}
+
+.contentbye.active {
+  bottom:0;
+}
+
+.contentbye {
+  position: fixed;
+  bottom:-8rem;
+  left:0;
+  background: rgba(255,255,255,0.95);
+  width: 100%;
+  height:7.8rem;
+  @include flex1;
+  z-index: 19;
+  flex-direction: column;
+  font-size: 0.26rem;
+  align-items: flex-start;
+  padding: 0 0.24rem;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  .close{
+    @include position(0.25rem,6.6rem);
+    width:0.58rem;
+    height:0.58rem;
+    z-index: 21;
+    img{
+      @include rect(0.58rem,0.58rem);
+    }
+  }
+  .choice {
+    @include flex1;
+    margin-top: 0.6rem;
+    justify-content: flex-start;
+    span {
+      color: #F2B830;
+    }
+  }
+  .color {
+    @include flex1;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 0.44rem;
+    li {
+      @include flex1;
+      margin: 0 0.13rem;
+      flex-direction: column;
+      .circle {
+        @include circle(0.62rem);
+        border-radius: 50%;
+        border: 0.02rem solid #B7B7B7;
+        margin-bottom: 0.18rem;
+      }
+    }
+  }
+  .size {
+    margin-top: 0.52rem;
+    @include flex1;
+    justify-content: flex-start;
+    span {
+      color: #EC101A;
+    }
+  }
+  .sizes {
+    @include flex1;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 0.44rem;
+    @include rect(5.2rem, 0.5rem);
+    border-radius: 0.25rem;
+    border: 0.01rem solid #000000;
+    li {
+      @include flex1;
+      margin: 0 0.1rem;
+      flex-direction: column;
+      .circle {
+        @include circle(0.62rem);
+        border-radius: 50%;
+        border: 0.02rem solid #B7B7B7;
+        margin-bottom: 0.18rem;
+      }
+    }
+  }
+  .number {
+    margin-top: 0.52rem;
+    @include flex1;
+    justify-content: flex-start;
+    span {
+      color: #384859;
+    }
+
+  }
+  .nums {
+    @include flex1;
+    margin-top: 0.48rem;
+    margin-left: 4.8rem;
+    .min, .add {
+      @include circle(0.34rem);
+      background: #E1D5AB;
+      color: #fff;
+      font-size: 0.4rem;
+      text-align: center;
+      line-height: 0.3rem;
+    }
+    .num {
+      @include flex1;
+      @include rect(0.74rem, 0.32rem);
+      border-radius: 0.3rem;
+      border: 0.02rem solid #000;
+      box-sizing: border-box;
+      margin: 0 0.1rem;
+    }
+  }
+
+}
+
+.total {
+  z-index: 20;
+  margin-top: 0.8rem;
+  @include flex1;
+  width: 100%;
+  height: 0.85rem;
+  overflow: hidden;
+  justify-content: flex-end;
+  background: rgba(255,255,255,0.5);
+  span {
+    font-size: 0.34rem;
+    color: #ED1B23;
+  }
+  .trmb {
+    @include flex1;
+    flex-direction: column;
+    border-left: 0.01rem dashed #000;
+    padding-left: 0.08rem;
+    margin-left: 0.15rem;
+    span {
+      font-size: 0.224rem;
+      color: #707070;
+    }
+  }
+  .pay {
+    font-size: 0.34rem;
+    @include rect(2.5rem, 0.6rem);
+    background: #395068;
+    color: #fff;
+    border-radius: 0.1rem;
+    margin-left: 0.16rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>闪屏页</title>
+    <link rel="stylesheet" href="<?php echo CSS_PATH?>lh_splash.css">
+    <script src="<?php echo JS_PATH?>jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="<?php echo CSS_PATH?>swiper.min.css">
+    <script src="<?php echo JS_PATH?>swiper.min.js"></script>
+</head>
+<style>
+    .splash li{
+        transition: all 1s ease;
+    }
+    /*div盒子居中*/
+    .swiper-container {
+       width: 100%;
+        height:100%;
+
+    }
+
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+
+    }
+</style>
+<body>
+    <div class="swiper-container">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+                <!--class="swiper-slide swiper-slide-active"-->
+                <a href="<?php echo PHP_PATH?>wtflogin"><div class="splash_skip">跳过</div></a>
+                <h2 class="splash_character1">私人订制</h2>
+                <h2 class="splash_character2">订制属于自己的家具</h2>
+            </li>
+            <li class="swiper-slide">
+                <!--class="swiper-slide swiper-slide-next"-->
+                <a href="<?php echo PHP_PATH?>wtflogin"><div class="splash_skip">跳过</div></a>
+                <h2 class="splash_character1">VR实景</h2>
+                <h2 class="splash_character2">实景查看家具摆放效果</h2>
+            </li>
+            <li class="swiper-slide">
+                <a href="<?php echo PHP_PATH?>wtflogin">
+                    <div class="splash_open">
+                        <p>开启家居新时代1.1</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+    <script>
+        var swiper = new Swiper('.swiper-container');
+    </script>
+</body>
+</html>
+

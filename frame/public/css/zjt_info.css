@@ -1,0 +1,44 @@
+body {
+  background: #ffffff; }
+
+.zjt_info {
+  margin-top: 1rem; }
+  .zjt_info .zjt_infoDemo {
+    width: 100%;
+    height: 1.62rem;
+    background: url("../img/zjt_img/zjtinfo1.png") no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 0px 8px #c1aa87; }
+    .zjt_info .zjt_infoDemo .zjt_infocircle {
+      width: 1.14rem;
+      height: 1.14rem;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 1px solid #494347; }
+      .zjt_info .zjt_infoDemo .zjt_infocircle img {
+        width: 100%;
+        background-size: 100%;
+        background-position: center; }
+    .zjt_info .zjt_infoDemo .zjt_infotext {
+      font-size: 0.32rem;
+      color: #2d2d33;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-content: space-between; }
+      .zjt_info .zjt_infoDemo .zjt_infotext p:nth-of-type(1), .zjt_info .zjt_infoDemo .zjt_infotext span {
+        font-size: 0.32rem;
+        color: #2d2d33; }
+      .zjt_info .zjt_infoDemo .zjt_infotext p:nth-of-type(2) {
+        margin-top: 0.36rem;
+        font-size: 0.3rem;
+        color: #6d6d70; }
+    .zjt_info .zjt_infoDemo .zjt_infoTime {
+      font-size: 0.3rem;
+      color: #2d2d33; }
+  .zjt_info .zjt_infoDemo1 {
+    margin-top: 0.2rem;
+    background: #ffffff; }

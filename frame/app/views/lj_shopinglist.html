@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品列表</title>
+    <link rel="stylesheet" href="<?php echo CSS_PATH?>lj_shopinglist.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH?>base.css">
+    <script src="<?php echo JS_PATH?>jquery-3.2.1.js"></script>
+    <!--<script src="<?php echo JS_PATH?>lj_shopinglist.js"></script>-->
+</head>
+<body>
+
+<div class="header">
+    <div class="left"><a href="<?php echo PHP_PATH?>lj_shoping/index"><img src="<?php echo IMG_PATH?>lj_img/lj_by_03.png" alt="" style="width: 0.19rem;height:0.3rem"></a></div>
+    <div class="middle">
+        <img src="<?php echo IMG_PATH?>lj_header8.png" alt="" style="width:0.16rem;height:0.08rem">
+        <?php echo $title?>
+        <img src="<?php echo IMG_PATH?>lj_header9.png" alt=""  style="width:0.16rem;height:0.08rem">
+    </div>
+    <div class="right"><a href="#"><img src="<?php echo IMG_PATH?>lj_header2.png" alt=""></a></div>
+</div>
+
+<?php include VIEW_PATH.'search.html'?>
+
+<div class="content">
+    <ul>
+        <?php foreach($data as $v):?>
+        <li>
+            <div class="ctop">
+                <img class='log1' src="<?php echo IMG_PATH?>lj_img/lj_shoping4_03.png" alt="">
+                <img class='log2' src="<?php echo IMG_PATH?>lj_img/LOGO.png" alt="">
+            </div>
+            <div class="mpic">
+                <a class="pic" href="<?php echo PHP_PATH?>lj_shoping/shopingdetail?id=<?php echo $v['id']?>">
+                    <img src="<?php echo $v['pic']?>" alt="">
+                </a>
+                <span><strong>·</strong>&nbsp;<?php echo $v['name']?>&nbsp;<strong>·</strong></span>
+                <span>CONTRACTED AND LOOSE <p>&nbsp;CHAIR</p></span>
+                <div class="price">
+                    <div class="prices"><?php echo $v['price']?></div>
+                    RMB
+                </div>
+            </div>
+            <div class="person">
+                <div class="left">
+                    <img src="<?php echo $v['designerpic']?>" alt="">
+                    <span><?php echo $v['designer']?></span>
+                </div>
+                <div class="more">
+                    <img src="<?php echo IMG_PATH?>lj_img/lj_shop8_03.png" alt="">
+                </div>
+            </div>
+        </li>
+        <?php endforeach; ?>
+
+    </ul>
+</div>
+
+</body>
+</html>

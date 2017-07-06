@@ -1,0 +1,243 @@
+@keyframes drop {
+  0% {
+    background: red;
+    transform: translate3d(-1000px, 0, 0);
+  }
+  /* 100%{ transform: translate3d(0,0,0); }*/
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 80px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 102.4px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 136.53333px;
+  }
+}
+
+a, input, form, button {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+}
+
+* {
+  -webkit-text-size-adjust: 100%;
+  -webkit-user-select: none;
+  -user-select: none;
+  max-height: 9999999px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button, input {
+  border: none;
+  outline: none;
+}
+
+img {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+html, body {
+  background: #ececec;
+}
+
+body {
+  background: #f3f3f5;
+}
+
+.back {
+  width: 100%;
+  height: 7.12rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.ka {
+  width: 100%;
+  height: 5rem;
+  padding-top: 0.88rem;
+}
+
+.payka {
+  width: 6.36rem;
+  height: 4rem;
+  margin: 0 auto;
+  margin-top: 0.17rem;
+}
+
+.payka .pay_tit {
+  width: 5.45rem;
+  margin: 0 auto;
+  padding-top: 0.5rem;
+  overflow: hidden;
+}
+
+.payka .pay_tit img {
+  width: 0.46rem;
+  display: block;
+  float: left;
+}
+
+.payka .pay_tit h2 {
+  font-size: 0.3rem;
+  color: #18191A;
+  float: left;
+  font-weight: normal;
+  margin-left: 0.15rem;
+  padding-top: 0.03rem;
+}
+
+.payka .pay_num {
+  width: 5.45rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.6rem;
+}
+
+.payka .pay_num li {
+  font-size: 0.45rem;
+  color: #000000;
+}
+
+.payka .pay_date {
+  width: 5.45rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.6rem;
+}
+
+.payka .pay_date li {
+  font-size: 0.4rem;
+  color: #000000;
+}
+
+.ka .swiper-pagination {
+  width: 1.28rem;
+  height: 0.18rem;
+  margin: 0.23rem 0;
+  position: absolute;
+  left: 50%;
+  margin-left: -0.64rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ka .swiper-pagination .swiper-pagination-bullet {
+  width: 0.18rem;
+  height: 0.18rem;
+  background: #CBCBD2;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.ka .swiper-pagination .swiper-pagination-bullet-active {
+  background: #ed2029;
+  border: 1px solid #f87893;
+  box-shadow: 0 0rem 0.08rem 0 #ed2029;
+  margin-top: -0.02rem;
+}
+
+.swiper-container {
+  width: 6.36rem;
+}
+
+.password {
+  width: 6rem;
+  height: 1rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -3rem;
+  top: 5.6rem;
+  z-index: 10;
+  font-size: 0.5rem;
+  letter-spacing: 0.9rem;
+  background: #F3F3F5;
+  border: 1px solid red;
+}
+
+.pass {
+  width: 6.36rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -3.18rem;
+  top: 6.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 20;
+}
+
+.pass li {
+  width: 0.8rem;
+  height: 0.04rem;
+  background: #202024;
+}

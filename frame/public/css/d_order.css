@@ -1,0 +1,265 @@
+body{
+    width: 100%;
+    /*height: 100%;*/
+    background: #1e243b;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    margin-top: 0.16rem;
+}
+.header .middle{
+    font-size: 0.45rem;
+}
+.header a img {
+    margin-top: 0.2rem;
+}
+.header div{
+    flex: 1;
+}
+
+.pay_list{
+    position: absolute;
+    left: -8rem;
+    top: 1.5rem;
+    transition: all 0.8s;
+    width: 6.4rem;
+    height: 9.9rem;
+    background: #fff;
+    border-radius: 0.1rem;
+}
+.huabian{
+    width: 100%;
+    height: 0.1rem;
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    left: 0;
+    bottom: -0.05rem;
+
+}
+.circle{
+    width: 0.36rem;
+    height: 0.36rem;
+    background: #1e243b;
+    position: absolute;
+    border-radius: 50%;
+    right: -0.2rem;
+    top: 2.24rem;
+
+}
+.top{
+    display: flex;
+    width: 100%;
+    height: 2.1rem;
+    box-shadow: inset -3px 0px 18px 1px #f4f4f4;;
+}
+.top .sofa{
+    width: 25%;
+    height: 100%;
+}
+.top .sofo_right{
+    width: 75%;
+    height: 100%;
+}
+.top .sofo_right ul{
+    width: 100%;
+    height: 100%;
+}
+.sofo_right ul li:first-child{
+    font-size: 0.24rem;
+    color: #424242;
+    margin-top: 0.5rem;
+}
+.sofo_right ul li:nth-child(2){
+    font-size: 0.16rem;
+    color: #525252;
+    font-weight: 600;
+}
+.sofo_right ul li:nth-child(3){
+    width: 100%;
+    height: 0.2rem;
+}
+.sofo_right ul li:nth-child(4){
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-size: 0.24rem;
+    font-weight: 600;
+    color: #b3b5b6;
+
+}
+.sofo_right ul li:nth-child(4) span{
+    width: 33.33%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+}
+.sofo_right ul li:nth-child(4) span i{
+    padding: 0 0.05rem;
+    font-style: normal;
+}
+.content{
+    display: flex;
+    width: 100%;
+    height: 3.9rem;
+}
+.content .content_left{
+    width: 1.35rem;
+    height: 100%;
+    /*background: red;*/
+}
+.content_left ul{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.content_left ul li{
+    font-size: 0.24rem;
+    color: #535353;
+}
+.content_left ul li:first-child{
+    position: absolute;
+    right: 0.04rem;
+    top: 0.37rem;
+}
+.content_left ul li:nth-child(2){
+    position: absolute;
+    right: 0.04rem;
+    top: 1.3rem;
+}
+.content_left ul li:nth-child(3){
+    position: absolute;
+    right: 0.04rem;
+    top: 2.05rem;
+}
+.content_left ul li:nth-child(4){
+    position: absolute;
+    right: 0.04rem;
+    top: 3.17rem;
+}
+
+.content .content_middle{
+    width: 0.28rem;
+    height: 100%;
+
+}
+.content_right{
+    display: flex;
+    flex: 1;
+    height: 100%;
+}
+.content_right ul{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.content_right ul li:first-child{
+     font-size: 0.2rem;
+     color: #49bbfc;
+     position: absolute;
+     left: 0.2rem;
+     top: 0.39rem;
+    font-weight: 600;
+}
+.content_right ul li:nth-child(2){
+    font-size: 0.2rem;
+    position: absolute;
+    left: 0.2rem;
+    top: 1.3rem;
+    color: #535353;
+}
+.content_right ul li:nth-child(2) span{
+    color: #ed2029;
+    font-weight: 600;
+    padding: 0 0.8rem;
+}
+.content_right ul li:nth-child(3){
+    color: #535353;
+    font-size: 0.2rem;
+    width: 3rem;
+    position: absolute;
+    left: 0.2rem;
+    top: 2.1rem;
+}
+.content_right ul li:nth-child(3) span{
+    position: absolute;
+    width: 0.5rem;
+    height: 0.4rem;
+    right: -0.6rem;
+    top: -0.05rem;
+}
+.content_right ul li:nth-child(4){
+    color: #535353;
+    font-size: 0.2rem;
+    position: absolute;
+    left: 0.2rem;
+    top: 3.21rem;
+}
+.message{
+    width: 5.9rem;
+    height: 2.15rem;
+    margin: 0 auto;
+
+}
+.message form{
+    width: 100%;
+    height: 100%;
+}
+.message textarea{
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding-top: 0.3rem;
+    outline: none;
+    background: #ededed;
+    border-radius: 0.1rem;
+    padding-left: 0.3rem;
+    display: flex;
+    align-content: flex-start;
+    justify-content: flex-start;
+}
+.zhifu{
+    width: 2.9rem;
+    height: 0.8rem;
+    background: #ed2029;
+    border-radius: 0.1rem;
+
+    font-size: 0.28rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: -0.5rem;
+    bottom: 0.5rem;
+    border: 1px solid #fff;
+}
+.zhifu a{
+    color: #fff;
+}
+.jiesuan{
+    width: 100%;
+    height: 1.45rem;
+    position: absolute;
+    left: -9rem;
+    transition: all 0.8s;
+    bottom: 0.2rem;
+}
+.jiesuan span:first-child{
+    font-size: 0.45rem;
+    color: #ed1b23;
+    font-weight: 600;
+    position: absolute;
+    left: 2.3rem;
+    top: 0.25rem;
+}
+.jiesuan span:nth-child(2){
+    font-size: 0.25rem;
+    color: #fff;
+    font-weight: 400;
+    position: absolute;
+    left: 5.1rem;
+    top: 0.38rem;
+}

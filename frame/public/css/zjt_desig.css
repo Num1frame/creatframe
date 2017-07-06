@@ -1,0 +1,232 @@
+@keyframes drop {
+  0% {
+    background: red;
+    transform: translate3d(-1000px, 0, 0);
+  }
+  /* 100%{ transform: translate3d(0,0,0); }*/
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 80px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 102.4px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 136.53333px;
+  }
+}
+
+a, input, form, button {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+}
+
+* {
+  -webkit-text-size-adjust: 100%;
+  -webkit-user-select: none;
+  -user-select: none;
+  max-height: 9999999px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+button, input {
+  border: none;
+  outline: none;
+}
+
+img {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.zjt_design {
+  width: 6.21rem;
+  height: 9.18rem;
+  position: absolute;
+  top: 0;
+  margin: auto;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.zjt_design .zjt_designOne {
+  width: 100%;
+  height: 100%;
+}
+
+.zjt_design .zjt_designOne li:nth-of-type(1) div:nth-of-type(1) {
+  width: 5.5rem;
+  height: 5.9rem;
+  background: #ffffff;
+  box-shadow: 1px 1px 50px 0.5px rgba(24, 29, 47, 0.3);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0.2rem;
+  position: relative;
+}
+
+.zjt_design .zjt_designOne li:nth-of-type(1) div:nth-of-type(1) img:nth-of-type(1) {
+  width: 0.49rem;
+  height: 3.56rem;
+  margin-top: 0.59rem;
+  margin-left: 0.75rem;
+}
+
+.zjt_design .zjt_designOne li:nth-of-type(1) div:nth-of-type(1) img:nth-of-type(2) {
+  width: 3.63rem;
+  height: 5.44rem;
+  margin-bottom: 0;
+  align-self: flex-end;
+  border-radius: 0.2rem;
+}
+
+.zjt_design .zjt_designOne li:nth-of-type(1) div:nth-of-type(1) .zjt_line {
+  width: 0.1rem;
+  height: 0.66rem;
+  border-radius: 0.2rem;
+  position: absolute;
+  bottom: -0.3rem;
+  left: 0.9rem;
+}
+
+.zjt_design .zjt_designOne li:nth-of-type(1) div:nth-of-type(2) {
+  width: 6.2rem;
+  height: 5.1rem;
+  background: #ffffff;
+  margin-top: -1.83rem;
+  border-radius: 0.2rem;
+  border: 1px solid #ffffff;
+}
+
+.zjt_design .zjt_designOne li:nth-of-type(1) div:nth-of-type(2) .zjt_text {
+  height: 2.69rem;
+  padding: 0 0.57rem;
+  margin: 2.1rem auto 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  box-shadow: none;
+}
+
+.zjt_design .zjt_designOne li:nth-of-type(1) div:nth-of-type(2) .zjt_text p:nth-of-type(1) {
+  font-size: 0.4rem;
+  color: #232427;
+}
+
+.zjt_design .zjt_designOne li:nth-of-type(1) div:nth-of-type(2) .zjt_text .zjt_notice {
+  width: 1rem;
+  height: 0.38rem;
+  border: 1px solid #b2b0ab;
+  border-radius: 0.1rem;
+  font-size: 0.24rem;
+  color: #232427;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.zjt_design .zjt_designOne li:nth-of-type(1) div:nth-of-type(2) .zjt_text p:nth-of-type(3) {
+  height: 1.6rem;
+  font-size: 0.24rem;
+  color: #232427;
+  text-align: center;
+}
+
+.zjt_design .zjt_designOne li:nth-of-type(2) div:nth-of-type(2) {
+  width: 6.2rem;
+  height: 5.1rem;
+  background: #ffffff;
+  margin-top: -1.6rem;
+  border-radius: 0.2rem;
+  border: 1px solid #ffffff;
+}
+
+.zjt_designTwo {
+  width: 1.9rem;
+  height: 0.18rem;
+  background: #ececec;
+  margin: 0.30rem auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.zjt_designTwo li {
+  width: 0.18rem;
+  height: 0.18rem;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+
+.zjt_designTwo li.active {
+  width: 0.38rem;
+  height: 0.18rem;
+  border-radius: 0.2rem;
+  border: 2px solid #eaa5a5;
+  background: #e50000;
+}

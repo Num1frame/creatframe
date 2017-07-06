@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="<?php echo CSS_PATH?>base.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH?>lyx_pay.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH?>/swiper.min.css">
+</head>
+<body>
+<!--头部-->
+<div class="header">
+    <div class="left"><a href="javascript:history.back()"><img src="<?php echo IMG_PATH?>lyximg/lyx_head.png" alt=""></a></div>
+    <div class="middle">
+        <img src="<?php echo IMG_PATH?>lj_header8.png" alt="" style="width:0.16rem;height:0.08rem">
+        <?php echo $title?>
+        <img src="<?php echo IMG_PATH?>lj_header9.png" alt="" style="width:0.16rem;height:0.08rem">
+    </div>
+    <div class="right"></div>
+</div>
+<style>
+    .ka {
+        width: 100%;
+        background-image: url('<?php echo IMG_PATH?>lyximg/lyx_pay_back.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 0 1.28rem;
+    }
+
+    .back {
+        width: 100%;
+        background-image: url('<?php echo IMG_PATH?>lyximg/lyx_pay_back2.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .payka {
+        background-image: url('<?php echo IMG_PATH?>lyximg/lyx_pay_payka.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+</style>
+
+<!--银行卡-->
+<div class="back"></div>
+<div class="ka">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+
+            <!--1-->
+            <div class="swiper-slide">
+                <div class="payka">
+                    <div class="pay_tit">
+                        <img src="<?php echo IMG_PATH?>lyximg/lyx_pay_zs.png" alt="">
+                        <h2>招商银行</h2>
+                    </div>
+                    <ul class="pay_num">
+                        <li>1234</li>
+                        <li>3456</li>
+                        <li>5767</li>
+                        <li>4356</li>
+                    </ul>
+                    <ul class="pay_date">
+                        <li>06/04</li>
+                        <li>456</li>
+                    </ul>
+                </div>
+            </div>
+            <!--2-->
+            <div class="swiper-slide">
+                <div class="payka">
+                    <div class="pay_tit">
+                        <img src="<?php echo IMG_PATH?>lyximg/lyx_pay_zs.png" alt="">
+                        <h2>招商银行</h2>
+                    </div>
+                    <ul class="pay_num">
+                        <li>1234</li>
+                        <li>3456</li>
+                        <li>5767</li>
+                        <li>4356</li>
+                    </ul>
+                    <ul class="pay_date">
+                        <li>06/04</li>
+                        <li>456</li>
+                    </ul>
+                </div>
+            </div>
+            <!--3-->
+            <div class="swiper-slide">
+                <div class="payka">
+                    <div class="pay_tit">
+                        <img src="<?php echo IMG_PATH?>lyximg/lyx_pay_zs.png" alt="">
+                        <h2>招商银行</h2>
+                    </div>
+                    <ul class="pay_num">
+                        <li>1234</li>
+                        <li>3456</li>
+                        <li>5767</li>
+                        <li>4356</li>
+                    </ul>
+                    <ul class="pay_date">
+                        <li>06/04</li>
+                        <li>456</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+</div>
+
+<!--密码-->
+<input type="password" class="password" maxlength="6">
+<ul class="pass">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+
+
+<script src="<?php echo JS_PATH?>/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+</script>
+</body>
+</html>

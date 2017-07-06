@@ -1,0 +1,90 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0.88rem;
+    background: #1E243B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 0.4rem;
+}
+.header .return{
+    margin-left: 0.24rem;
+}
+.header .return img{
+    display: block;
+    width: 0.42rem;
+    height: 0.42rem;
+}
+.header .middle{
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-right: 0.42rem;
+}
+.header .middle img{
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+}
+.neikuan{
+    margin-top:1.09rem;
+}
+.news_box{
+    width: 100%;
+    height: 100%;
+}
+.substance{
+    width: 100%;
+    height: 1.62rem;
+    box-shadow: 0rem 0.05rem  .1rem #888888;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: .24rem;
+    padding-right: .34rem;
+    margin-top: .2rem;
+}
+.substance .head{
+    width: 1.14rem;
+    height:1.14rem;
+    border-radius: 50%;
+    border: .01rem solid #62595a;
+    overflow: hidden;
+}
+.substance .head img{
+    width: 1.14rem;
+}
+.xinxi{
+    height: .8rem;
+    width: 4.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.xinxi h1{
+    color: #2d2d33;
+    font-size: .3rem;
+}
+.xinxi h2{
+    margin-top: .2rem;
+    color: #828284;
+    font-size: .29rem;
+}
+.time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: .72rem;
+    height: .8rem;
+    font-size: .3rem;
+}
+.time span{
+    font-weight: bold;
+    color:#2d2d33;
+}
