@@ -12,7 +12,29 @@
 <body>
 
 <?php include VIEW_PATH.'header.html'?>
-<?php include VIEW_PATH.'footer.html'?>
+
+<ul class="footer">
+    <li><a href="<?php echo PHP_PATH?>home/index">
+        <div class="pic"></div>
+        <span>首页</span>
+    </a></li>
+    <li><a href="<?php echo PHP_PATH?>zjt_design">
+        <div class="pic"></div>
+        <span>设计师</span>
+    </a></li>
+    <li class="active"><a href="<?php echo PHP_PATH?>lj_shoping/index">
+        <div class="pic"></div>
+        <span>购物车</span>
+    </a></li>
+    <li><a href="<?php echo PHP_PATH?>lzn_my">
+        <div class="pic"></div>
+        <span>我的</span>
+    </a></li>
+    <li><a href="<?php echo PHP_PATH?>lyx_state/lyx_state">
+        <div class="pic"></div>
+        <span>动态</span>
+    </a></li>
+</ul>
 
 <div class="vr">
     <a href="#"><img src="<?php echo IMG_PATH?>lj_img/lj_shoping2_03.png" alt=""></a>
