@@ -11,7 +11,7 @@ class db
     public function __construct($table)
     {
         $this->table = $table;
-        $this->pdo = new \PDO('mysql:host=localhost;dbname=test;port=3306;charset=utf8', 'root', '');
+        $this->pdo = new \PDO('mysql:host=localhost;dbname=home;port=3306;charset=utf8', 'root', '');
     }
     public function query($sql)
     {

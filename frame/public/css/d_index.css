@@ -15,7 +15,10 @@ a, input, form, button {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
+button,input{
+    border: none;
+    outline: none;
+}
 
 body{
     background: #bbae82;

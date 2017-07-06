@@ -11,12 +11,13 @@
     <link rel="stylesheet" href="<?php echo CSS_PATH?>d_index.css">
     <script src="<?php echo JS_PATH?>swiper-3.4.2.min.js"></script>
     <script src="<?php echo JS_PATH?>jquery.min.js"></script>
+    <link rel="stylesheet" href="<?php echo CSS_PATH?>base.css">
 </head>
 <body>
 <?php include VIEW_PATH.'header.html'?>
-
 <div class="search">
-    <a href="" class="search1"><span>搜索你的最爱...</span></a>
+    <input type="hidden" val="<?php echo $title?>">
+    <a class="search1"><input id ="find" type="text" placeholder="搜索你的最爱..." style="font-size:0.28rem" name="find"></a>
     <div class="search2"><u>Search</u><img src="<?php echo IMG_PATH?>lj_header6_10.png" alt=""></div>
 </div>
 <div class="banner" >
@@ -128,7 +129,12 @@
 
     })
 
-
-
+    $(function(){
+        $("#find").on("focus",function(){
+            if(!(location.pathname=="/frame/index.php/gj_search/index")){
+                location.href="<?php echo PHP_PATH?>gj_search/index";
+            }
+        })
+    })
 </script>
 </html>
