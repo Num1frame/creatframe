@@ -17,4 +17,9 @@ class gj_search extends core {
         move_uploaded_file($src,$dist);
         echo $name;
     }
+    function search1(){
+        $text=$_REQUEST['text'];
+        $data=M("goods")->selectAll();
+        $this->json($data);
+    }
 }

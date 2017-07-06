@@ -1,6 +1,22 @@
 $(function () {
     //输入搜索
-    // $("")
+    $("#find").on("keyup",function(){
+        $(".entry").addClass("active");
+        let i=setInterval(function(){
+            let val=$("#find").val();
+            if(!val){
+                $(".entry").removeClass("active");
+                return;
+            }
+            $.ajax({
+                url:"../index.php/gj_search/search1",
+                data:{text:val},
+                success:function(data){
+                    console.log(data);
+                }
+            })
+        },2000)
+    })
 
     //搜索
     var item = $(".gj_nav .item"),
