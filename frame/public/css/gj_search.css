@@ -364,6 +364,12 @@ html, body {
       right: 2rem;
       font-size: 0.24rem;
       text-align: center; }
+    .accuracy .price hr {
+      width: 0.95rem;
+      background: #2b3541;
+      position: absolute;
+      top: 0.5rem;
+      right: 1rem; }
     .accuracy .price .input2 {
       width: 0.92rem;
       height: 0.37rem;
@@ -371,6 +377,7 @@ html, body {
       position: absolute;
       top: 0.3rem;
       right: 0.24rem;
+      font-size: 0.24rem;
       text-align: center; }
     .accuracy .price .option {
       width: 100%;

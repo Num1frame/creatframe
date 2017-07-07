@@ -62,7 +62,7 @@ body{
     top: 11px;
     width: 1.18rem;
     height: 1.18rem;
-    background: url("../img/d_1.jpg") no-repeat center/cover;
+    /*background: url("../img/d_1.jpg") no-repeat center/cover;*/
     border-radius: 50%;
 }
 .list{

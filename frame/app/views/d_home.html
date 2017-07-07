@@ -19,39 +19,39 @@
     <div class="mask"></div>
     <h2>我的头像</h2>
     <a class="back"></a>
-    <div class="touxiang"></div>
+    <div class="touxiang" style="background: url(<?php echo $data['pic']?>) no-repeat center/cover"></div>
 </div>
 <div class="list">
     <ul>
         <li>
             <div class="tu" style="background: url(<?php echo IMG_PATH?>d_3.png) no-repeat center/cover"></div>
             <h2>用户名</h2>
-            <p>杜帅</p>
+            <p><?php echo $data['name']?></p>
         </li>
         <li>
             <div class="tu" style="background: url(<?php echo IMG_PATH?>d_4.png) no-repeat center/cover"></div>
             <h2>手机号</h2>
-            <p>18435106215</p>
+            <p><?php echo $data['phone']?></p>
         </li>
         <li>
             <div class="tu" style="background: url(<?php echo IMG_PATH?>d_5.png) no-repeat center/cover"></div>
             <h2>邮箱</h2>
-            <p>757293200@qq.com</p>
+            <p><?php echo $data['email']?></p>
         </li>
         <li>
             <div class="tu" style="background: url(<?php echo IMG_PATH?>d_6.png) no-repeat center/cover"></div>
             <h2>微信</h2>
-            <p>du3211314</p>
+            <p><?php echo $data['weixin']?></p>
         </li>
         <li>
             <div class="tu" style="background: url(<?php echo IMG_PATH?>d_7.png) no-repeat center/cover"></div>
             <h2>QQ</h2>
-            <p>757293200</p>
+            <p><?php echo $data['qq']?></p>
         </li>
         <li>
             <div class="tu" style="background: url(<?php echo IMG_PATH?>d_8.png) no-repeat center/cover"></div>
             <h2>地址</h2>
-            <p>太原学院</p>
+            <p><?php echo $data['dizhi']?></p>
         </li>
 
     </ul>

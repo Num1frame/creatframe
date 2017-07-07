@@ -48,22 +48,6 @@ $(function () {
                 })
             },800)
         }
-        // $(".entry").addClass("active");
-        // let i = setInterval(function () {
-        //     let val = $("#find").val();
-        //     if (!val) {
-        //         $(".entry").removeClass("active");
-        //         return;
-        //     }
-        //     $.ajax({
-        //         url: "../gj_search/search1",
-        //         data: {text: val},
-        //         success: function (data) {
-        //             data = JSON.parse(data);
-        //             historyLi(data);
-        //         }
-        //     })
-        // }, 2000)
     })
 
     ///点击跳转按钮记录信息
@@ -176,17 +160,31 @@ $(function () {
         $(".style li:eq(0)").addClass("active hot");
     }
     add();
+    var text1,text2,text3;
     $(".price li").on("click", function () {
         $(".price li").removeClass("active hot");
         $(this).addClass("active hot");
         let text = $(this).find("input").val();
         let arr=text.split("-");
-        $(".accuracy .price .input1").val(arr[0])
-        $(".accuracy .price .input2").val(arr[1])
+        $(".accuracy .price .input1").val(arr[0]);
+        $(".accuracy .price .input2").val(arr[1]);
     })
     $(".style li").on("click", function () {
         $(".style li").removeClass("active hot");
         $(this).addClass("active hot");
     })
 
+    $(".accuracy .button").on("click",function(){
+        text1=$(".accuracy .price .input1").val();
+        text2=$(".accuracy .price .input2").val();
+        text3=$(".style").find(".active").attr("id");
+        if(!text1){
+            location.href="../gj_search/shopinglist3?&num3="+text3;
+        }else if(!text2 && text1){
+            location.href="../gj_search/shopinglist4?num1="+text1+"&num3="+text3;
+        }
+        else{
+            location.href="../gj_search/shopinglist2?num1="+text1+"&num2="+text2+"&num3="+text3;
+        }
+    })
 })

@@ -8,13 +8,18 @@
     <title>个人资料</title>
     <link rel="stylesheet" href="<?php echo CSS_PATH?>base.css">
     <link rel="stylesheet" href="<?php echo CSS_PATH?>grd_grzl.css">
+    <script src="<?php echo JS_PATH?>jquery.min.js"></script>
+    <script src="<?php echo JS_PATH?>grd_grzl.js"></script>
     <style>
         .header{
             z-index:5;
         }
-        /*.grd_gzpic li:hover{*/
-            /*display:none;*/
-        /*}*/
+        .grd_gzpic li .active{
+            display: block;
+        }
+        .active{
+            display:none;
+        }
     </style>
 </head>
 <body>
@@ -44,232 +49,255 @@
 </div>
 <div class="grd_content">
 
-<div class="grd_wdgz">
-   <div class="grd_neikuan">
-     <div class="grd_gz">
-        <div class="grd_gz1">
-            <img src="<?php echo IMG_PATH?>grd_img/grd9_11.png" alt="">
-        </div>
-        <div class="grd_gz2">
-            <ul>
-                <li style="font-family:宋体">我的关注</li>
-                <li class="grd_gzxt">
-                       <div class="grd_gzxt1"></div>
-                       <div class="grd_gzxt2"></div>
-                       <div class="grd_gzxt1"></div>
+    <div class="grd_wdgz">
+        <div class="grd_neikuan">
+            <div class="grd_gz">
+                <div class="grd_gz1">
+                    <img src="<?php echo IMG_PATH?>grd_img/grd9_11.png" alt="">
+                </div>
+                <div class="grd_gz2">
+                    <ul>
+                        <li style="font-family:宋体">我的关注</li>
+                        <li class="grd_gzxt">
+                            <div class="grd_gzxt1"></div>
+                            <div class="grd_gzxt2"></div>
+                            <div class="grd_gzxt1"></div>
+                        </li>
+                        <li>ATTENTION</li>
+                    </ul>
+                </div>
+                <div class="grd_gz3">
+                    <img src=" <?php echo IMG_PATH?>grd_img/grd10_11.png" alt="">
+                </div>
+
+            </div>
+            <ul class="grd_gzpic">
+                <?php foreach ($data as $v):?>
+                <li>
+                    <div class="grd_grt">
+                        <img src="<?php echo IMG_PATH?>grd_img/grd11_03.png" alt="">
+                    </div>
+                    <div class="grd_gztx">
+                        <img src="<?php echo $v['pic']?>" alt="">
+                    </div>
+                    <h2><?php echo $v['name']?></h2>
+                    <h3><?php echo $v['num']?></h3>
+                    <div class="zhezhao">
+                        <div class="qxgz">取消关注</div>
+                    </div>
                 </li>
-                <li>ATTENTION</li>
+                <?php endforeach;?>
+                <!--<li>-->
+                <!--<div class="grd_grt">-->
+                <!--<img src="<?php echo IMG_PATH?>grd_img/grd11_03.png" alt="">-->
+                <!--</div>-->
+                <!--<div class="grd_gztx">-->
+                <!--<img src="<?php echo IMG_PATH?>grd_img/12_06.png" alt="">-->
+                <!--</div>-->
+                <!--<h2>匠云</h2>-->
+                <!--<h3>121,38 关注</h3>-->
+                <!--<div class="zhezhao">-->
+                <!--<div class="qxgz">取消关注</div>-->
+                <!--</div>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<div class="grd_grt">-->
+                <!--<img src="<?php echo IMG_PATH?>grd_img/grd11_03.png" alt="">-->
+                <!--</div>-->
+                <!--<div class="grd_gztx">-->
+                <!--<img src="<?php echo IMG_PATH?>grd_img/12_06.png" alt="">-->
+                <!--</div>-->
+                <!--<h2>匠云</h2>-->
+                <!--<h3>121,38 关注</h3>-->
+                <!--<div class="zhezhao">-->
+                <!--<div class="qxgz">取消关注</div>-->
+                <!--</div>-->
+                <!--</li>-->
+
             </ul>
+            <div class="grd_more">
+                <img src="<?php echo IMG_PATH?>grd_img/14_12.png" alt="">
+            </div>
+            <div class="grd_kuai"></div>
+            <div class="grd_gz">
+                <div class="grd_gz1">
+                    <img src="<?php echo IMG_PATH?>grd_img/grd9_11.png" alt="">
+                </div>
+                <div class="grd_gz2">
+                    <ul>
+                        <li>我的粉丝</li>
+                        <li class="grd_gzxt">
+                            <div class="grd_gzxt1"></div>
+                            <div class="grd_gzxt2"></div>
+                            <div class="grd_gzxt1"></div>
+                        </li>
+                        <li>MYFANS</li>
+                    </ul>
+                </div>
+                <div class="grd_gz3">
+                    <img src=" <?php echo IMG_PATH?>grd_img/grd10_11.png" alt="">
+                </div>
+
+            </div>
+            <ul class="grd_gzpic">
+                <?php foreach ($data1 as $v):?>
+                <li>
+                    <div class="grd_grt">
+                        <img src="<?php echo IMG_PATH?>grd_img/grd11_03.png" alt="">
+                    </div>
+                    <div class="grd_gztx">
+                        <img src="<?php echo $v['pic']?>" alt="">
+                    </div>
+                    <h2><?php echo $v['name']?></h2>
+                    <h3><?php echo $v['num']?></h3>
+                    <div class="zhezhao">
+                        <div class="qxgz">取消关注</div>
+                    </div>
+                </li>
+                <!--<li>-->
+                <!--<div class="grd_grt">-->
+                <!--<img src="<?php echo IMG_PATH?>grd_img/grd11_03.png" alt="">-->
+                <!--</div>-->
+                <!--<div class="grd_gztx">-->
+                <!--<img src="<?php echo IMG_PATH?>grd_img/12_06.png" alt="">-->
+                <!--</div>-->
+                <!--<h2>匠云</h2>-->
+                <!--<h3>121,38 关注</h3>-->
+                <!--<div class="zhezhao">-->
+                <!--<div class="qxgz">取消关注</div>-->
+                <!--</div>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<div class="grd_grt">-->
+                <!--<img src="<?php echo IMG_PATH?>grd_img/grd11_03.png" alt="">-->
+                <!--</div>-->
+                <!--<div class="grd_gztx">-->
+                <!--<img src="<?php echo IMG_PATH?>grd_img/12_06.png" alt="">-->
+                <!--</div>-->
+                <!--<h2>匠云</h2>-->
+                <!--<h3>121,38 关注</h3>-->
+                <!--<div class="zhezhao">-->
+                <!--<div class="qxgz">取消关注</div>-->
+                <!--</div>-->
+                <!--</li>-->
+                <?php endforeach;?>
+            </ul>
+            <div class="grd_more">
+                <img src="<?php echo IMG_PATH?>grd_img/14_12.png" alt="">
+            </div>
+            <div class="grd_kuai">
+
+            </div>
         </div>
-        <div class="grd_gz3">
-            <img src=" <?php echo IMG_PATH?>grd_img/grd10_11.png" alt="">
+
+        <div class="grd_lb">
+            <div class="grd_neikuan">
+                <div class="grd_gz">
+                    <div class="grd_gz1">
+                        <img src="<?php echo IMG_PATH?>grd_img/grd9_11.png" alt="">
+                    </div>
+                    <div class="grd_gz2">
+                        <ul>
+                            <li>我的列表</li>
+                            <li class="grd_gzxt">
+                                <div class="grd_gzxt1"></div>
+                                <div class="grd_gzxt2"></div>
+                                <div class="grd_gzxt1"></div>
+                            </li>
+                            <li>PUBLISHED</li>
+                        </ul>
+                    </div>
+                    <div class="grd_gz3">
+                        <img src=" <?php echo IMG_PATH?>grd_img/grd10_11.png" alt="">
+                    </div>
+                    <div class="grd_liebiao">
+                        <div class="wrapper">
+                            <h1 style="font-family:宋体;">适合小户型的 “新中式" 装修风格到底该这么搭配</h1>
+                            <h2 style="font-family:楷体;">首先卧室不宜放太多家具，夜里起床容易碰着。主题所说的十平米带飘窗卧室是时下非常典型的我是布局。如果是以装饰丶小家具出发，可以重点着手的就是这2个区域</h2>
+
+                            <ul class="grd_lbdb">
+                                <li>
+                                    <img src="<?php echo IMG_PATH?>grd_img/57_56.png" alt="">
+                                    <span>12138</span>
+                                </li>
+                                <li>
+                                    <img src="<?php echo IMG_PATH?>grd_img/54_66.png" alt="">
+                                    <span>13580</span>
+                                </li>
+                                <li>
+                                    <img src="<?php echo IMG_PATH?>grd_img/55_60.png" alt="">
+                                    <span>17580</span>
+                                </li>
+                                <li>2017-05-30</li>
+                            </ul>
+                        </div>
+                        <div class="wrapper1">
+                            <div class="grd_footer">
+                                <h1 style="color:#aeaeb1;font-family:宋体;font-size:0.3rem;line-height:0.4rem;">适合小户型的 “新中式” 装修风格到底该这么搭配</h1>
+                                <dl>
+                                    <dt><img src="<?php echo IMG_PATH?>grd_img/24_47.png" alt=""></dt>
+                                    <dt><img src="<?php echo IMG_PATH?>grd_img/25_49.png" alt=""></dt>
+                                    <dt><img src="<?php echo IMG_PATH?>grd_img/26_51.png" alt=""></dt>
+                                </dl>
+                                <ul class="grd_lbdb">
+                                    <li>
+                                        <img src="<?php echo IMG_PATH?>grd_img/57_56.png" alt="">
+                                        <span>12138</span>
+                                    </li>
+                                    <li>
+                                        <img src="<?php echo IMG_PATH?>grd_img/54_66.png" alt="">
+                                        <span>13580</span>
+                                    </li>
+                                    <li>
+                                        <img src="<?php echo IMG_PATH?>grd_img/55_60.png" alt="">
+                                        <span>17580</span>
+                                    </li>
+                                    <li>2017-05-30</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
 
-     </div>
-     <ul class="grd_gzpic">
-         <li>
-             <div class="grd_grt">
-                 <img src="<?php echo IMG_PATH?>grd_img/grd11_03.png" alt="">
-             </div>
-             <div class="grd_gztx">
-                 <img src="<?php echo IMG_PATH?>grd_img/12_06.png" alt="">
-             </div>
-             <h2>匠云</h2>
-             <h3>121,38 关注</h3>
-             <div class="zhezhao">
-                 <div class="qxgz">取消关注</div>
-             </div>
-         </li>
-         <li>
-             <div class="grd_grt">
-                 <img src="<?php echo IMG_PATH?>grd_img/grd11_03.png" alt="">
-             </div>
-             <div class="grd_gztx">
-                 <img src="<?php echo IMG_PATH?>grd_img/12_06.png" alt="">
-             </div>
-             <h2>匠云</h2>
-             <h3>121,38 关注</h3>
-             <div class="zhezhao">
-                 <div class="qxgz">取消关注</div>
-             </div>
-         </li>
-         <li>
-             <div class="grd_grt">
-                 <img src="<?php echo IMG_PATH?>grd_img/grd11_03.png" alt="">
-             </div>
-             <div class="grd_gztx">
-                 <img src="<?php echo IMG_PATH?>grd_img/12_06.png" alt="">
-             </div>
-             <h2>匠云</h2>
-             <h3>121,38 关注</h3>
-             <div class="zhezhao">
-                 <div class="qxgz">取消关注</div>
-             </div>
-         </li>
 
-     </ul>
-     <div class="grd_more">
-         <img src="<?php echo IMG_PATH?>grd_img/14_12.png" alt="">
-     </div>
-<div class="grd_kuai"></div>
-       <div class="grd_gz">
-           <div class="grd_gz1">
-               <img src="<?php echo IMG_PATH?>grd_img/grd9_11.png" alt="">
-           </div>
-           <div class="grd_gz2">
-               <ul>
-                   <li>我的粉丝</li>
-                   <li class="grd_gzxt">
-                       <div class="grd_gzxt1"></div>
-                       <div class="grd_gzxt2"></div>
-                       <div class="grd_gzxt1"></div>
-                   </li>
-                   <li>MYFANS</li>
-               </ul>
-           </div>
-           <div class="grd_gz3">
-               <img src=" <?php echo IMG_PATH?>grd_img/grd10_11.png" alt="">
-           </div>
 
-       </div>
-       <ul class="grd_gzpic">
-           <li>
-               <div class="grd_grt">
-                   <img src="<?php echo IMG_PATH?>grd_img/grd11_03.png" alt="">
-               </div>
-               <div class="grd_gztx">
-                   <img src="<?php echo IMG_PATH?>grd_img/12_06.png" alt="">
-               </div>
-               <h2>匠云</h2>
-               <h3>121,38 关注</h3>
-               <div class="zhezhao">
-                   <div class="qxgz">取消关注</div>
-               </div>
-           </li>
-           <li>
-               <div class="grd_grt">
-                   <img src="<?php echo IMG_PATH?>grd_img/grd11_03.png" alt="">
-               </div>
-               <div class="grd_gztx">
-                   <img src="<?php echo IMG_PATH?>grd_img/12_06.png" alt="">
-               </div>
-               <h2>匠云</h2>
-               <h3>121,38 关注</h3>
-               <div class="zhezhao">
-                   <div class="qxgz">取消关注</div>
-               </div>
-           </li>
-           <li>
-               <div class="grd_grt">
-                   <img src="<?php echo IMG_PATH?>grd_img/grd11_03.png" alt="">
-               </div>
-               <div class="grd_gztx">
-                   <img src="<?php echo IMG_PATH?>grd_img/12_06.png" alt="">
-               </div>
-               <h2>匠云</h2>
-               <h3>121,38 关注</h3>
-               <div class="zhezhao">
-                   <div class="qxgz">取消关注</div>
-               </div>
-           </li>
-
-       </ul>
-       <div class="grd_more">
-           <img src="<?php echo IMG_PATH?>grd_img/14_12.png" alt="">
-       </div>
-       <div class="grd_kuai">
-
-       </div>
-   </div>
-
-<div class="grd_lb">
-    <div class="grd_neikuan">
-       <div class="grd_gz">
-           <div class="grd_gz1">
-               <img src="<?php echo IMG_PATH?>grd_img/grd9_11.png" alt="">
-           </div>
-           <div class="grd_gz2">
-               <ul>
-                   <li>我的列表</li>
-                   <li class="grd_gzxt">
-                       <div class="grd_gzxt1"></div>
-                       <div class="grd_gzxt2"></div>
-                       <div class="grd_gzxt1"></div>
-                   </li>
-                   <li>PUBLISHED</li>
-               </ul>
-           </div>
-           <div class="grd_gz3">
-               <img src=" <?php echo IMG_PATH?>grd_img/grd10_11.png" alt="">
-           </div>
-           <div class="grd_liebiao">
-               <div class="wrapper">
-                    <h1 style="font-family:宋体;">适合小户型的 “新中式" 装修风格到底该这么搭配</h1>
-                    <h2 style="font-family:楷体;">首先卧室不宜放太多家具，夜里起床容易碰着。主题所说的十平米带飘窗卧室是时下非常典型的我是布局。如果是以装饰丶小家具出发，可以重点着手的就是这2个区域</h2>
-
-                 <ul class="grd_lbdb">
-                     <li>
-                         <img src="<?php echo IMG_PATH?>grd_img/57_56.png" alt="">
-                         <span>12138</span>
-                     </li>
-                     <li>
-                         <img src="<?php echo IMG_PATH?>grd_img/54_66.png" alt="">
-                         <span>13580</span>
-                     </li>
-                     <li>
-                         <img src="<?php echo IMG_PATH?>grd_img/55_60.png" alt="">
-                         <span>17580</span>
-                     </li>
-                     <li>2017-05-30</li>
-                 </ul>
-               </div>
-               <div class="wrapper1">
-                 <div class="grd_footer">
-                        <h1 style="color:#aeaeb1;font-family:宋体">适合小户型的 “新中式” 装修风格到底该这么搭配</h1>
-                        <dl>
-                            <dt><img src="<?php echo IMG_PATH?>grd_img/24_47.png" alt=""></dt>
-                            <dt><img src="<?php echo IMG_PATH?>grd_img/25_49.png" alt=""></dt>
-                            <dt><img src="<?php echo IMG_PATH?>grd_img/26_51.png" alt=""></dt>
-                        </dl>
-                     <ul class="grd_lbdb">
-                         <li>
-                             <img src="<?php echo IMG_PATH?>grd_img/57_56.png" alt="">
-                             <span>12138</span>
-                         </li>
-                         <li>
-                             <img src="<?php echo IMG_PATH?>grd_img/54_66.png" alt="">
-                             <span>13580</span>
-                         </li>
-                         <li>
-                             <img src="<?php echo IMG_PATH?>grd_img/55_60.png" alt="">
-                             <span>17580</span>
-                         </li>
-                         <li>2017-05-30</li>
-                     </ul>
-                 </div>
-               </div>
-
-           </div>
-       </div>
-       </div>
+    </div>
 </div>
 
 
-
-</div>
-</div>
-<script src="https://cdn.bootcss.com/jquery/2.2.2/jquery.js">
-
-</script>
 <script>
-   $(function(){
 
-       $(".grd_gzpic li").on('click',function(){
-           $(".zhezhao").css("display","block");
 
-       });
+//    $(function(){
+//        $('.grd_gzpic').on('click','li',function(){
+//            $(this).find('.zhezhao').addClass('active');
+//        })
+//        $('.zhezhao').on('click','.qxgz',function(){
+//            $(this).find('.grd_gzpic li').addClass('active1');
+//        })
+//
+//        $('.grd_gzpic').on('click','.zhezhao.active .qxgz',function(){
+//            if($(this).html()=='取消关注'){
+////                   $(this).html('关注').addClass('grd_gzactive');
+//                // $('.grd_gzpic li').eq($(this).index()).css('display','none');
+//            }
+////               else{
+////                   $(this).html('取消关注').removeClass('grd_gzactive');
+////               }
+//        })
+//        $(document.body).on('click',function(e){
+//            for(let i=0;i<$('.grd_gzpic li').length;i++){
+//                if($(e.target).closest('li')[0]!=$('.grd_gzpic li')[i]){
+//                    $($('.grd_gzpic li')[i]).find('.zhezhao').removeClass('active');
+//                }
+//            }
+//        })
+//    })
 
-   })
+
 
 
 
