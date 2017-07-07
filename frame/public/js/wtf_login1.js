@@ -53,7 +53,6 @@ $(function(){
             $('#wtf_password').prop('type','text');
         }
         $(this).toggleClass('active');
-
     })
 
 })

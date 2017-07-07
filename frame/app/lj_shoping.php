@@ -5,6 +5,8 @@ use core\core;
 
 class lj_shoping extends core{
     function index(){
+        $o = M('goods')->selectAll();
+        $this->assign('data',$o);
         $this->assign('title','购物车');
         $this->display('lj_shoping');
     }
@@ -15,7 +17,7 @@ class lj_shoping extends core{
         $this->display('lj_shopinglist');
     }
     function shopinglist1(){
-    $datas =M()->query("select * from goods where label=".$_REQUEST['key']);
+    $datas =M()->query("select * from goods where label=".$_REQUEST['id']);
     $this->assign('data',$datas);
     $this->assign('title','商品列表');
     $this->display('lj_shopinglist');
