@@ -126,6 +126,7 @@
   width: 7rem;
   height: 0.73rem;
   font-size: 0.24rem;
+  z-index: 100;
 }
 
 .search .search1 {
