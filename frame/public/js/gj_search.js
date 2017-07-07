@@ -70,11 +70,8 @@ $(function () {
     function render(data){
         $(".top .label").empty();
             data.forEach(function(v,i){
-                if(i<7){
-                    $(`<li data=${v}>`).addClass("li").html(v).prependTo($(".top .label"));
-                }
+                $(`<li data=${v}>`).addClass("li").html(v).prependTo($(".top .label"));
             })
-
     }
     var list=[];
     if(localStorage.home){

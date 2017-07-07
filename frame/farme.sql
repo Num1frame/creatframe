@@ -79,3 +79,26 @@ INSERT INTO goodsdetail (gid,pic,price,name,content) VALUES
 ( '2', '/frame/public/img/lj_img/lj_shop9_07.png','4396.70','摩登北欧客厅沙发','ASDU'),
 ( '3', '/frame/public/img/lj_img/lj_shoplist9_07.png','2137.20','新中式储物柜','ASDU'),
 ( '4', '/frame/public/img/lj_img/lj_shoplist9_11.png','1753.00','简约松软靠椅','ASDU');
+
+DROP TABLE IF EXISTS goods;
+CREATE TABLE IF NOT EXISTS `goods` (
+  `id` int(12) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `pic` varchar(255) DEFAULT NULL,
+  `designer` varchar(255) DEFAULT NULL,
+  `designerpic` varchar(255) DEFAULT NULL,
+  `price` varchar(255) DEFAULT NULL,
+  `homeid` int(11) NOT NULL,
+  `label` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
+
+INSERT INTO `goods` (`id`, `name`, `pic`, `designer`, `designerpic`, `price`, `homeid`, `label`) VALUES
+(1, '简约松软靠椅', '/creatframe/frame/public/img/lj_img/lj_shoplist9_03.png', '胡艳 Silvia', '/creatframe/frame/public/img/lj_img/lj_shoping7_10.png', '1213.80', 0, 1),
+(2, '摩登北欧客厅沙发', '/creatframe/frame/public/img/lj_img/lj_shop9_07.png', '胡艳 Silvia', '/creatframe/frame/public/img/lj_img/lj_shoping7_10.png', '4396.70', 0, 2),
+(3, '新中式储物柜', '/creatframe/frame/public/img/lj_img/lj_shoplist9_07.png', '胡艳 Silvia', '/creatframe/frame/public/img/lj_img/lj_shoping7_10.png', '2137.20', 0, 3),
+(4, '简约松软靠椅', '/creatframe/frame/public/img/lj_img/lj_shoplist9_11.png', '胡艳 Silvia', '/creatframe/frame/public/img/lj_img/lj_shoping7_10.png', '1753.00', 0, 4),
+(5, '摩登北欧客厅沙发', '/creatframe/frame/public/img/lj_img/lj_shop9_07.png', '胡艳 Silvia', '/creatframe/frame/public/img/lj_img/lj_shoping7_10.png', '4396.70', 0, 5),
+(6, '简约松软靠椅', '/creatframe/frame/public/img/lj_img/lj_shoplist9_11.png', '胡艳 Silvia', '/creatframe/frame/public/img/lj_img/lj_shoping7_10.png', '1753.00', 0, 3),
+(7, '欧美', '/creatframe/frame/public/img/lj_img/lj_shoplist9_11.png', '胡艳 Silvia', '/creatframe/frame/public/img/lj_img/lj_shoping7_10.png', '1753.00', 0, 1);
+
