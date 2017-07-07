@@ -116,14 +116,21 @@ $(function () {
     function renderPhoto(data) {
         $(".photo .img .history").remove();
         photoList.forEach(function (v, i) {
-            $("<li class='history'>").css({
-                width: 2 + "rem",
-                height: 2 + "rem",
-                backgroundImage: "url(" + v + ")",
-                backgroundSize: 100 + "%" + "" + 100 + "%"
-            }).prependTo($(".photo .img"));
+                $("<li class='history'>").css({
+                    width: 2 + "rem",
+                    height: 2 + "rem",
+                    backgroundImage: "url(" + v + ")",
+                    backgroundSize: 100 + "%" + "" + 100 + "%"
+                }).prependTo($(".photo .img"));
+            $(".photo .img li").length==9;
+
         })
     }
+    $(".photo .img").on("click","li",function(){
+
+        let uid=$(this).attr("id");
+        location.href="../gj_search/photo1?uid="+uid;
+    })
 
     var photoList = [];
     if (localStorage.photoList) {
@@ -186,5 +193,17 @@ $(function () {
         else{
             location.href="../gj_search/shopinglist2?num1="+text1+"&num2="+text2+"&num3="+text3;
         }
+    })
+
+
+    //语音搜索
+    let miniter;
+    let speak=document.getElementsByClassName("speak")[0];
+    let round=speak.getElementsByClassName("round")[0];
+    round.addEventListener('touchstart',function(){
+        round.className="round active";
+    })
+    round.addEventListener('touchend',function(){
+        round.className="round";
     })
 })

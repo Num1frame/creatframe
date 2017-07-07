@@ -153,4 +153,20 @@ INSERT INTO zjt_design (name, pic, content) VALUES
 ( '江云Alice','/creatframe/frame/public/img/zjt_img/zjtdetails13.png','丰富的想象、创新能力和前瞻性是必不可少的，这是设计师与工程师的一大区别。工程设计采用计算法或类比法，工作的性质主要是改进、完善而非创新；造型设计则非常讲究原创和独创性'),
 ( '戴斯Darcie','/creatframe/frame/public/img/zjt_img/zjtdetails2.png','新设计师要不断磨练自己，经得起考验。在这个磨练的过程中我们更多的是要找准自己的定位和长处，必须要对自己苛刻要求，才能更好地提高自己'),
 ( '张紫萱ailsa','/creatframe/frame/public/img/d_1.jpg',' 夕阳从窗外透进来。他的影子长长地映在地板上。脸上的镜片也被阳光晕染得熠熠生辉。就这么温暖,这么宁静。时间似乎凝固了,他审视着自己的作品');
->>>>>>> 8f4d078be072388afcedc0f36d4f3d7395bf1707
+
+
+DROP TABLE IF EXISTS gj_search1;
+CREATE TABLE IF NOT EXISTS `gj_search1` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
+INSERT INTO `gj_search1` (`id`, `name`) VALUES
+(1, '英式<br>田园'),
+(2, '新古典'),
+(3, '现代风'),
+(4, '新中式'),
+(5, '地中海'),
+(6, '混搭'),
+(8, '普罗<br>旺斯'),
+(9, '洛可可');

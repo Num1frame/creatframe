@@ -225,17 +225,30 @@ html, body {
   background-repeat: no-repeat;
   background-position: 0 0.4rem;
   position: relative;
-  .round {
+  .round.active{
+    animation:move 3s linear 0s infinite;
+  }
+  @keyframes move {
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(720deg);
+    }
+}
+  .round{
     @include rect(2.78rem, 2.87rem);
     background-image: url("../img/gj_img/gj_speak.png");
     background-size: cover;
     @include leftright();
     bottom: 0;
-    img {
-      @include rect(0.9rem, 1.53rem);
-      @include cc();
-    }
   }
+  img {
+     @include rect(0.9rem, 1.53rem);
+     @include cc();
+    @include leftright();
+    bottom:-6rem;
+   }
   h1 {
     font-size: 0.7rem;
     color: #1a1a1d;
@@ -283,8 +296,9 @@ html, body {
     left: 2.55rem;
   }
   .img {
-    @include rect(100%, 80%);
+    @include rect(100%,67%);
     position: absolute;
+    overflow:hidden;
     top: 1rem;
     display: flex;
     justify-content: space-around;
