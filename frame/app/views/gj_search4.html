@@ -1,8 +1,8 @@
 <div class="accuracy">
     <div class="price">
         <span class="name">价格</span>
-        <input  type="text" value="1000" class="input">
-        <input  type="text" value="0" class="input">
+        <input  type="text" value="0" class="input1">
+        <input  type="text" value="1000" class="input2">
         <ul class="option">
             <li class="active hot">1000元以下
                 <input type="hidden" value="0-1000">
@@ -24,14 +24,9 @@
         <span class="name">风格</span>
         <div class="over">全部</div>
         <ul class="option">
-            <li class="active hot">英式<br>田园</li>
-            <li>新古典</li>
-            <li>现代风</li>
-            <li>新中式</li>
-            <li>地中海</li>
-            <li>混搭</li>
-            <li>普罗<br>旺斯</li>
-            <li>洛可可</li>
+            <?php foreach($data as $v):?>
+            <li id="<?php echo $v['id']?>"><?php echo $v['name']?></li>
+            <?php endforeach;?>
         </ul>
     </div>
     <a class="button">

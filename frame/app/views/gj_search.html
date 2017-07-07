@@ -15,24 +15,7 @@
 <?php include VIEW_PATH.'search.html'?>
 <div class="entry">
     <div class="top"></div>
-    <ul class="bottom">
-        <li>
-            <div class="left">
-                <img src="" alt="">
-            </div>
-            <div class="right">
-                <span>新中式</span>
-                <div class="dashed"></div>
-                <div class="designBox">
-                    <div class="headPhoto"></div>
-                    <span class="design">设计师</span>
-                </div>
-
-            </div>
-        </li>
-        <li></li>
-        <li></li>
-    </ul>
+    <ul class="bottom"></ul>
 </div>
 <div class="gj_main">
     <ul class="gj_nav">
@@ -69,35 +52,4 @@
     </ul>
 </div>
 </body>
-<script>
-    $(function(){
-        function render(data){
-            data.forEach(function(v,i){
-                $("<li>").addClass("li").html(v).appendTo($(".top .label"));
-            })
-        }
-        var list=[];
-        if(localStorage.home){
-            $(".top").removeClass("active");
-            list=JSON.parse(localStorage.home);
-            render(list);
-        }else{
-            list=[];
-        }
-        $(".search2").on("click",function(){
-            if($("#find").val()){
-                let text=$("#find").val();
-                let r=list.filter(function(v,i){
-                    return v == text;
-                });
-                if(!r.length){
-                    list.push(text);
-                }
-            localStorage.home=JSON.stringify(list);
-            $("#find").val("");
-            location.href='<?php echo PHP_PATH?>home/index';
-        }
-    })
-})
-</script>
 </html>
