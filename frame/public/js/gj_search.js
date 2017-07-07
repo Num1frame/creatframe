@@ -200,6 +200,13 @@ $(function () {
     let miniter;
     let speak=document.getElementsByClassName("speak")[0];
     let round=speak.getElementsByClassName("round")[0];
+    let video=speak.getElementsByClassName("video")[0];
+    video.addEventListener('touchstart',function(){
+        round.className="round active";
+    })
+    video.addEventListener('touchend',function(){
+        round.className="round";
+    })
     round.addEventListener('touchstart',function(){
         round.className="round active";
     })
