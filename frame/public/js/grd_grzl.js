@@ -26,15 +26,15 @@ $(function(){
 
 
 
-  //$(.zhezhao).on('click','.qvgz',function(){
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //  })
+  $('.zhezhao').on('click','.qvgz',function(){
+
+
+
+
+
+
+
+    })
 
 
 
