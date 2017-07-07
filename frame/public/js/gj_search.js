@@ -180,7 +180,10 @@ $(function () {
         text3=$(".style").find(".active").attr("id");
         if(!text1){
             location.href="../gj_search/shopinglist3?&num3="+text3;
-        }else{
+        }else if(!text2 && text1){
+            location.href="../gj_search/shopinglist4?num1="+text1+"&num3="+text3;
+        }
+        else{
             location.href="../gj_search/shopinglist2?num1="+text1+"&num2="+text2+"&num3="+text3;
         }
     })

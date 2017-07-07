@@ -36,5 +36,11 @@ class gj_search extends core {
         $this->assign('title','商品列表');
         $this->display('lj_shopinglist');
     }
+    function shopinglist4(){
+        $datas =M()->query("select * from goods where '$_REQUEST[num1]'< price AND label='$_REQUEST[num3]'");
+        $this->assign('data',$datas);
+        $this->assign('title','商品列表');
+        $this->display('lj_shopinglist');
+    }
 
 }
