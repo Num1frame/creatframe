@@ -10,8 +10,7 @@ class lj_shoping extends core{
     }
 
     function shopinglist(){
-        $datas =  M('goods')->selectAll();
-        $this->assign('data', $datas);
+        $this->assign('data', M('goods')->selectAll());
         $this->assign('title','商品列表');
         $this->display('lj_shopinglist');
     }
