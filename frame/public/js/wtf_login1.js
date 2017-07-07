@@ -2,7 +2,7 @@
  * Created by WTF on 2017/7/5.
  */
 $(function(){
-    if(localStorage.user!=null){
+    if(localStorage.user!=undefined&&localStorage.user!='null'){
         let user=JSON.parse(localStorage.user);
         $('.wtf_remenberbtn').addClass('active')
         $('.wtf_login1peo').val(user[0].name);
