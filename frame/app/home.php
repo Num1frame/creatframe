@@ -16,4 +16,11 @@ class home extends core{
         $this->assign('title','闪屏页');
         $this->display("lhsplash");  //首页
     }
+    function d_shoplist(){
+        $id=$_REQUEST['id'];
+        $data=M()->query("select * from goods where homeid=".$id);
+//        dump($data);
+        $this->assign('data','$data');
+        $this->display("lj_shopinglist");
+    }
 }

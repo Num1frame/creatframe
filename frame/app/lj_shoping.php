@@ -15,9 +15,8 @@ class lj_shoping extends core{
         $this->display('lj_shopinglist');
     }
     function shopinglist1(){
-    $datas =M()->query("select * from goods where label=".$_REQUEST['key']);
+    $datas =M()->query("select * from goods where label=".$_REQUEST['id']);
     $this->assign('data',$datas);
-    $this->assign('data', M('goods')->selectAll());
     $this->assign('title','商品列表');
     $this->display('lj_shopinglist');
     }
