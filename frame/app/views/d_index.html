@@ -5,21 +5,21 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title><?php echo $title?></title>
     <link rel="stylesheet" href="<?php echo CSS_PATH?>base.css">
     <link rel="stylesheet" href="<?php echo CSS_PATH?>swiper-3.4.2.min.css">
     <link rel="stylesheet" href="<?php echo CSS_PATH?>d_index.css">
     <script src="<?php echo JS_PATH?>swiper-3.4.2.min.js"></script>
-    <script src="<?php echo JS_PATH?>jquery.min.js"></script>
-    <script src="<?php echo JS_PATH?>first1.js"></script>
-</head>
+    <script src="<?php echo JS_PATH?>jquery.min.js"></script></head>
+<style>
+    a {
+        text-decoration: none;
+    }
+</style>
 <body>
 <?php include VIEW_PATH.'header.html'?>
+<?php include VIEW_PATH.'search.html'?>
 
-<div class="search">
-    <a href="" class="search1"><span>搜索你的最爱...</span></a>
-    <div class="search2"><u>Search</u><img src="<?php echo IMG_PATH?>lj_header6_10.png" alt=""></div>
-</div>
 <div class="banner" >
     <div class="banner_info">
         <!--<img src="<?php echo IMG_PATH?>d_01.png" alt="">-->
@@ -51,13 +51,18 @@
         </div>
         <div class="content">
             <ul class="xxk">
+                <?php foreach($data as $v):?>
+                <li id="<?php echo $v['id']?>"><a href="<?php echo PHP_PATH?>lj_shoping/shopinglist1?id=<?php echo $v['id']?>"><img src="<?php echo $v['pic']?>" alt=""></a></li>
+                <?php endforeach; ?>
+<!--
+
                 <li><img src="<?php echo IMG_PATH?>d_9.png" alt=""></li>
                 <li><img src="<?php echo IMG_PATH?>d_10.png" alt=""></li>
                 <li><img src="<?php echo IMG_PATH?>d_11.png" alt=""></li>
                 <li><img src="<?php echo IMG_PATH?>d_12.png" alt=""></li>
                 <li><img src="<?php echo IMG_PATH?>d_13.png" alt=""></li>
                 <li><img src="<?php echo IMG_PATH?>d_14.png" alt=""></li>
-
+-->
             </ul>
         </div>
     </div>
@@ -75,18 +80,25 @@
         </div>
 
     </div>
-    <div class="fenlei active">
+    <div class="fenlei">
         <div class="bg" style="background: url(<?php echo IMG_PATH?>d_04.png) no-repeat center/80%">
             <p>大神推荐</p>
         </div>
         <div class="content">
             <ul class="xxk">
-                <li><img src="<?php echo IMG_PATH?>d_9.png" alt=""></li>
-                <li><img src="<?php echo IMG_PATH?>d_10.png" alt=""></li>
-                <li><img src="<?php echo IMG_PATH?>d_11.png" alt=""></li>
-                <li><img src="<?php echo IMG_PATH?>d_12.png" alt=""></li>
-                <li><img src="<?php echo IMG_PATH?>d_13.png" alt=""></li>
-                <li><img src="<?php echo IMG_PATH?>d_14.png" alt=""></li>
+                <?php foreach($data as $v):?>
+                <li id="<?php echo $v['id']?>">
+                    <a href="#">
+                        <img src="<?php echo $v['pic']?>" alt="">
+                    </a>
+                </li>
+                <?php endforeach; ?>-->
+                <!--<li><img src="<?php echo IMG_PATH?>d_9.png" alt=""></li>-->
+                <!--<li><img src="<?php echo IMG_PATH?>d_10.png" alt=""></li>-->
+                <!--<li><img src="<?php echo IMG_PATH?>d_11.png" alt=""></li>-->
+                <!--<li><img src="<?php echo IMG_PATH?>d_12.png" alt=""></li>-->
+                <!--<li><img src="<?php echo IMG_PATH?>d_13.png" alt=""></li>-->
+                <!--<li><img src="<?php echo IMG_PATH?>d_14.png" alt=""></li>-->
 
             </ul>
         </div>
@@ -151,6 +163,17 @@
         $('.zhanshi .fenlei').removeClass('active').eq($(this).index()).addClass('active');
 
     })
+  /*  $(".content .xxk").on("click","li",function(){
+        let id=$(this).attr("id");
+        $.ajax({
+            url:"<?php echo PHP_PATH?>home/d_shoplist",
+            data:{id:id},
+            success:function () {
+                console.log(1);
+                location.href = '../home/d_shoplist'
+            }
+        })
+    })*/
 
 
 

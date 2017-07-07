@@ -157,15 +157,14 @@ html, body {
       justify-content: space-around; }
       .entry .bottom li .left {
         width: 1rem;
-        height: 1rem;
-        background: blue; }
+        height: 1rem; }
       .entry .bottom li .right {
         width: 4.14rem;
-        height: 1.18rem;
-        background: red; }
+        height: 1.18rem; }
         .entry .bottom li .right span {
           font-size: 0.26rem;
-          display: block; }
+          display: block;
+          coloe: #26272A; }
         .entry .bottom li .right .dashed {
           width: 2.65rem;
           height: 0.06rem;
@@ -180,14 +179,14 @@ html, body {
           .entry .bottom li .right .designBox .headPhoto {
             width: 0.45rem;
             height: 0.45rem;
-            background: pink;
             border-radius: 50%;
             margin-right: 0.2rem; }
           .entry .bottom li .right .designBox .desigh {
             font-size: 0.24rem;
-            display: block; }
-    .entry .bottom li:last-child {
-      background-image: url(""); }
+            display: block;
+            coloe: #26272A; }
+  .entry li:last-child {
+    background-image: url(""); }
 
 .top {
   width: 100%;
@@ -250,6 +249,14 @@ html, body {
   background-repeat: no-repeat;
   background-position: 0 0.4rem;
   position: relative; }
+  .speak .round.active {
+    animation: move 3s linear 0s infinite; }
+
+@keyframes move {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(720deg); } }
   .speak .round {
     width: 2.78rem;
     height: 2.87rem;
@@ -260,15 +267,20 @@ html, body {
     right: 0;
     margin: auto;
     bottom: 0; }
-    .speak .round img {
-      width: 0.9rem;
-      height: 1.53rem;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto; }
+  .speak img {
+    width: 0.9rem;
+    height: 1.53rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -6rem; }
   .speak h1 {
     font-size: 0.7rem;
     color: #1a1a1d;
@@ -311,8 +323,9 @@ html, body {
     left: 2.55rem; }
   .photo .img {
     width: 100%;
-    height: 80%;
+    height: 67%;
     position: absolute;
+    overflow: hidden;
     top: 1rem;
     display: flex;
     justify-content: space-around;
@@ -356,7 +369,7 @@ html, body {
       position: absolute;
       top: 0.2rem;
       left: 0.6rem; }
-    .accuracy .price .input {
+    .accuracy .price .input1, .accuracy .price input2 {
       width: 0.92rem;
       height: 0.37rem;
       border: 1px solid #2b3541;
@@ -365,13 +378,21 @@ html, body {
       right: 2rem;
       font-size: 0.24rem;
       text-align: center; }
-    .accuracy .price .input:nth-child(2) {
+    .accuracy .price hr {
+      width: 0.95rem;
+      background: #2b3541;
+      position: absolute;
+      top: 0.5rem;
+      right: 1rem; }
+    .accuracy .price .input2 {
       width: 0.92rem;
       height: 0.37rem;
       border: 1px solid #2b3541;
       position: absolute;
       top: 0.3rem;
-      right: 0.24rem; }
+      right: 0.24rem;
+      font-size: 0.24rem;
+      text-align: center; }
     .accuracy .price .option {
       width: 100%;
       height: 2rem;

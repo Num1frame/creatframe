@@ -67,14 +67,20 @@
     <ul class="huabian" style="background: url(<?php echo IMG_PATH?>d_huabian.png) no-repeat center/100%"></ul>
 </div>
 <div class="jiesuan" style="background: url(<?php echo IMG_PATH?>d_21.png) no-repeat center/100%">
-    <span>8888.88</span>
+    <span class="zongjia">8888.88</span>
     <span>已优惠66元</span>
 </div>
 </body>
 <script>
 $(window).on('load',function () {
+    let totalprice = localStorage.totalprice;
+
     $('.pay_list').css({left:'-0.1rem'});
     $('.jiesuan').css({left:0});
+
+    let prs = JSON.parse(totalprice)[0];
+
+    $('.jiesuan .zongjia').html(prs);
 })
 
 </script>
