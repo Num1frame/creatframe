@@ -1,6 +1,6 @@
 @import "mixin";
 
-@include rem();
+@include rem;
 
 a, input, form, button {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -37,6 +37,14 @@ html, body {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
+}
+
+body {
+  -webkit-ovflow-scrolling: touch;
+  ovflow-scrolling: touch;
+  background-size: 100%;
+  padding-left: 0.24rem;
+  padding-right: 0.24rem;
 }
 
 .zjt_design {
@@ -91,39 +99,39 @@ html, body {
         margin-top: -1.83rem;
         border-radius: 0.2rem;
         border: 1px solid #ffffff;
-        .zjt_text {
+        .zjt_text{
           height: 2.69rem;
-          padding: 0 0.57rem;
+          padding:0 0.57rem;
           margin: 2.1rem auto 0;
           text-align: center;
           display: flex;
           flex-direction: column;
           box-shadow: none;
-          p:nth-of-type(1) {
+          p:nth-of-type(1){
             font-size: 0.4rem;
             color: #232427;
           }
           .zjt_notice {
-            width: 1rem;
-            height: 0.38rem;
-            border: 1px solid #b2b0ab;
-            border-radius: 0.1rem;
+           width: 1rem;
+           height: 0.38rem;
+           border: 1px solid #b2b0ab;
+           border-radius: 0.1rem;
+           font-size: 0.24rem;
+           color: #232427;
+           text-align: center;
+            margin:0 auto;
+         }
+          p:nth-of-type(3){
+            height:1.6rem;
             font-size: 0.24rem;
-            color: #232427;
-            text-align: center;
-            margin: 0 auto;
-          }
-          p:nth-of-type(3) {
-            height: 1.6rem;
-            font-size: 0.24rem;
-            color: #232427;
+            color:#232427;
             text-align: center;
           }
         }
       }
     }
-    li:nth-of-type(2) {
-      div:nth-of-type(2) {
+    li:nth-of-type(2){
+      div:nth-of-type(2){
         width: 6.2rem;
         height: 5.1rem;
         background: #ffffff;
@@ -135,24 +143,24 @@ html, body {
   }
 }
 
-.zjt_designTwo {
-  width: 1.9rem;
-  height: 0.18rem;
+.zjt_designTwo{
+  width:1.9rem;
+  height:0.18rem;
   background: #ececec;
-  margin: 0.30rem auto 0;
+  margin:0.30rem auto 0;
   display: flex;
   justify-content: space-between;
   align-content: center;
-  li {
+  li{
     width: 0.18rem;
-    height: 0.18rem;
-    border: 2px solid #ffffff;
+    height:0.18rem;
+    border:2px solid #ffffff;
     border-radius: 50%;
-    &.active {
+    &.active{
       width: 0.38rem;
-      height: 0.18rem;
+      height:0.18rem;
       border-radius: 0.2rem;
-      border: 2px solid #eaa5a5;
+      border:2px solid #eaa5a5;
       background: #e50000;
     }
   }

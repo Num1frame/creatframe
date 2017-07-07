@@ -10,6 +10,7 @@
     <?php include VIEW_PATH.'search.html'?>
     <!--<?php include VIEW_PATH.'footer.html'?>-->
     <link rel="stylesheet" href="<?php echo CSS_PATH?>zjt_desig.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH?>swiper.min.css">
 </head>
 <style>
     body {
@@ -18,6 +19,31 @@
         background-image: url("<?php echo IMG_PATH?>zjt_img/zjtdesign1.png");
         background-size: 100%;
     }
+    .swiper-container{
+        position:absolute;
+    }
+    .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+        bottom: -50px;
+    }
+    .swiper-pagination{
+        position: absolute;
+        bottom:1.3rem;
+        left:0;
+        right:0;
+        margin:auto;
+    }
+    .swiper-pagination-bullet{
+        width: 0.3rem;
+        height: 0.3rem;
+        border: 2px solid #ffffff;
+        border-radius: 50%;
+    }
+    .swiper-pagination-bullet-active {
+        width: 0.68rem;
+        height: 0.3rem;
+        border-radius: 0.2rem;
+        border: 2px solid #eaa5a5;
+        background: #e50000; }
 </style>
 <body>
 
@@ -44,42 +70,46 @@
     </a></li>
 </ul>
 
-<div class="zjt_design">
-    <ul class="zjt_designOne">
-        <li>
+<div class="zjt_design swiper-container">
+    <ul class="zjt_designOne swiper-wrapper">
+        <?php foreach ($data as $v):?>
+        <li class="swiper-slide">
             <a href="<?php echo PHP_PATH?>zjt_design/zjt_details">
-            <div>
-                <img class="zjt_text" src="<?php echo IMG_PATH?>zjt_img/zjtdesign2.png"/>
-                <img src="<?php echo IMG_PATH?>zjt_img/zjtdesign3.png" alt="">
-                <img class="zjt_line" src="<?php echo IMG_PATH?>zjt_img/zjtdesign4.png"/>
-            </div>
-            <div>
-                <div class="zjt_text">
-                    <p class="zjt_word">
-                        胡艳Silvia
-                    </p>
-                    <p class="zjt_notice">关注</p>
-                    <p class="zjt_pre">
-设计师Silvia，nacasa创始人兼
-设计师,拥有超过十年欧美高端家具品牌产品开
-发及设计经验.源于对民间手工艺的热爱,她的
-设计理念是将民间手工艺与当代时尚设计相结合，
-将手工艺继续传承下去
-                    </p>
+                <div>
+                    <img class="zjt_text" src="<?php echo IMG_PATH?>zjt_img/zjtdesign2.png"/>
+                    <img src="<?php echo $v['pic']?>" alt="">
+                    <img class="zjt_line" src="<?php echo IMG_PATH?>zjt_img/zjtdesign4.png"/>
                 </div>
-            </div>
+                <div>
+                    <div class="zjt_text">
+                        <p class="zjt_word">
+                            <?php echo $v['name']?>
+                        </p>
+                        <p class="zjt_notice">关注</p>
+                        <p class="zjt_pre">
+                            <?php echo $v['content']?>
+                        </p>
+                    </div>
+                </div>
             </a>
         </li>
-    </ul>
-    <ul class="zjt_designTwo">
-        <li class="active"></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <?php endforeach;?>
+
+
     </ul>
 </div>
+<ul id=zjt_designTwo" class="swiper-pagination">
+    <span class="active"></span>
+</ul>
 
 </body>
 </html>
+<script src="<?php echo JS_PATH?>swiper.min.js"></script>
 
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+</script>
