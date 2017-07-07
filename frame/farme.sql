@@ -170,3 +170,44 @@ INSERT INTO `gj_search1` (`id`, `name`) VALUES
 (6, '混搭'),
 (8, '普罗<br>旺斯'),
 (9, '洛可可');
+
+DROP TABLE IF EXISTS t_follow;
+CREATE TABLE IF NOT EXISTS t_follow (
+  id int(12) NOT NULL AUTO_INCREMENT,
+  name varchar(255) NOT NULL,
+  pic varchar(255) NOT NULL,
+  aid varchar(255) NOT NULL,
+  uid varchar(255) NOT NULL,
+  PRIMARY KEY (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+INSERT INTO t_follow( name, pic,aid,uid) VALUES
+('Arial','/creatframe/frame/public/img/lzn_img/lzn_my13.jpg','1','1'),
+('Anybody','/creatframe/frame/public/img/lzn_img/lzn_my14.jpg','1','1'),
+('布里克','/creatframe/frame/public/img/lzn_img/lzn_my15.png','2','1'),
+('Cindy','/creatframe/frame/public/img/lzn_img/lzn_my16.jpg','3','1'),
+('科德','/creatframe/frame/public/img/lzn_img/lzn_my17.jpg','3','1'),
+('Cvogue','/creatframe/frame/public/img/lzn_img/lzn_my18.jpg','3','1'),
+('酷锐U达','/creatframe/frame/public/img/lzn_img/lzn_my19.jpg','3','1'),
+('Disigner','/creatframe/frame/public/img/lzn_img/lzn_my20.jpg','4','1'),
+('Dave','/creatframe/frame/public/img/lzn_img/lzn_my19.jpg','4','1');
+
+
+DROP TABLE IF EXISTS t_fans;
+CREATE TABLE IF NOT EXISTS t_fans (
+  id int(12) NOT NULL AUTO_INCREMENT,
+  name varchar(255) NOT NULL,
+  pic varchar(255) NOT NULL,
+  aid varchar(255) NOT NULL,
+  uid varchar(255) NOT NULL,
+  PRIMARY KEY (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+INSERT INTO t_fans(name, pic,aid,uid) VALUES
+('Arial','/creatframe/frame/public/img/lzn_img/lzn_my13.jpg','1','1'),
+('Anybody','/creatframe/frame/public/img/lzn_img/lzn_my14.jpg','1','1'),
+('布里克','/creatframe/frame/public/img/lzn_img/lzn_my15.png','2','1'),
+('Cindy','/creatframe/frame/public/img/lzn_img/lzn_my16.jpg','3','1'),
+('科德','/creatframe/frame/public/img/lzn_img/lzn_my17.jpg','3','1'),
+('Cvogue','/creatframe/frame/public/img/lzn_img/lzn_my18.jpg','3','1'),
+('酷锐U达','/creatframe/frame/public/img/lzn_img/lzn_my19.jpg','3','1'),
+('Disigner','/creatframe/frame/public/img/lzn_img/lzn_my20.jpg','4','1'),
+('Dave','/creatframe/frame/public/img/lzn_img/lzn_my19.jpg','4','1');
