@@ -88,12 +88,15 @@
         </div>
         <div class="content">
             <ul class="xxk">
-                <li><img src="<?php echo IMG_PATH?>d_9.png" alt=""></li>
-                <li><img src="<?php echo IMG_PATH?>d_10.png" alt=""></li>
-                <li><img src="<?php echo IMG_PATH?>d_11.png" alt=""></li>
-                <li><img src="<?php echo IMG_PATH?>d_12.png" alt=""></li>
-                <li><img src="<?php echo IMG_PATH?>d_13.png" alt=""></li>
-                <li><img src="<?php echo IMG_PATH?>d_14.png" alt=""></li>
+                <?php foreach($data as $v):?>
+                <li><img src="<?php echo $v['pic']?>" alt=""></li>
+                <?php endforeach; ?>
+                <!--<li><img src="<?php echo IMG_PATH?>d_9.png" alt=""></li>-->
+                <!--<li><img src="<?php echo IMG_PATH?>d_10.png" alt=""></li>-->
+                <!--<li><img src="<?php echo IMG_PATH?>d_11.png" alt=""></li>-->
+                <!--<li><img src="<?php echo IMG_PATH?>d_12.png" alt=""></li>-->
+                <!--<li><img src="<?php echo IMG_PATH?>d_13.png" alt=""></li>-->
+                <!--<li><img src="<?php echo IMG_PATH?>d_14.png" alt=""></li>-->
 
             </ul>
         </div>
