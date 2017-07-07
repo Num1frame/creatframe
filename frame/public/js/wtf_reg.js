@@ -28,7 +28,7 @@ $(function(){
                             $('.wtf_usertxt').html('此账号已存在').css('color','red')
                             $('.wtf_usergo').removeClass('wtf_useractive');
                         }else{
-                            $('.wtf_usertxt').html('此账号可用').css('color','green')
+                            $('.wtf_usertxt').html('此账号可用').css('color','#33f519')
                             $('.wtf_usergo').addClass('wtf_useractive');
                         }
                     }
@@ -49,14 +49,24 @@ $(function(){
         }
     })
     $('.wtf_regpswd').on('input',function(){
-        $('.wtf_regpswdtext').css('color','red');
+        $('.wtf_regpswdtext').css({'color':'red','margin-top':'0.1rem'});
         if($(this).val().trim()==''){
             $('.wtf_regpswdtext').css('color','#9B9CA1');
         }
         if(pswdreg.test($(this).val().trim())){
+            $('.wtf_regpswdtext').css({'color':'#33f519','margin-top':'0.1rem'});
+            $('.wtf_erroy').css('display','none')
+            $('.wtf_yes').css('display','inline-block')
             $('.wtf_pswdgo').addClass('wtf_pswdactive')
-        }else{
+        }else if($(this).val().trim()==''){
+            $('.wtf_erroy').css('display','none')
+            $('.wtf_yes').css('display','none')
+            $('.wtf_regpswdtext').css('margin-top','0.2rem');
+        }
+        else{
             $('.wtf_pswdgo').removeClass('wtf_pswdactive')
+            $('.wtf_erroy').css('display','inline-block')
+            $('.wtf_yes').css('display','none')
         }
     })
     $(document.body).on('click','.wtf_pswdactive',function(){
@@ -70,9 +80,21 @@ $(function(){
         }
     })
     $('.wtf_aginpswd').on('input',function(){
+        let aginpswd=$('.wtf_aginpswd').val().trim();
+        $('.wtf_aginpswdtext').html('两次输入密码不一致').css('color','red');
         if($(this).val().trim().length>=6){
             $('.wtf_lastgo').addClass('wtf_aginpswdactive');
-        }else{
+            if(aginpswd==successpswd){
+                $('.wtf_aginpswdtext').html('密码一致').css('color','#33f519');
+            }else{
+                $('.wtf_aginpswdtext').html('两次输入密码不一致').css('color','red');
+            }
+
+        }else if($(this).val()==''){
+            $('.wtf_aginpswdtext').html('请设置6-12位密码(必须包含字母,数字) 字符').css('color','#9B9CA1');
+        }
+        else{
+            $('.wtf_aginpswdtext').html('两次输入密码不一致').css('color','red');
             $('.wtf_lastgo').removeClass('wtf_aginpswdactive');
         }
     })
@@ -87,8 +109,6 @@ $(function(){
                     $('.wtf_mask').animate({height:'100%',width:'100%'})
                 }
             })
-        }else{
-            $('.wtf_aginpswdtext').html('两次密码输入不一致').css('color','red');
         }
     })
 })
