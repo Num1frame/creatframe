@@ -12,11 +12,6 @@ window.onload = function(){
             return v.id == o.id;
         });
 
-       /* let now = $(this).prev().html();
-        console.log(now);
-        r[0].num = r[0].num + now+ 1;
-        $(this).prev().html(r[0].num);*/
-
         if (!r.length) {
             o.num = 1;  //把这个的Num改成1
             choicelist.push(o);

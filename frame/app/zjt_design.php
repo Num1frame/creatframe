@@ -12,6 +12,8 @@ class zjt_design extends core{
         $this->display("zjt_design");
     }
     function zjt_details(){
+        $datas=M('');
+
         $this->assign('title','设计师详情');
         $this->display("zjt_details");
     }
