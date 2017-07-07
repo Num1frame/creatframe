@@ -1,6 +1,14 @@
 
 
-
+--后台登陆页    王腾飞
+DROP TABLE IF EXISTS boss;
+CREATE TABLE boss(
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  account VARCHAR (255),
+  password VARCHAR (255)
+)DEFAULT CHARSET = utf8;
+INSERT INTO boss (account,password) VALUES
+('wtf110','123456')
 
 -- 登录数据库   王腾飞
 DROP TABLE IF EXISTS user;
