@@ -35,9 +35,9 @@ $(function(){
                 })
             },600);
 
-        }else if(user.length<6){
+        } else {
             clearTimeout(timeId);
-            $('.wtf_usertxt').html('用户名只能由字母开头,6-20个字符(可以包括数字,字母，下划线)').css('color','#9B9CA1');
+            $('.wtf_usertxt').html('用户名只能由字母开头,6-20个字符(可以包括数字,字母，下划线)').css('color', '#9B9CA1');
             $('.wtf_usergo').removeClass('wtf_useractive');
         }
     })
