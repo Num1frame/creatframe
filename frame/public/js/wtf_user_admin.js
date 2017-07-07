@@ -2,7 +2,7 @@
  * Created by WTF on 2017/7/7.
  */
 $(function () {
-    if (!location.hash) {
+    if (!location.hash){
         location.href = location.pathname + '#list'
     }
     $(window).on('hashchange', function () {
