@@ -213,6 +213,7 @@ body {
           font-size: 0.32rem;
           color: #373737; }
         .zjt_detailsThree .zjt_ThreeWrap .zjt_Threedemo .zjt_my .zjt_line {
+          width: 100%;
           display: flex;
           justify-content: space-between;
           align-items: center; }
@@ -254,7 +255,6 @@ body {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          align-items: center;
           background: transparent; }
           .zjt_detailsThree .zjt_ThreeWrap .zjt_Wraptwo .zjt_Wrapdemo2 .zjt_wraptext .zjt_Wraptwop {
             width: 100%;
@@ -275,7 +275,7 @@ body {
             height: 0.08rem;
             display: flex;
             justify-content: center;
-            align-self: flex-start; }
+            align-items: center; }
             .zjt_detailsThree .zjt_ThreeWrap .zjt_Wraptwo .zjt_Wrapdemo2 .zjt_wraptext .zjt_WraptwoLine span:nth-of-type(1) {
               width: 0.07rem;
               height: .07rem;
@@ -350,6 +350,7 @@ body {
           font-size: 0.32rem;
           color: #373737; }
         .zjt_detailsfour .zjt_detailsWrap .zjt_Threedemo .zjt_my .zjt_line {
+          width: 100%;
           display: flex;
           justify-content: space-between;
           align-items: center; }
@@ -435,3 +436,10 @@ body {
           width: 20%;
           transform: rotate(180deg);
           vertical-align: middle; }
+.zjt_detailsThree .zjt_ThreeWrap .zjt_Wraptwo .zjt_Wrapdemo2:nth-of-type(2) .zjt_wraptext {
+  margin-left: 0.8rem;}
+.zjt_detailsThree .zjt_ThreeWrap .zjt_Wraptwo .zjt_Wrapdemo2:nth-of-type(2) .zjt_wrapimg1 {
+  height:2.5rem;
+  background-size: 100%;
+  margin-top: -0.8rem;
+  margin-left: 0.4rem; }

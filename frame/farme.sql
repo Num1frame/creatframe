@@ -102,3 +102,19 @@ INSERT INTO `goods` (`id`, `name`, `pic`, `designer`, `designerpic`, `price`, `h
 (6, '简约松软靠椅', '/creatframe/frame/public/img/lj_img/lj_shoplist9_11.png', '胡艳 Silvia', '/creatframe/frame/public/img/lj_img/lj_shoping7_10.png', '1753.00', 0, 3),
 (7, '欧美', '/creatframe/frame/public/img/lj_img/lj_shoplist9_11.png', '胡艳 Silvia', '/creatframe/frame/public/img/lj_img/lj_shoping7_10.png', '1753.00', 0, 1);
 
+//个人信息表
+DROP TABLE IF EXISTS d_person;
+CREATE TABLE IF NOT EXISTS `d_person` (
+  `id` int(12) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `phone` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `weixin` varchar(255) DEFAULT NULL,
+  `qq` int(11) NOT NULL,
+  `dizhi` varchar(255) NOT NULL,
+  `pic` int(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
+
+INSERT INTO `d_person` ( `name`, `phone`, `email`, `weixin`, `qq`, `dizhi`, `pic`) VALUES
+('杜帅','110','757293200@qq.com','du321521','757293200','太原学院','/creatframe/frame/public/img/d_3.png');
