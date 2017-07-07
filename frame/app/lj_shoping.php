@@ -5,6 +5,8 @@ use core\core;
 
 class lj_shoping extends core{
     function index(){
+        $o = M('goods')->selectAll();
+        $this->assign('data',$o);
         $this->assign('title','购物车');
         $this->display('lj_shoping');
     }
