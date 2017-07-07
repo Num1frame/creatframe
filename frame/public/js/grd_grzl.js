@@ -26,7 +26,15 @@ $(function(){
 
 
 
-
+  //$(.zhezhao).on('click','.qvgz',function(){
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //  })
 
 
 
