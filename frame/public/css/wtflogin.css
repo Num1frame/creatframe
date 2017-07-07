@@ -258,6 +258,7 @@ body {
   box-sizing: border-box;
   color:#9B9CA1;
   line-height: 0.4rem;
+  overflow: hidden;
 }
 .wtf_usernext{
   height: 0.52rem;
@@ -323,4 +324,10 @@ body {
 }
 .wtf_nowreturn{
   right:0.3rem;
+}
+.wtf_regusertext>img{
+  height: 0.3rem;
+  width: 0.3rem;
+  margin-top:0.12rem;
+  display: none;
 }
