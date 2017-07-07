@@ -11,35 +11,41 @@
     <title>注册</title>
 </head>
 <body>
-    <div class="wtf_registerbg">
-        <a class="wtf_back" href="javascript:history.go(-1)"></a>
-        <div class="wtf_registermain active">
-            <h2>用户名</h2>
-            <input class="wtf_reguser wtf_regadmin" type="text" maxlength="20">
-            <p class="wtf_regusertext wtf_usertxt">用户名只能由字母开头,6-20个字符(可以包括数字,字母，下划线)</p>
-            <div class="wtf_usernext wtf_usergo"></div>
-        </div>
-        <div class="wtf_registermain">
-            <h2>密码</h2>
-            <input class="wtf_reguser wtf_regpswd" type="password"  maxlength="12">
-            <div class="wtf_eye wtf_eye1"></div>
-            <p class="wtf_regusertext wtf_regpswdtext">请设置6-12位密码(必须包含字母,数字) 字符</p>
-            <div class="wtf_usernext wtf_pswdgo"></div>
-        </div>
-        <div class="wtf_registermain">
-            <h2>确认密码</h2>
-            <input class="wtf_reguser wtf_aginpswd" type="password"  maxlength="12">
-            <div class="wtf_eye wtf_eye2"></div>
-            <p class="wtf_regusertext wtf_aginpswdtext">请设置6-12位密码(必须包含字母,数字) 字符</p>
-            <div class="wtf_usernext wtf_lastgo"></div>
-        </div>
+<div class="wtf_registerbg">
+    <a class="wtf_back" href="javascript:history.go(-1)"></a>
+    <div class="wtf_registermain active">
+        <h2>用户名</h2>
+        <input class="wtf_reguser wtf_regadmin" type="text" maxlength="20">
+        <p class="wtf_regusertext wtf_usertxt">用户名只能由字母开头,6-20个字符(可以包括数字,字母，下划线)</p>
+        <div class="wtf_usernext wtf_usergo"></div>
     </div>
-    <div class="wtf_mask">
-        <div class="wtf_maskgo">
-            <p>注册成功！<br>是否立即登录</p>
-            <a class="wtf_nowlog" href="<?php echo PHP_PATH;?>wtflogin/wtflogin1">立即登录</a>
-            <a class="wtf_nowreturn" href="<?php echo PHP_PATH;?>wtflogin">取消</a>
-        </div>
+    <div class="wtf_registermain">
+        <h2>密码</h2>
+        <input class="wtf_reguser wtf_regpswd" type="password" maxlength="12">
+        <div class="wtf_eye wtf_eye1"></div>
+        <p class="wtf_regusertext wtf_regpswdtext">
+            <img class="wtf_erroy" src="<?php echo IMG_PATH;?>wtf_erroy.png" alt="">
+            <img class="wtf_yes" src="<?php echo IMG_PATH;?>wtf_yes.png" alt="">
+            请设置6-12位密码(必须包含字母,数字) 字符
+        </p>
+        <div class="wtf_usernext wtf_pswdgo"></div>
     </div>
+    <div class="wtf_registermain">
+        <h2>确认密码</h2>
+        <input class="wtf_reguser wtf_aginpswd" type="password" maxlength="12">
+        <div class="wtf_eye wtf_eye2"></div>
+        <p class="wtf_regusertext wtf_aginpswdtext">
+            请设置6-12位密码(必须包含字母,数字) 字符
+        </p>
+        <div class="wtf_usernext wtf_lastgo"></div>
+    </div>
+</div>
+<div class="wtf_mask">
+    <div class="wtf_maskgo">
+        <p>注册成功！<br>是否立即登录</p>
+        <a class="wtf_nowlog" href="<?php echo PHP_PATH;?>wtflogin/wtflogin1">立即登录</a>
+        <a class="wtf_nowreturn" href="<?php echo PHP_PATH;?>wtflogin">取消</a>
+    </div>
+</div>
 </body>
 </html>
