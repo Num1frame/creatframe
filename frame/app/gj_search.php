@@ -50,5 +50,17 @@ class gj_search extends core {
         $this->assign('title','商品列表');
         $this->display('lj_shopinglist');
     }
+    function shopinglist(){
+        $datas =M()->query("select * from goods where name like '%{$_REQUEST['key']}%' ");
+        $this->assign('data',$datas);
+        $this->assign('title','商品列表');
+        $this->display('lj_shopinglist');
+    }
+    function shopinglist1(){
+        $datas =M()->query("select * from goods where label=".$_REQUEST['key']);
+        $this->assign('data',$datas);
+        $this->assign('title','商品列表');
+        $this->display('lj_shopinglist');
+    }
 
 }

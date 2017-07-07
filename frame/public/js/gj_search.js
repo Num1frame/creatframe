@@ -74,7 +74,7 @@ $(function () {
             list.push(text);
         }
         localStorage.home=JSON.stringify(list);
-        location.href="../lj_shoping/shopinglist?key="+text;
+        location.href="../gj_search/shopinglist?key="+text;
     })
     $(".search2").on("click",function() {
         if ($("#find").val()) {
@@ -87,18 +87,18 @@ $(function () {
             }
             localStorage.home = JSON.stringify(list);
             $("#find").val("");
-            location.href = "../lj_shoping/shopinglist?key="+text;
+            location.href = "../gj_search/shopinglist?key="+text;
         }
     })
 
     //历史搜索
     $(".top .label").on("click",".li",function(){
         let text=$(this).attr('data');
-        location.href = "../lj_shoping/shopinglist?key="+text;
+        location.href = "../gj_search/shopinglist?key="+text;
     })
     $(".bottom .label").on("click",".li",function(){
         let text=$(this).attr("id");
-        location.href = "../lj_shoping/shopinglist1?key="+text;
+        location.href = "../gj_search/shopinglist1?key="+text;
     })
 
     //选项卡
