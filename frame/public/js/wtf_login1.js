@@ -2,7 +2,7 @@
  * Created by WTF on 2017/7/5.
  */
 $(function(){
-    if(localStorage.user!=undefined){
+    if(localStorage.user!=null){
         let user=JSON.parse(localStorage.user);
         $('.wtf_remenberbtn').addClass('active')
         $('.wtf_login1peo').val(user[0].name);
@@ -26,9 +26,10 @@ $(function(){
                         userdata.push({'name':`${name}`,'password':`${pswd}`});
                         localStorage.user=JSON.stringify(userdata);
                     }else{
-                        localStorage.clear();
+                        localStorage.user=null;
                     }
-                    location.href = '../../';
+                   localStorage.account=JSON.stringify(name);
+                   location.href="../../";
                 }else if(data=='erroy'){
                     $('.wtf_loginprompt').html('账号或密码错误');
                     $('.wtf_login1pswd').val('');

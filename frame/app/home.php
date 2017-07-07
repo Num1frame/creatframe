@@ -5,6 +5,7 @@ use core\core;
 
 class home extends core{
     function index(){
+        $this->assign('data', M('d_homelist')->selectAll());
         $this->assign('title','创家居');
 //        $this->display("home");
 //        $this->display("d_home");

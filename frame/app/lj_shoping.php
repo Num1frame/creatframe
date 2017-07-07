@@ -10,6 +10,7 @@ class lj_shoping extends core{
     }
 
     function shopinglist(){
+<<<<<<< HEAD
         $datas =M()->query("select * from goods where name like '%{$_REQUEST['key']}%' ");
         $this->assign('data',$datas);
         $this->assign('title','商品列表');
@@ -18,6 +19,9 @@ class lj_shoping extends core{
     function shopinglist1(){
         $datas =M()->query("select * from goods where label=".$_REQUEST['key']);
         $this->assign('data',$datas);
+=======
+        $this->assign('data', M('goods')->selectAll());
+>>>>>>> 47dfe09c93b575468c19c33ceb5e0ebfd03b68e6
         $this->assign('title','商品列表');
         $this->display('lj_shopinglist');
     }

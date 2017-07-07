@@ -11,15 +11,17 @@
     <link rel="stylesheet" href="<?php echo CSS_PATH?>d_index.css">
     <script src="<?php echo JS_PATH?>swiper-3.4.2.min.js"></script>
     <script src="<?php echo JS_PATH?>jquery.min.js"></script>
-    <link rel="stylesheet" href="<?php echo CSS_PATH?>base.css">
+    <script src="<?php echo JS_PATH?>first1.js"></script>
 </head>
+<style>
+    a {
+        text-decoration: none;
+    }
+</style>
 <body>
 <?php include VIEW_PATH.'header.html'?>
-<div class="search">
-    <input type="hidden" val="<?php echo $title?>">
-    <a class="search1"><input id ="find" type="text" placeholder="搜索你的最爱..." style="font-size:0.28rem" name="find"></a>
-    <div class="search2"><u>Search</u><img src="<?php echo IMG_PATH?>lj_header6_10.png" alt=""></div>
-</div>
+<?php include VIEW_PATH.'search.html'?>
+
 <div class="banner" >
     <div class="banner_info">
         <!--<img src="<?php echo IMG_PATH?>d_01.png" alt="">-->
@@ -51,13 +53,18 @@
         </div>
         <div class="content">
             <ul class="xxk">
+                <?php foreach($data as $v):?>
+                <li><img src="<?php echo $v['pic']?>" alt=""></li>
+                <?php endforeach; ?>
+<!--
+
                 <li><img src="<?php echo IMG_PATH?>d_9.png" alt=""></li>
                 <li><img src="<?php echo IMG_PATH?>d_10.png" alt=""></li>
                 <li><img src="<?php echo IMG_PATH?>d_11.png" alt=""></li>
                 <li><img src="<?php echo IMG_PATH?>d_12.png" alt=""></li>
                 <li><img src="<?php echo IMG_PATH?>d_13.png" alt=""></li>
                 <li><img src="<?php echo IMG_PATH?>d_14.png" alt=""></li>
-
+-->
             </ul>
         </div>
     </div>
@@ -75,7 +82,7 @@
         </div>
 
     </div>
-    <div class="fenlei active">
+    <div class="fenlei">
         <div class="bg" style="background: url(<?php echo IMG_PATH?>d_04.png) no-repeat center/80%">
             <p>大神推荐</p>
         </div>
@@ -109,7 +116,30 @@
 
 </div>
 
-<?php include VIEW_PATH.'footer.html'?>
+<!--<?php include VIEW_PATH.'footer.html'?>-->
+
+<ul class="footer">
+    <li class="active"><a href="<?php echo PHP_PATH?>home/index">
+        <div class="pic"></div>
+        <span>首页</span>
+    </a></li>
+    <li><a href="<?php echo PHP_PATH?>zjt_design">
+        <div class="pic"></div>
+        <span>设计师</span>
+    </a></li>
+    <li><a href="<?php echo PHP_PATH?>lj_shoping/index">
+        <div class="pic"></div>
+        <span>购物车</span>
+    </a></li>
+    <li><a href="<?php echo PHP_PATH?>lzn_my">
+        <div class="pic"></div>
+        <span>我的</span>
+    </a></li>
+    <li><a href="<?php echo PHP_PATH?>lyx_state/lyx_state">
+        <div class="pic"></div>
+        <span>动态</span>
+    </a></li>
+</ul>
 
 </body>
 <script>
@@ -129,12 +159,7 @@
 
     })
 
-    $(function(){
-        $("#find").on("focus",function(){
-            if(!(location.pathname=="/frame/index.php/gj_search/index")){
-                location.href="<?php echo PHP_PATH?>gj_search/index";
-            }
-        })
-    })
+
+
 </script>
 </html>
