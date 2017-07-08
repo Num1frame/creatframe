@@ -17,8 +17,13 @@ $(function () {
         data.forEach(function (v,i) {
             let el=`
                     <tr data-id="${v.id}">
+<<<<<<< HEAD
                         <td style=""><input class="id" type="text" value="${v.id}" style="border: none;outline: none;border-bottom: 1px solid;text-align: center "></td>
                         <td><input class="pic" type="text" value="${v.pic}" style="border: none;outline: none;border-bottom: 1px solid;text-align: center "></td>
+=======
+                        <td>${v.id}</td>
+                        <td>${v.pic}</td>
+>>>>>>> ddb937d1db6f9e503069bc4ffded1a7acd5242b4
                         <td><a class="delete">删除</a></td>
                     </tr>
                    `;
@@ -48,6 +53,7 @@ $(function () {
         return false;
     })
 
+<<<<<<< HEAD
     //删除
 
     $('tbody').on('click','.delete',function () {
@@ -75,6 +81,8 @@ $(function () {
             }
         })
     })
+=======
+>>>>>>> ddb937d1db6f9e503069bc4ffded1a7acd5242b4
 
 
 

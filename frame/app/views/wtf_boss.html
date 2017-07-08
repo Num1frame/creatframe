@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link rel="stylesheet" href="<?php echo CSS_PATH ;?>bootstrap.min.css">
+<script src="<?php echo JS_PATH ;?>jquery-3.2.1.js"></script>
+<body style="height: 100%;display: flex;justify-content: center;align-items: center">
+<div class="panel panel-info" style="width: 600px;">
+    <div class="panel-heading">请输入您的用户名和密码</div>
+    <div class="panel-body">
+        <form id="form" class="form-horizontal" method="post" action="">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">账号</label>
+                <div class="col-sm-10">
+                    <input type="text" name="name" class="form-control" id="inputEmail3" placeholder="请输入账号">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">密码</label>
+                <div class="col-sm-10">
+                    <input type="password" name="password" class="form-control" id="inputPassword3" placeholder="请输入密码">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> 记住我一周
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">登陆</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
+<script>
+    $(function(){
+        $('button[type=submit]').on('click',function(){
+            let formData=$('#form').serializeArray();
+            let postData={};
+            formData.forEach(function(v,i){
+                postData[v.name] = v.value;
+            })
+
+            $.ajax({
+                url:'wtf_isboss/checkbos',
+                method:'post',
+                data:postData,
+                success:function(data){
+                    if(data=='ok'){
+                        location.href = "wtf_user_admin";
+                    }else if (data=='erroy'){
+                        alert('账号密码有误')
+                    }
+                }
+            })
+
+            return false;
+        })
+    })
+</script>

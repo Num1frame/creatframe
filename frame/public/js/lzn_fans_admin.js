@@ -1,8 +1,5 @@
-/**
- * Created by WTF on 2017/7/7.
- */
 $(function () {
-    if (!location.hash){
+    if (!location.hash) {
         location.href = location.pathname + '#list'
     }
     $(window).on('hashchange', function () {
@@ -18,9 +15,9 @@ $(function () {
             let el=`
                     <tr data-id="${v.id}">
                         <td>${v.id}</td>
-                        <td>${v.account}</td>
-                        <td>${v.password}</td>
-                        <td>${v.ctime}</td>
+                        <td>${v.name}</td>
+                        <td>${v.pic}</td>
+                        <td>${v.aid}</td>
                         <td><a class="wtf_user_del" href="#">删除</a></td>
                     </tr>
                     `
@@ -28,13 +25,11 @@ $(function () {
         })
     }
     $.ajax({
-        url:"wtf_user_admin/load",
+        url:"lzn_fans_admin/load",
         success:function(data){
             render(JSON.parse(data));
         }
     });
-    let userreg=/^[a-zA-Z][a-zA-Z0-9_]{6,20}$/;
-    let pswdreg=/^(?![^a-zA-Z]+$)(?!\D+$).{6,12}$/;
     $('button[type=submit]').on('click',function(){
         let username=$('.wtf_username').val();
         let userpswd=$('.wtf_userpswd').val();
@@ -67,14 +62,3 @@ $(function () {
 
         return false;
     })
-    tbodyEl.on('click','.wtf_user_del',function(){
-        let parid=$(this).closest('tr').attr('data-id');
-        $.ajax({
-            url:'wtf_user_admin/del?id='+parid,
-            success:function(){
-                location.reload();
-            }
-        })
-        // return false;
-    })
-})

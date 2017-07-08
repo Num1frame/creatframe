@@ -35,120 +35,143 @@
 </div>
 <div class="main">
     <!--文章-->
-    <div class="cont">
+    <?php foreach($state as $v):?>
+    <div class="cont" id="<?php echo $v['id']?>">
         <div class="peo">
             <div class="peoimg">
                 <img src="<?php echo IMG_PATH?>lyximg/lyx_peoimg.png" class="pimg">
             </div>
-            <h1>胡艳Silvia</h1>
-            <img src="<?php echo IMG_PATH?>lyximg/lyx_guan.png" class="guan">
-            <a href="<?php echo PHP_PATH?>lyx_state/lyx_particulars">
+            <h1><?php echo $v['she_name']?></h1>
+            <?php if($v['guanzhu']==0):?>
+                <img src="<?php echo IMG_PATH?>lyximg/lyx_guan.png" class="guan">
+            <?php endif;?>
+            <a href="<?php echo PHP_PATH?>lyx_state/lyx_particulars?id=<?php echo $v['id']?>" class="yuedu">
                 <img src="<?php echo IMG_PATH?>lyximg/lyx_more.png" class="more">
             </a>
         </div>
         <img src="<?php echo IMG_PATH?>lyximg/lyx_fen.png" class="fen">
         <div class="fontcon">
-            <h2>适合小户型的“新中式”装修风格到底应该怎么搭配</h2>
+            <h2><?php echo $v['title']?></h2>
             <div class="box">
-                <p>首先卧室不宜放太多家具,夜里起床容易磕着.题主所说的十平米带飘窗卧室是时下非常典型的卧室布局,如果是以软装饰、小家具出发,可以重点着手的就是两个区域...</p>
+                <?php if($v['uid']==1):?>
+                    <p><?php echo $v['content']?></p>
+                <?php endif;?>
+                <?php if($v['uid']==2):?>
+                <?php  $arr=explode('?',$v['img']);?>
+                    <div class="boxborder">
+                        <img src="<?php echo IMG_PATH?>lyximg/<?php echo $arr[0]?>" alt="">
+                    </div>
+                    <div class="boxborder">
+                        <img src="<?php echo IMG_PATH?>lyximg/<?php echo $arr[1]?>" alt="">
+                    </div>
+                    <?php if(count($arr)>3):?>
+                        <div class="boxborder">
+                            <img src="<?php echo IMG_PATH?>lyximg/<?php echo $arr[2]?>" alt="">
+                        </div>
+                    <?php endif;?>
+                <?php endif;?>
+                <?php if($v['uid']==3):?>
+                <?php  $arr=explode('?',$v['img']);?>
+                    <img src="<?php echo IMG_PATH?>lyximg/<?php echo $arr[0]?>" class="one">
+                <?php endif;?>
             </div>
         </div>
         <ul class="bot">
             <li>
                 <img src="<?php echo IMG_PATH?>lyximg/lyx_bot1.png" alt="">
-                <span>12138</span>
+                <span><?php echo $v['num1']?></span>
             </li>
             <li>
                 <img src="<?php echo IMG_PATH?>lyximg/lyx_bot2.png" alt="">
-                <span>13580</span>
+                <span><?php echo $v['num2']?></span>
             </li>
             <li>
                 <img src="<?php echo IMG_PATH?>lyximg/lyx_bot3.png" alt="">
-                <span>17580</span>
+                <span><?php echo $v['num3']?></span>
             </li>
-            <li><span>2013-05-30</span></li>
+            <li class="time"><span><?php echo $v['time']?></span></li>
         </ul>
     </div>
+    <?php endforeach ;?>
+    <!--&lt;!&ndash;图文3&ndash;&gt;-->
+    <!--<div class="cont">-->
+        <!--<div class="peo">-->
+            <!--<div class="peoimg">-->
+                <!--<img src="<?php echo IMG_PATH?>lyximg/lyx_peoimg.png" class="pimg">-->
+            <!--</div>-->
+            <!--<h1>胡艳Silvia</h1>-->
+            <!--<img src="<?php echo IMG_PATH?>lyximg/lyx_guan.png" class="guan">-->
+            <!--<a href="<?php echo PHP_PATH?>lyx_state/lyx_particulars">-->
+                <!--<img src="<?php echo IMG_PATH?>lyximg/lyx_more.png" class="more">-->
+            <!--</a>-->
+        <!--</div>-->
+        <!--<img src="<?php echo IMG_PATH?>lyximg/lyx_fen.png" class="fen">-->
+        <!--<div class="fontcon">-->
+            <!--<h2>适合小户型的“新中式”装修风格到底应该怎么搭配</h2>-->
+            <!--<div class="box">-->
+                <!--<div class="boxborder">-->
+                    <!--<img src="<?php echo IMG_PATH?>lyximg/lyx_tu1.png" alt="">-->
+                <!--</div>-->
+                <!--<div class="boxborder">-->
+                    <!--<img src="<?php echo IMG_PATH?>lyximg/lyx_tu2.png" alt="">-->
+                <!--</div>-->
+                <!--<div class="boxborder">-->
+                    <!--<img src="<?php echo IMG_PATH?>lyximg/lyx_tu3.png" alt="">-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<ul class="bot">-->
+            <!--<li>-->
+                <!--<img src="<?php echo IMG_PATH?>lyximg/lyx_bot1.png" alt="">-->
+                <!--<span>12138</span>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<img src="<?php echo IMG_PATH?>lyximg/lyx_bot2.png" alt="">-->
+                <!--<span>13580</span>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<img src="<?php echo IMG_PATH?>lyximg/lyx_bot3.png" alt="">-->
+                <!--<span>17580</span>-->
+            <!--</li>-->
+            <!--<li><span>2013-05-30</span></li>-->
+        <!--</ul>-->
+    <!--</div>-->
 
-    <!--图文3-->
-    <div class="cont">
-        <div class="peo">
-            <div class="peoimg">
-                <img src="<?php echo IMG_PATH?>lyximg/lyx_peoimg.png" class="pimg">
-            </div>
-            <h1>胡艳Silvia</h1>
-            <img src="<?php echo IMG_PATH?>lyximg/lyx_guan.png" class="guan">
-            <a href="<?php echo PHP_PATH?>lyx_state/lyx_particulars">
-                <img src="<?php echo IMG_PATH?>lyximg/lyx_more.png" class="more">
-            </a>
-        </div>
-        <img src="<?php echo IMG_PATH?>lyximg/lyx_fen.png" class="fen">
-        <div class="fontcon">
-            <h2>适合小户型的“新中式”装修风格到底应该怎么搭配</h2>
-            <div class="box">
-                <div class="boxborder">
-                    <img src="<?php echo IMG_PATH?>lyximg/lyx_tu1.png" alt="">
-                </div>
-                <div class="boxborder">
-                    <img src="<?php echo IMG_PATH?>lyximg/lyx_tu2.png" alt="">
-                </div>
-                <div class="boxborder">
-                    <img src="<?php echo IMG_PATH?>lyximg/lyx_tu3.png" alt="">
-                </div>
-            </div>
-        </div>
-        <ul class="bot">
-            <li>
-                <img src="<?php echo IMG_PATH?>lyximg/lyx_bot1.png" alt="">
-                <span>12138</span>
-            </li>
-            <li>
-                <img src="<?php echo IMG_PATH?>lyximg/lyx_bot2.png" alt="">
-                <span>13580</span>
-            </li>
-            <li>
-                <img src="<?php echo IMG_PATH?>lyximg/lyx_bot3.png" alt="">
-                <span>17580</span>
-            </li>
-            <li><span>2013-05-30</span></li>
-        </ul>
-    </div>
-
-    <!--图文1-->
-    <div class="cont">
-        <div class="peo">
-            <div class="peoimg">
-                <img src="<?php echo IMG_PATH?>lyximg/lyx_peoimg.png" class="pimg">
-            </div>
-            <h1>胡艳Silvia</h1>
-            <img src="<?php echo IMG_PATH?>lyximg/lyx_guan.png" class="guan">
-            <a href="<?php echo PHP_PATH?>lyx_state/lyx_particulars">
-                <img src="<?php echo IMG_PATH?>lyximg/lyx_more.png" class="more">
-            </a>
-        </div>
-        <img src="<?php echo IMG_PATH?>lyximg/lyx_fen.png" class="fen">
-        <div class="fontcon">
-            <h2>适合小户型的“新中式”装修风格到底应该怎么搭配</h2>
-            <div class="box">
-                <img src="<?php echo IMG_PATH?>lyximg/lyx_one.png" class="one">
-            </div>
-        </div>
-        <ul class="bot">
-            <li>
-                <img src="<?php echo IMG_PATH?>lyximg/lyx_bot1.png" alt="">
-                <span>12138</span>
-            </li>
-            <li>
-                <img src="<?php echo IMG_PATH?>lyximg/lyx_bot2.png" alt="">
-                <span>13580</span>
-            </li>
-            <li>
-                <img src="<?php echo IMG_PATH?>lyximg/lyx_bot3.png" alt="">
-                <span>17580</span>
-            </li>
-            <li><span>2013-05-30</span></li>
-        </ul>
-    </div>
+    <!--&lt;!&ndash;图文1&ndash;&gt;-->
+    <!--<div class="cont">-->
+        <!--<div class="peo">-->
+            <!--<div class="peoimg">-->
+                <!--<img src="<?php echo IMG_PATH?>lyximg/lyx_peoimg.png" class="pimg">-->
+            <!--</div>-->
+            <!--<h1>胡艳Silvia</h1>-->
+            <!--<img src="<?php echo IMG_PATH?>lyximg/lyx_guan.png" class="guan">-->
+            <!--<a href="<?php echo PHP_PATH?>lyx_state/lyx_particulars">-->
+                <!--<img src="<?php echo IMG_PATH?>lyximg/lyx_more.png" class="more">-->
+            <!--</a>-->
+        <!--</div>-->
+        <!--<img src="<?php echo IMG_PATH?>lyximg/lyx_fen.png" class="fen">-->
+        <!--<div class="fontcon">-->
+            <!--<h2>适合小户型的“新中式”装修风格到底应该怎么搭配</h2>-->
+            <!--<div class="box">-->
+                <!--<img src="<?php echo IMG_PATH?>lyximg/lyx_one.png" class="one">-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<ul class="bot">-->
+            <!--<li>-->
+                <!--<img src="<?php echo IMG_PATH?>lyximg/lyx_bot1.png" alt="">-->
+                <!--<span>12138</span>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<img src="<?php echo IMG_PATH?>lyximg/lyx_bot2.png" alt="">-->
+                <!--<span>13580</span>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<img src="<?php echo IMG_PATH?>lyximg/lyx_bot3.png" alt="">-->
+                <!--<span>17580</span>-->
+            <!--</li>-->
+            <!--<li><span>2013-05-30</span></li>-->
+        <!--</ul>-->
+    <!--</div>-->
 
 
 </div>

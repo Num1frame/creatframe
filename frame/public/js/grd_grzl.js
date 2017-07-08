@@ -8,12 +8,15 @@ $(function(){
 
     $('.grd_gzpic').on('click','.zhezhao.active .qxgz',function(){
         if($(this).html()=='取消关注'){
-//                   $(this).html('关注').addClass('grd_gzactive');
-            // $('.grd_gzpic li').eq($(this).index()).css('display','none');
+                   //$(this).html('关注').addClass('grd_gzactive');
+             //$('.grd_gzpic li').eq($(this).index()).css('display','none');
         }
-//               else{
-//                   $(this).html('取消关注').removeClass('grd_gzactive');
-//               }
+               //else{
+               //    $(this).html('取消关注').removeClass('grd_gzactive');
+               //}
+    })
+    $('.grd_gzpic li').on('click','.qxgz',function(){
+        $(this).closest('li').css('display','none');
     })
     $(document.body).on('click',function(e){
         for(let i=0;i<$('.grd_gzpic li').length;i++){

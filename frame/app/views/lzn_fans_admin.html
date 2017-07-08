@@ -4,32 +4,26 @@
     <div class="col-sm-12">
         <div class="container">
             <ul class="nav nav-tabs" id="myTabs" role="tablist">
-                <li role="presentation"class="active"><a  id="add-tab"  href="#add">添加设计师</a></li>
-                <li role="presentation"><a id="list-tab" href="#list">设计师列表</a></li>
+                <li role="presentation"class="active"><a  id="add-tab"  href="#add">添加粉丝</a></li>
+                <li role="presentation"><a id="list-tab" href="#list">粉丝列表</a></li>
             </ul>
-            <div class="panel panel-success active" id="add" style="width:800px;">
-                <div class="panel-heading">添加设计师</div>
+            <div class="panel panel-success active" id="add" style="width:600px;">
+                <div class="panel-heading">添加粉丝</div>
                 <div class="panel-body">
-                    <form class="form-horizontal" id="form" method="post" enctype="multipart/form-data">
+                    <form class="form-horizontal" id="form" method="post">
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">设计师名字</label>
+                            <label class="col-sm-2 control-label">粉丝名字</label>
                             <div class="col-sm-10 wtf_content">
-                                <input type="text" name="name" class="form-control wtf_username"  placeholder="">
+                                <input type="text" name="name" class="form-control wtf_username" id="inputEmail3" placeholder="">
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label">图片</label>
-                            <div class="col-sm-10">
-                                <label for="file" style="width: auto ;border:1px solid #000;box-sizing: border-box" class="col-sm-2 control-label">点击上传文件</label>
-                                <input  type="file" name="pic" class="form-control" style="display:none" id="file" placeholder="" >
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label">设计师介绍</label>
+                            <label class="col-sm-2 control-label" style="margin-top:16px">粉丝图片</label>
                             <div class="col-sm-10 wtf_content">
-                                <textarea type="text" name="content" class="form-control wtf_username"  placeholder=""></textarea>
+                                <input type="text" name="pic" class="form-control wtf_userpswd"
+                                       style="margin-top:16px" id="inputEmail3" placeholder="">
                             </div>
+
                         </div>
+
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10">
                                 <button type="submit" class="btn btn-default" method="post">提交</button>
@@ -48,7 +42,6 @@
                             <th style="text-align:center">序号</th>
                             <th style="text-align:center">名字</th>
                             <th style="text-align:center">图片</th>
-                            <th style="text-align:center">介绍</th>
                             <th style="text-align:center">操作</th>
                         </tr>
                         </thead>
@@ -71,8 +64,6 @@
         border-bottom: 1px solid #b0b0b0;
     }
     .panel{
-        width: 1200px;
-        margin-top: 30px;
         display: none;
     }
     .active{
@@ -89,8 +80,7 @@
         box-sizing: border-box;
         line-height: 30px;
     }
-
 </style>
-<script src="<?php echo JS_PATH ;?>zjt_designmanage.js">
+<script src="<?php echo JS_PATH ;?>wtf_user_admin.js">
 
 </script>
