@@ -14,15 +14,21 @@ $(function () {
         $(location.hash).addClass('active');
     })
     $(window).trigger('hashchange');
+    $('#file').on('change',function(){
+        $(this).prev().html(this.files[0].name);
+
+    });
+
     let tbodyEl=$('tbody');
     function render(data) {
         tbodyEl.empty();
         data.forEach(function (v,i) {
             let el=`
             <tr data-id="${v.id}">
-                //<td style=""><input class="id" type="text" value="${v.id}" style="border: none;outline: none;border-bottom: 1px solid;text-align: center "></td>
+                <!--<td style=""><input class="id" type="text" value="${v.id}" style="border: none;outline: none;border-bottom: 1px solid;text-align: center "></td>-->
                 <td><input class="name" type="text" value="${v.name}" style="border: none;outline: none;border-bottom: 1px solid;text-align: center "></td>
-                <td><input class="pic" type="text" value="${v.pic}" style="border: none;outline: none;border-bottom: 1px solid;text-align: center "></td>
+                  <td contenteditable="true" class="pic"><img src="${v.pic}" width="100"/></td>
+
                 <td><input class="num" type="text" value="${v.num}" style="border: none;outline: none;border-bottom: 1px solid;text-align: center "></td>
                 <td><a class="delete">删除</a></td>
                 </tr>
@@ -40,21 +46,52 @@ $(function () {
 
     //增
     $('button[type=submit]').on('click',function () {
-        let id=$('input[name=id]').val();
-        let pic=$('input[name=pic]').val();
-        let name=$('input[name=name]').val();
-        let num=$('input[name=num]').val();
+        //let id=$('input[name=id]').val();
+        //let pic=$('input[name=pic]').val();
+        //let name=$('input[name=name]').val();
+        //let num=$('input[name=num]').val();
+        //
+        //
+        //let val=$('#form').serialize();
+        //$.ajax({
+        //    url:'grd_guanzhumanage/add',
+        //    data:{id:id,pic:pic,name:name,num:num},
+        //    success:function (data) {
+        //
+        //    }
+        //})
+        //return false;
 
-
-        let val=$('#form').serialize();
+        var formData=new FormData($('#form').get(0));
+        console.log(formData);
         $.ajax({
             url:'grd_guanzhumanage/add',
-            data:{id:id,pic:pic,name:name,num:num},
+            method:'post',
+            processData: false,
+            contentType: false,
+            data:formData,
             success:function (data) {
+                location.href=location.pathname+'#list';
+                $('input[name=name]').val('');
+
+                $('input[name=pic]').val('');
+                //$('input[name=price]').val('');
+                //$('input[name=star]').val('');
+                $('input[name=num]').val('');
+
 
             }
-        })
+
+        });
+
+
+
+
+        location.href=location.pathname+'#list';
         return false;
+
+
+
     })
 
 

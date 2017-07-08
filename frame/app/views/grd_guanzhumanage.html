@@ -10,7 +10,7 @@
             <div class="panel panel-success active" id="add" style="width:600px;">
                 <div class="panel-heading">添加分类</div>
                 <div class="panel-body">
-                    <form class="form-horizontal" id="form" method="post">
+                    <form class="form-horizontal" id="form" method="post" enctype="multipart/form-data">
                         <!--<div class="form-group">-->
                             <!--<label class="col-sm-2 control-label">序号</label>-->
                             <!--<div class="col-sm-10 wtf_content">-->
@@ -23,10 +23,18 @@
                                 <input type="text" name="name" class="form-control wtf_username" id="inputEmail3" placeholder="">
                             </div>
                         </div>
+                        <!--<div class="form-group">-->
+                            <!--<label class="col-sm-2 control-label">图片</label>-->
+                            <!--<div class="col-sm-10 wtf_content">-->
+                                <!--<input type="text" name="pic" class="form-control wtf_username" id="inputEmail3" placeholder="">-->
+                            <!--</div>-->
+                        <!--</div>-->
+
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">图片</label>
-                            <div class="col-sm-10 wtf_content">
-                                <input type="text" name="pic" class="form-control wtf_username" id="inputEmail3" placeholder="">
+                            <label for="" class="col-sm-2 control-label">请上传图片</label>
+                            <div class="col-sm-10">
+                                <label style="padding-top:7px" for="file" >点击上传</label>
+                                <input style="display:none" type="file" name="pic" class="form-control" id="file" placeholder="">
                             </div>
                         </div>
                         <div class="form-group">
