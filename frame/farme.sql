@@ -241,7 +241,7 @@ SET time_zone = "+00:00";
 --
 -- 表的结构 `zjt_details`
 --
-
+DROP TABLE IF EXISTS t_fans;
 CREATE TABLE IF NOT EXISTS `zjt_details` (
   `id` int(12) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) DEFAULT NULL,

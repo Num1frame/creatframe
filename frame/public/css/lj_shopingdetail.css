@@ -425,7 +425,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 0.13rem;
+  padding: 0.1rem 0.1rem;
   flex-direction: column;
 }
 
@@ -457,6 +457,7 @@ body {
   justify-content: flex-start;
   width: 100%;
   margin-top: 0.44rem;
+  padding: 0 0.1rem;
   width: 5.2rem;
   height: 0.5rem;
   border-radius: 0.25rem;
@@ -467,7 +468,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 0.1rem;
+  padding: 0 0.1rem;
   flex-direction: column;
 }
 
@@ -521,6 +522,17 @@ body {
   border: 0.02rem solid #000;
   box-sizing: border-box;
   margin: 0 0.1rem;
+}
+
+.contentbye .color li.active {
+  border-radius: 0.5rem;
+  background: #cbcbcb;
+}
+
+.contentbye .sizes li.active {
+  border-radius: 0.2rem;
+  background: #435262;
+  color: #fff;
 }
 
 .total {

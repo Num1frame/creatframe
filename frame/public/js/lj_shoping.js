@@ -13,12 +13,12 @@ window.onload = function(){
         });
 
         if (!r.length) {
-            o.num = 1;  //把这个的Num改成1
+            o.num = 2;  //把这个的Num改成1
             choicelist.push(o);
-            $(this).prev().html(o.num);
+            $(this).prev().html('0'+o.num);
         } else {
-            r[0].num += 1; //
-            $(this).prev().html(r[0].num);
+            r[0].num += 1;
+            $(this).prev().html('0'+r[0].num);
         }
 
         total();
@@ -55,7 +55,9 @@ window.onload = function(){
     $('.total .pay').on('click',function(){
         localStorage.totalprice = JSON.stringify(totalprice);
         localStorage.choicelist = JSON.stringify(choicelist);
-    })
+    });
+
+
 
 
 

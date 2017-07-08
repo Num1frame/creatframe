@@ -9,7 +9,7 @@ $(function () {
         $('#myTabs li, .panel').removeClass('active');
         $(location.hash + '-tab').parent().addClass('active');
         $(location.hash).addClass('active');
-    })
+    });
     $(window).trigger('hashchange');
     let tbodyEl=$('tbody');
     function render(data){
@@ -23,6 +23,7 @@ $(function () {
                         <td>${v.price}</td>
                         <td>${v.designer}</td>
                         <td>${v.designerpic}</td>
+                        <td>${v.homeid}</td>
                         <td>${v.label}</td>
                         <td><a class="lj_shoping_del" href="#">删除</a></td>
                     </tr>
@@ -45,6 +46,7 @@ $(function () {
         // if(username.trim()!=''&&userpswd.trim()!=''){
         //     if(userreg.test(username)&&pswdreg.test(userpswd)){
                 let val=$('#form').serialize();
+                console.log(val);
                 $.ajax({
                     url:'lj_shoping_admin/add?'+val,
                     success:function(){
