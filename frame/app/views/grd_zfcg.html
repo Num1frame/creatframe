@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>支付成功</title>
+    <link rel="stylesheet" href="<?php echo CSS_PATH?>base.css">
+    <style>
+        .header{
+            z-index:5;
+        }
+        .content{
+            width:100%;
+            height:8rem;
+        }
+        .tupian{
+            width:100%;
+            height:6rem;
+            /*background:red;*/
+        }
+        .tupian img{
+            width:6.7rem;
+            height:4.7rem;
+            margin:4rem auto;
+            margin-left:0.65rem;
+        }
+        .zhezhao{
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background:rgba(55,55,55,0.4);
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="left"><a href="<?php echo PHP_PATH?>home/index"><img src="<?php echo IMG_PATH?>grd_img/grd1.png" alt=""></a></div>
+    <div class="middle">
+        <img src="<?php echo IMG_PATH?>lj_header8.png" alt="" style="width:0.16rem;height:0.08rem">
+        <?php echo $title?>
+        <img src="<?php echo IMG_PATH?>lj_header9.png" alt=""  style="width:0.16rem;height:0.08rem">
+    </div>
+    <div class="right"><a href="#"><img src="<?php echo IMG_PATH?>lj_header2.png" alt=""></a></div>
+</div>
+<div class="content">
+    <div class="tupian">
+        <img src="/creatframe/frame/public/img/grd_img/233_03.png" alt="">
+    </div>
+    <div class="zhezhao">
+
+    </div>
+
+</div>
+
+</body>
+</html>
