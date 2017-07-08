@@ -6,4 +6,60 @@ window.onload = function(){
     $('.contentbye .close img').on('click',function(){
         $('.contentbye').removeClass('active');
     });
+
+    $('.contentbye .color').on('click','li',function(){
+        $('.contentbye .color li').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    $('.contentbye .sizes').on('click','li',function(){
+        $('.contentbye .sizes li').removeClass('active');
+        $(this).addClass('active');
+    });
+
+
+
+    let shuliang  = Number($('.contentbye .nums .num').html());
+    let danjia = Number($('.total>span').html());
+
+    $('.contentbye .nums').on('click','.add',function(){
+        shuliang += 1;
+        let total = (shuliang * danjia).toFixed(2);
+        $(this).prev().html(shuliang);
+        $('.total>span').html(total);
+    });
+
+    let total;
+    var o, r;
+    let shuzu = localStorage.shanpinxiangqing;
+    shuzu = [];
+
+    let color=$('.contentbye .color li.active p').html();
+    let size =$('.contentbye .sizes li.active').html();
+    let name =$('.content .sofa span').html();
+
+    $('.contentbye .nums').on('click','.min',function(){
+        if(shuliang>0){
+            shuliang -= 1;
+            total = (shuliang * danjia).toFixed(2);
+            $(this).next().html(shuliang);
+            $('.total>span').html(total);
+        }
+    });
+
+
+    console.log(color);
+    console.log(size);
+    console.log(name);
+    $('.total .pay').on('click',function(){
+        shuzu = [
+            {shuliang:shuliang},
+            {zongjia:total},
+            {color:color},
+            {size:size},
+            {name:name},
+        ];
+        localStorage.shanpinxiangqing = JSON.stringify(shuzu);
+    })
+
 };

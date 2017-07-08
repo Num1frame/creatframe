@@ -102,26 +102,42 @@ $(function () {
     })
 
     //选项卡
+    // var item = $(".gj_nav .item"),
+    //     img = $(".gj_nav .item img"),
+    //     con = $(".gj_con .content");
+    // item.on("click", function () {
+    //     let hash=(location.hash).slice(1);
+    //     console.log(".gj_nav .item #"+hash+"img");
+    //     img.removeClass("active");
+    //     $(".gj_nav .item #"+hash).find("img").addClass("active");
+    //     // con.removeClass("active");
+    //     // con.eq(item.index($(this))).addClass("active");
+    // })
+
     var item = $(".gj_nav .item"),
         img = $(".gj_nav .item img"),
         con = $(".gj_con .content");
-    item.on("click", function () {
+    $(window).on("hashchange", function () {
+        if(!location.hash){
+            location.hash='#search1';
+        }
         img.removeClass("active");
-        $(this).find("img").addClass("active");
-        con.removeClass("active");
-        con.eq(item.index($(this))).addClass("active");
+        $(location.hash + "-tab").find("img").addClass('active');
+        $(".gj_con .content").removeClass("active");
+        $(location.hash).addClass("active");
     })
+    $(window).trigger("hashchange");
 
     //图片搜索
     function renderPhoto(data) {
         $(".photo .img .history").remove();
         photoList.forEach(function (v, i) {
-                $("<li class='history'>").css({
-                    width: 2 + "rem",
-                    height: 2 + "rem",
-                    backgroundImage: "url(" + v + ")",
-                    backgroundSize: 100 + "%" + "" + 100 + "%"
-                }).prependTo($(".photo .img"));
+            $("<li class='history'>").css({
+                width: 2 + "rem",
+                height: 2 + "rem",
+                backgroundImage: "url(" + v + ")",
+                backgroundSize: 100 + "%" + "" + 100 + "%"
+            }).prependTo($(".photo .img"));
             $(".photo .img li").length==9;
 
         })

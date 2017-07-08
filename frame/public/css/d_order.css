@@ -187,6 +187,14 @@ body{
     left: 0.2rem;
     top: 2.1rem;
 }
+.content_right ul li:nth-child(3) textarea{
+    width: 100%;
+    height: 1.2rem;
+    border: none;
+    color: #535353;
+}
+
+
 .content_right ul li:nth-child(3) span{
     position: absolute;
     width: 0.5rem;

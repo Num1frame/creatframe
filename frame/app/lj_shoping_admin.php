@@ -19,7 +19,8 @@ class lj_shoping_admin extends core{
        echo json_encode($data);
     }
     function add(){
-        M()->query("insert into goods (name,pic,price,designer,designerpic,label) VALUES ('{$_REQUEST['name']}','{$_REQUEST['pic']}','{$_REQUEST['price']}','{$_REQUEST['designer']}','{$_REQUEST['designerpic']}','{$_REQUEST['label']}')");
+        print_r($_REQUEST['name']);
+        $data = M()->query("insert into goods (name,pic,price,designer,designerpic,label,homeid) VALUES ('$_REQUEST[name]','$_REQUEST[pic]','$_REQUEST[price]','$_REQUEST[designer]','$_REQUEST[designerpic]','$_REQUEST[label]','$_REQUEST[homeid]')");
     }
     function del(){
         M()->query("delete from goods WHERE id='{$_REQUEST['id']}'");

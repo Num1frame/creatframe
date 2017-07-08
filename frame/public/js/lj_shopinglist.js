@@ -1,13 +1,5 @@
 window.onload = function () {
 
-
-    /*$.ajax({
-        url: '< ? php echo PHP_PATH ?>lj_shoping / shopinglist',
-        success: function (data) {
-            render(data);
-        }
-    });*/
-
     function render(data) {
         $('.content ul').empty();
         data.forEach(function(v,i){

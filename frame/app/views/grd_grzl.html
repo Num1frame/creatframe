@@ -71,9 +71,9 @@
                 </div>
 
             </div>
-            <ul class="grd_gzpic">
+            <ul class="grd_gzpic grd_gzpic1">
                 <?php foreach ($data as $v):?>
-                <li>
+                <li data='<?php echo json_encode($v);?>'>
                     <div class="grd_grt">
                         <img src="<?php echo IMG_PATH?>grd_img/grd11_03.png" alt="">
                     </div>
@@ -115,9 +115,9 @@
                 <!--</li>-->
 
             </ul>
-            <a class="grd_more" href="<?php echo PHP_PATH?>lzn_my/lzn_follow">
+            <div class="grd_more">
                 <img src="<?php echo IMG_PATH?>grd_img/14_12.png" alt="">
-            </a>
+            </div>
             <div class="grd_kuai"></div>
             <div class="grd_gz">
                 <div class="grd_gz1">
@@ -141,7 +141,7 @@
             </div>
             <ul class="grd_gzpic">
                 <?php foreach ($data1 as $v):?>
-                <li>
+                <li  data='<?php echo json_encode($v);?>'>
                     <div class="grd_grt">
                         <img src="<?php echo IMG_PATH?>grd_img/grd11_03.png" alt="">
                     </div>
@@ -182,9 +182,9 @@
                 <!--</li>-->
                 <?php endforeach;?>
             </ul>
-            <a class="grd_more" href="<?php echo PHP_PATH?>lzn_my/lzn_fans">
+            <div class="grd_more">
                 <img src="<?php echo IMG_PATH?>grd_img/14_12.png" alt="">
-            </a>
+            </div>
             <div class="grd_kuai">
 
             </div>
@@ -271,31 +271,31 @@
 <script>
 
 
-//    $(function(){
-//        $('.grd_gzpic').on('click','li',function(){
-//            $(this).find('.zhezhao').addClass('active');
-//        })
-//        $('.zhezhao').on('click','.qxgz',function(){
-//            $(this).find('.grd_gzpic li').addClass('active1');
-//        })
-//
-//        $('.grd_gzpic').on('click','.zhezhao.active .qxgz',function(){
-//            if($(this).html()=='取消关注'){
-////                   $(this).html('关注').addClass('grd_gzactive');
-//                // $('.grd_gzpic li').eq($(this).index()).css('display','none');
-//            }
-////               else{
-////                   $(this).html('取消关注').removeClass('grd_gzactive');
-////               }
-//        })
-//        $(document.body).on('click',function(e){
-//            for(let i=0;i<$('.grd_gzpic li').length;i++){
-//                if($(e.target).closest('li')[0]!=$('.grd_gzpic li')[i]){
-//                    $($('.grd_gzpic li')[i]).find('.zhezhao').removeClass('active');
-//                }
-//            }
-//        })
-//    })
+    //    $(function(){
+    //        $('.grd_gzpic').on('click','li',function(){
+    //            $(this).find('.zhezhao').addClass('active');
+    //        })
+    //        $('.zhezhao').on('click','.qxgz',function(){
+    //            $(this).find('.grd_gzpic li').addClass('active1');
+    //        })
+    //
+    //        $('.grd_gzpic').on('click','.zhezhao.active .qxgz',function(){
+    //            if($(this).html()=='取消关注'){
+    ////                   $(this).html('关注').addClass('grd_gzactive');
+    //                // $('.grd_gzpic li').eq($(this).index()).css('display','none');
+    //            }
+    ////               else{
+    ////                   $(this).html('取消关注').removeClass('grd_gzactive');
+    ////               }
+    //        })
+    //        $(document.body).on('click',function(e){
+    //            for(let i=0;i<$('.grd_gzpic li').length;i++){
+    //                if($(e.target).closest('li')[0]!=$('.grd_gzpic li')[i]){
+    //                    $($('.grd_gzpic li')[i]).find('.zhezhao').removeClass('active');
+    //                }
+    //            }
+    //        })
+    //    })
 
 
 
