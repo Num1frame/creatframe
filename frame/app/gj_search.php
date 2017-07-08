@@ -6,7 +6,9 @@ use core\core;
 class gj_search extends core {
     function index(){
         $data=M("gj_search1")->selectAll();
+        $datas=M()->query("select * from goods limit 8");
         $this->assign('data',$data);
+        $this->assign('datas',$datas);
         $this->assign('title','创家居');
         $this->display('gj_search');
     }
@@ -14,10 +16,16 @@ class gj_search extends core {
         $src=$_FILES['url']['tmp_name'];
         $ext=explode(".",$_FILES['url']['name'])[1];
         $file_name=md5(time()) . '.' . $ext;
-        $dist="public/gj_img/".$file_name;
+        $dist="public/upload/".$file_name;
         $name="/creatframe/frame/public/upload/".$file_name;
         move_uploaded_file($src,$dist);
         echo $name;
+    }
+    function photo1(){
+        $datas =M()->query("select * from goods where pic='$_REQUEST[uid]'");
+        $this->assign('data',$datas);
+        $this->assign('title','商品列表');
+        $this->display('lj_shopinglist');
     }
     function search1(){
         $text=$_REQUEST['key'];
@@ -38,6 +46,18 @@ class gj_search extends core {
     }
     function shopinglist4(){
         $datas =M()->query("select * from goods where '$_REQUEST[num1]'< price AND label='$_REQUEST[num3]'");
+        $this->assign('data',$datas);
+        $this->assign('title','商品列表');
+        $this->display('lj_shopinglist');
+    }
+    function shopinglist(){
+        $datas =M()->query("select * from goods where name like '%{$_REQUEST['key']}%' ");
+        $this->assign('data',$datas);
+        $this->assign('title','商品列表');
+        $this->display('lj_shopinglist');
+    }
+    function shopinglist1(){
+        $datas =M()->query("select * from goods where label=".$_REQUEST['key']);
         $this->assign('data',$datas);
         $this->assign('title','商品列表');
         $this->display('lj_shopinglist');

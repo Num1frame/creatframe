@@ -1,0 +1,110 @@
+<?php include "wtf_all_admin_header.html" ;?>
+
+
+<div class="row">
+
+    <div class="col-sm-12">
+        <div class="container">
+            <ul class="nav nav-tabs" id="myTabs" role="tablist">
+                <li role="presentation"class="active"><a  id="add-tab"  href="#add">添加商品内容</a></li>
+                <li role="presentation"><a id="list-tab" href="#list">商品详情</a></li>
+            </ul>
+            <div class="panel panel-success active" id="add" style="width:600px;">
+                <div class="panel-heading">添加商品内容</div>
+                <div class="panel-body">
+                    <form class="form-horizontal" id="form" method="post">
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">商品名称</label>
+                            <div class="col-sm-9 wtf_content">
+                                <input type="text" name="name" class="form-control wtf_username" id="inputEmail3" placeholder="">
+                            </div>
+                            <div class="wtf_kong wtf_kong1"></div>
+
+                            <label class="col-sm-3 control-label">商品图片地址</label>
+                            <div class="col-sm-9 wtf_content">
+                                <input type="text" name="pic" class="form-control wtf_userpswd" id="inputEmail3" placeholder="">
+                            </div>
+                            <div class="wtf_kong wtf_kong2"></div>
+
+                            <label class="col-sm-3 control-label">商品价格</label>
+                            <div class="col-sm-9 wtf_content">
+                                <input type="text" name="price" class="form-control wtf_userpswd" id="inputEmail3" placeholder="">
+                            </div>
+                            <div class="wtf_kong wtf_kong2"></div>
+
+
+                            <label class="col-sm-3 control-label">商品gid</label>
+                            <div class="col-sm-9 wtf_content">
+                                <input type="text" name="gid" class="form-control wtf_userpswd" id="inputEmail3" placeholder="">
+                            </div>
+                            <div class="wtf_kong wtf_kong2"></div>
+
+                            <label class="col-sm-3 control-label">内容介绍</label>
+                            <div class="col-sm-9 wtf_content">
+                                <input type="text" name="content" class="form-control wtf_userpswd" id="inputEmail3" placeholder="">
+                            </div>
+                            <div class="wtf_kong wtf_kong2"></div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-9">
+                                <button type="submit" class="btn btn-default" method="post">提交</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="panel panel-info" id="list">
+                <div class="panel-heading">商品详情</div>
+                <div class="panel-body">
+                    <table class="table" style="text-align:center">
+                        <thead>
+                        <tr>
+                            <th style="text-align:center">序号</th>
+                            <th style="text-align:center">商品名称</th>
+                            <th style="text-align:center">商品图片地址</th>
+                            <th style="text-align:center">商品价格</th>
+                            <th style="text-align:center">商品gid</th>
+                            <th style="text-align:center">内容</th>
+                            <th style="text-align:center">操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+<style>
+    .trade,.price{
+        outline: none;
+        border:none;
+        border-bottom: 1px solid #b0b0b0;
+    }
+    .panel{
+        display: none;
+    }
+    .active{
+        display: block;
+    }
+    .title,.pic{
+        width: 80%;
+    }
+    .wtf_kong{
+        width: 100%;
+        height: 60px;
+        padding-top:30px;
+        padding-left:115px;
+        box-sizing: border-box;
+        line-height: 30px;
+    }
+</style>
+<script src="<?php echo JS_PATH?>lj_shopingdetail_admin.js"></script>
