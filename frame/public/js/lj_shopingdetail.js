@@ -45,9 +45,6 @@ window.onload = function(){
             $(this).next().html(shuliang);
             $('.total>span').html(total);
         }
-    });
-
-    $('.total .pay').on('click',function(){
         total = (shuliang * danjia).toFixed(2);
         shuzu = [
             {shuliang:shuliang},
@@ -56,8 +53,23 @@ window.onload = function(){
             {size:size},
             {name:name},
         ];
-        cnosole.log(shuzu);
         localStorage.shanpinxiangqing = JSON.stringify(shuzu);
+        console.log(localStorage.shanpinxiangqing);
+    });
+
+    $('.total .pay').on('click',function(){
+        localStorage.shanpinxiangqing = JSON.stringify(shuzu);
+        total = (shuliang * danjia).toFixed(2);
+        shuzu = [
+            {shuliang:shuliang},
+            {zongjia:total},
+            {color:color},
+            {size:size},
+            {name:name},
+        ];
+
+        localStorage.shanpinxiangqing = JSON.stringify(shuzu);
+        console.log(localStorage.shanpinxiangqing);
     })
 
 };
