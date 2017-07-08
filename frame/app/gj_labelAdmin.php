@@ -5,6 +5,10 @@ use \core\db;
 use MongoDB\Driver\Query;
 
 class gj_labelAdmin extends core {
+    function __construct()
+    {
+        check_login();
+    }
     function index(){
         $this->assign("title","商品标签");
         $this->display("gj_labelAdmin");

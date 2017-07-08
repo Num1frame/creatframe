@@ -10,6 +10,10 @@ use \core\db;
 use core\core;
 
 class lj_shoping_admin extends core{
+    function __construct()
+    {
+        check_login();
+    }
     function index(){
         $this->assign('title','商品列表管理');
         $this->display('lj_shopinglist_admin');

@@ -8,6 +8,6 @@ function M($table="")
 }
 function check_login(){
     if(!isset($_COOKIE['login'])){
-        header('Location:/index.php/adminLogin/login');
+        header('location:/creatframe/frame/index.php/wtf_isboss');
     }
 }

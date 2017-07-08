@@ -5,6 +5,10 @@ use \core\db;
 
 //更新
 class d_index_manger extends core{
+    function __construct()
+    {
+        check_login();
+    }
     function index(){
         $this->assign('title','主页商品分类');
         $this->display('d_index_manger');
