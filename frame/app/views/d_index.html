@@ -43,14 +43,14 @@
 </div>
 <div class="list">
     <ul>
-        <li  style="background: url(<?php echo IMG_PATH?>d_03.png) no-repeat center/100%" ><a href="#index1">商品分类</a></li>
-        <li><a href="#index2">热门推荐</a></li>
-        <li ><a href="#index3">大神推荐</a></li>
-        <li ><a href="#index4">VR实景</a></li>
+        <li  style="background: url(<?php echo IMG_PATH?>d_03.png) no-repeat center/100%" ><a href="#">商品分类</a></li>
+        <li><a href="#">热门推荐</a></li>
+        <li ><a href="#">大神推荐</a></li>
+        <li ><a href="#">VR实景</a></li>
     </ul>
 </div>
 <div class="zhanshi">
-    <div class="fenlei active" id="index1">
+    <div class="fenlei active">
         <div class="bg" style="background: url(<?php echo IMG_PATH?>d_04.png) no-repeat center/80%">
             <p>商品分类</p>
         </div>
@@ -71,21 +71,23 @@
             </ul>
         </div>
     </div>
-    <div class="fenlei" id="index2">
+    <div class="fenlei">
         <div class="bg bg2" style="background: url(<?php echo IMG_PATH?>d_15.png) no-repeat center/100%">
-            <p>热门推荐</p>
-            <h1>中式禅意风格</h1>
-            <h2>煮一杯清茶 闻香知雅意</h2>
-            <h3>美式复古客厅装饰品新中式陶瓷花瓶干花仿真插花花艺禅意陶瓷摆件</h3>
-            <h4>亲密无间</h4>
-            <h5>品牌直销 居家自用 婚庆送礼</h5>
-            <h6>创意新中式摆件禅意家居客厅电视柜玄关 树脂工艺品摆设 软装饰品</h6>
-            <span>¥ 769.00</span>
-            <i>¥ 675.00</i>
+            <a href="<?php echo PHP_PATH?>lj_shoping/shopinglist1?id=<?php echo $v['id']?>" style="display: block;width: 100%;height: 100%">
+                <p>热门推荐</p>
+                <h1>中式禅意风格</h1>
+                <h2>煮一杯清茶 闻香知雅意</h2>
+                <h3>美式复古客厅装饰品新中式陶瓷花瓶干花仿真插花花艺禅意陶瓷摆件</h3>
+                <h4>亲密无间</h4>
+                <h5>品牌直销 居家自用 婚庆送礼</h5>
+                <h6>创意新中式摆件禅意家居客厅电视柜玄关 树脂工艺品摆设 软装饰品</h6>
+                <span>¥ 769.00</span>
+                <i>¥ 675.00</i>
+            </a>
         </div>
 
     </div>
-    <div class="fenlei" id="index3">
+    <div class="fenlei">
         <div class="bg" style="background: url(<?php echo IMG_PATH?>d_04.png) no-repeat center/80%">
             <p>大神推荐</p>
         </div>
@@ -96,7 +98,7 @@
                     <a href="#">
                         <img src="<?php echo $v['pic']?>" alt="">
                     </a>
-                </li>
+                </li><li id="<?php echo $v['id']?>"><a href="<?php echo PHP_PATH?>lj_shoping/shopinglist1?id=<?php echo $v['id']?>"><img src="<?php echo $v['pic']?>" alt=""></a></li>
                 <?php endforeach; ?>
                 <!--<li><img src="<?php echo IMG_PATH?>d_9.png" alt=""></li>-->
                 <!--<li><img src="<?php echo IMG_PATH?>d_10.png" alt=""></li>-->
@@ -107,17 +109,19 @@
             </ul>
         </div>
     </div>
-    <div class="fenlei " id="index4">
+    <div class="fenlei">
         <div class="bg bg2" style="background: url(<?php echo IMG_PATH?>d_15.png) no-repeat center/100%">
-            <p>VR实景</p>
-            <h1>中式禅意风格</h1>
-            <h2>煮一杯清茶 闻香知雅意</h2>
-            <h3>美式复古客厅装饰品新中式陶瓷花瓶干花仿真插花花艺禅意陶瓷摆件</h3>
-            <h4>亲密无间</h4>
-            <h5>品牌直销 居家自用 婚庆送礼</h5>
-            <h6>创意新中式摆件禅意家居客厅电视柜玄关 树脂工艺品摆设 软装饰品</h6>
-            <span>¥ 769.00</span>
-            <i>¥ 675.00</i>
+            <a href="<?php echo PHP_PATH?>lj_shoping/shopinglist1?id=<?php echo $v['id']?>" style="display: block;width: 100%;height: 100%">
+                <p>热门推荐</p>
+                <h1>中式禅意风格</h1>
+                <h2>煮一杯清茶 闻香知雅意</h2>
+                <h3>美式复古客厅装饰品新中式陶瓷花瓶干花仿真插花花艺禅意陶瓷摆件</h3>
+                <h4>亲密无间</h4>
+                <h5>品牌直销 居家自用 婚庆送礼</h5>
+                <h6>创意新中式摆件禅意家居客厅电视柜玄关 树脂工艺品摆设 软装饰品</h6>
+                <span>¥ 769.00</span>
+                <i>¥ 675.00</i>
+            </a>
         </div>
 
     </div>
@@ -164,20 +168,20 @@
         $(this).siblings().css({'background':''});
         $(this).css({'background':'url(<?php echo IMG_PATH?>d_03.png) no-repeat center/80%'});
 
-//        $('.zhanshi .fenlei').removeClass('active').eq($(this).index()).addClass('active');
+        $('.zhanshi .fenlei').removeClass('active').eq($(this).index()).addClass('active');
 
     })
-  /*  $(".content .xxk").on("click","li",function(){
-        let id=$(this).attr("id");
-        $.ajax({
-            url:"<?php echo PHP_PATH?>home/d_shoplist",
-            data:{id:id},
-            success:function () {
-                console.log(1);
-                location.href = '../home/d_shoplist'
-            }
-        })
-    })*/
+//    $(".content .xxk").on("click","li",function(){
+//        let id=$(this).attr("id");
+//        $.ajax({
+//            url:"<?php echo PHP_PATH?>home/d_shoplist",
+//            data:{id:id},
+//            success:function () {
+//                console.log(1);
+//                location.href = '../home/d_shoplist'
+//            }
+//        })
+//    })
 
 
 
