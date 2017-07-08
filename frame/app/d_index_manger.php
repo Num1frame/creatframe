@@ -18,7 +18,7 @@ class d_index_manger extends core{
         M()->query("insert into d_homelist (id,pic) values ('{$_REQUEST['id']}','{$_REQUEST['pic']}')");
     }
 
-<<<<<<< HEAD
+
     function del(){
         $id=$_REQUEST['id'];
         M()->query("delete from d_homelist where id={$id}");
@@ -35,6 +35,5 @@ class d_index_manger extends core{
 //        M()->querys("update d_index_manger set ('{$key}'='{$val}' where id={$id})");
     }
 
-=======
->>>>>>> ddb937d1db6f9e503069bc4ffded1a7acd5242b4
+
 }
