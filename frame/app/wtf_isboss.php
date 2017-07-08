@@ -5,7 +5,11 @@ use \core\db;
 use \core\core;
 class wtf_isboss extends core{
     function index(){
-        $this->display('wtf_boss');
+        if(!isset($_COOKIE['login'])){
+            $this->display('wtf_boss');
+        }else{
+            header('location:/creatframe/frame/index.php/wtf_user_admin');
+        }
     }
     function checkbos(){
         $name=$_REQUEST['name'];

@@ -1,4 +1,5 @@
 $(function () {
+console.log(location.pathname);
     //输入搜索
     function renderList(data) {
         $(".entry .bottom").empty();
@@ -46,7 +47,7 @@ $(function () {
                         renderList(data);
                     }
                 })
-            },800)
+            },300)
         }
     })
 
@@ -102,12 +103,13 @@ $(function () {
     })
 
 
+    $(".header .right img").css('display','none');
     var item = $(".gj_nav .item"),
         img = $(".gj_nav .item img"),
         con = $(".gj_con .content");
     $(window).on("hashchange", function () {
         if(!location.hash){
-            location.hash='#search1';
+            location.hash="#search1"
         }
         img.removeClass("active");
         $(location.hash + "-tab").find("img").addClass('active');
@@ -130,8 +132,7 @@ $(function () {
 
         })
     }
-    $(".photo .img").on("click","li",function(){
-
+    $(".photo .img").on("click",".imgs",function(){
         let uid=$(this).attr("id");
         location.href="../gj_search/photo1?uid="+uid;
     })
@@ -154,6 +155,7 @@ $(function () {
             type: 'post',
             data: formData,
             success: function (data) {
+                console.log(data);
                 let r = photoList.filter(function (v, i) {
                     return v == data;
                 });

@@ -111,9 +111,7 @@ INSERT INTO `goods` (`id`, `name`, `pic`, `designer`, `designerpic`, `price`, `h
 (6, '简约松软靠椅', '/creatframe/frame/public/img/lj_img/lj_shoplist9_11.png', '胡艳 Silvia', '/creatframe/frame/public/img/lj_img/lj_shoping7_10.png', '1753.00', 0, 3),
 (7, '欧美', '/creatframe/frame/public/img/lj_img/lj_shoplist9_11.png', '胡艳 Silvia', '/creatframe/frame/public/img/lj_img/lj_shoping7_10.png', '1753.00', 0, 1);
 
-<<<<<<< HEAD
--- //个人信息表
-=======
+
 -- 个人信息表
 >>>>>>> 8f4d078be072388afcedc0f36d4f3d7395bf1707
 DROP TABLE IF EXISTS d_person;
@@ -131,8 +129,7 @@ CREATE TABLE IF NOT EXISTS `d_person` (
 
 INSERT INTO `d_person` ( `name`, `phone`, `email`, `weixin`, `qq`, `dizhi`, `pic`) VALUES
 ('杜帅','110','757293200@qq.com','du321521','757293200','太原学院','/creatframe/frame/public/img/d_3.png');
-<<<<<<< HEAD
-=======
+
 
 
 -- 設計師列表
@@ -214,33 +211,11 @@ INSERT INTO t_fans(name, pic,aid,uid) VALUES
 ('Dave','/creatframe/frame/public/img/lzn_img/lzn_my19.jpg','4','1');
 
 
--- phpMyAdmin SQL Dump
--- version 4.1.14
--- http://www.phpmyadmin.net
---
--- Host: 127.0.0.1
--- Generation Time: 2017-07-08 08:20:06
--- 服务器版本： 5.6.17
--- PHP Version: 5.5.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
-
---
--- Database: `home`
---
-
--- --------------------------------------------------------
-
---
--- 表的结构 `zjt_details`
---
 DROP TABLE IF EXISTS t_fans;
 CREATE TABLE IF NOT EXISTS `zjt_details` (
   `id` int(12) NOT NULL AUTO_INCREMENT,
@@ -252,10 +227,6 @@ CREATE TABLE IF NOT EXISTS `zjt_details` (
   `uid` int(12) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
-
---
--- 转存表中的数据 `zjt_details`
---
 
 INSERT INTO `zjt_details` (`id`, `name`, `pic`, `content`, `notice`, `fans`, `uid`) VALUES
 (1, '胡艳Silvia', '/creatframe/frame/public/img/zjt_img/zjtdesign3.png', '设计师Silvia，nacasa创始人兼设计师,拥有超过十年欧美高端家具品牌产品开发及设计经验.源于对民间手工艺的热爱,她的设计理念是将民间手工艺与当代时尚设计相结合,将手工艺继续传承', 2546, 25896, 1),
