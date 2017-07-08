@@ -14,5 +14,8 @@ $(function () {
         $('.fenlei').removeClass('active');
         $(location.hash).addClass('active');
     })
+    $('#index2').on('click',function () {
+        location.href = location.pathname + '#index2'
+    })
 })
 $(window).trigger('hashchange');
