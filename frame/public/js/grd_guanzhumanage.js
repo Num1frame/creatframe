@@ -26,10 +26,10 @@ $(function () {
             let el=`
             <tr data-id="${v.id}">
                 <td style=""><input class="id" type="text" value="${v.id}" style="border: none;outline: none;border-bottom: 1px solid;text-align: center "></td>
-                <td><input class="name" type="text" value="${v.name}" style="border: none;outline: none;border-bottom: 1px solid;text-align: center "></td>
-                  <td contenteditable="true" class="pic"><img src="${v.pic}" width="100"/></td>
+                <td><input class="name" type="text" value="${v.name}" style="border: none;outline: none;border-bottom: 1px solid;text-align: center;text-align: center;height:100%;display:block;width:100%;line-height:100% "></td>
+                  <td contenteditable="true" class="pic"><img src="${v.pic}"></td>
 
-                <td><input class="num" type="text" value="${v.num}" style="border: none;outline: none;border-bottom: 1px solid;text-align: center "></td>
+                <td><input class="num" type="text" value="${v.num}" style="border: none;display:block;outline: none;border-bottom: 1px solid;text-align: center;height:100%;width:100%;line-height:100%"></td>
                 <td><a class="delete">删除</a></td>
                 </tr>
                    `;

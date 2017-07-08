@@ -16,6 +16,7 @@ class grd_guanzhumanage extends core{
     function add(){
         dump($_FILES);
         $src=$_FILES['pic']['tmp_name'];
+//        dump($src);
         $ext=explode('.',$_FILES['pic']['name'])[1];
         $file_name=md5(time()).'.'.$ext;
         $dist='public/upload/'.$file_name;
