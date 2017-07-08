@@ -18,7 +18,7 @@ class lzn_my extends core{
         $this->assign('data2',$data);
         $data = M()->query("select * from t_follow where aid ='4' ") ;
         $this->assign('data3',$data);
-        $this->assign('title','我的关注');
+        $this->assign('title','关注');
         $this->display("lzn_follow");
     }
     function lzn_fans(){
@@ -30,7 +30,7 @@ class lzn_my extends core{
         $this->assign('data2',$data);
         $data = M()->query("select * from t_fans where aid ='4' ") ;
         $this->assign('data3',$data);
-        $this->assign('title','我的粉丝');
+        $this->assign('title','粉丝');
         $this->display("lzn_fans");
     }
     function lzn_news(){

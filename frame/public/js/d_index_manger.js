@@ -17,6 +17,8 @@ $(function () {
         data.forEach(function (v,i) {
             let el=`
                     <tr data-id="${v.id}">
+                        <td style=""><input class="id" type="text" value="${v.id}" style="border: none;outline: none;border-bottom: 1px solid;text-align: center "></td>
+                        <td><input class="pic" type="text" value="${v.pic}" style="border: none;outline: none;border-bottom: 1px solid;text-align: center "></td>
                         <td>${v.id}</td>
                         <td>${v.pic}</td>
                         <td><a class="delete">删除</a></td>
@@ -46,6 +48,35 @@ $(function () {
             }
         })
         return false;
+    })
+
+
+    //删除
+
+    $('tbody').on('click','.delete',function () {
+         let tr=$(this).closest('tr')
+         let id=$(this).closest('tr').attr('data-id');
+         $.ajax({
+             url:'d_index_manger/del',
+             data:{id:id},
+             success:function (data) {
+                tr.remove();
+             }
+         })
+
+    })
+
+    $('tbody').on('change','input',function () {
+        let key=$(this).attr('class');
+        let val=$(this).val();
+        let id=$(this).closest('tr').attr('data-id');
+        $.ajax({
+            url:'d_index_manger/update',
+            data:{key:key,val:val,id:id},
+            success:function (data) {
+
+            }
+        })
     })
 
 

@@ -15,7 +15,7 @@ DROP TABLE IF EXISTS user;
 CREATE TABLE user(
   id INT PRIMARY KEY AUTO_INCREMENT,
   account VARCHAR (255),
-  password VARCHAR (255)
+  password VARCHAR (255),
   ctime timestamp NULL DEFAULT CURRENT_TIMESTAMP
 )DEFAULT CHARSET = utf8;
 INSERT INTO user (account,password) VALUES
