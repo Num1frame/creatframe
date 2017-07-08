@@ -47,7 +47,6 @@ window.onload = function(){
         }
     });
 
-
     console.log(color);
     console.log(size);
     console.log(name);
