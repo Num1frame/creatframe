@@ -74,19 +74,21 @@
 <script>
     $(window).on('load', function () {
         let totalprice = localStorage.totalprice;
-        let shuzu = JSON.parse(localStorage.shanpinxiangqing);
-        console.table(shuzu);
-        let name1 = shuzu[4].name;
-        let color1 = shuzu[2].color;
-        let size1 = shuzu[3].size;
-        let shuliang1 = shuzu[0].shuliang;
-        let zongjia1 = shuzu[1].zongjia;
+        if(localStorage.shanpinxiangqing){
+            let shuzu = JSON.parse(localStorage.shanpinxiangqing);
+            console.table(shuzu);
+            let name1 = shuzu[4].name;
+            let color1 = shuzu[2].color;
+            let size1 = shuzu[3].size;
+            let shuliang1 = shuzu[0].shuliang;
+            let zongjia1 = shuzu[1].zongjia;
 
-        $('.sofo_right ul li:first-child').html(name1);//name
-        $('.sofo_right ul li:nth-child(4) span:nth-child(1) i').html(color1);//color
-        $('.sofo_right ul li:nth-child(4) span:nth-child(2) i').html(size1);//size
-        $('.sofo_right ul li:nth-child(4) span:nth-child(3)').html(shuliang1);
-        $('.zongjia').html(zongjia1);
+            $('.sofo_right ul li:first-child').html(name1);//name
+            $('.sofo_right ul li:nth-child(4) span:nth-child(1) i').html(color1);//color
+            $('.sofo_right ul li:nth-child(4) span:nth-child(2) i').html(size1);//size
+            $('.sofo_right ul li:nth-child(4) span:nth-child(3)').html(shuliang1);
+            $('.zongjia').html(zongjia1);
+        }
 
 
         $('.pay_list').css({left: '-0.1rem'});
