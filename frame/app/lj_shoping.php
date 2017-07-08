@@ -10,6 +10,12 @@ class lj_shoping extends core{
         $this->assign('title','购物车');
         $this->display('lj_shoping');
     }
+    function dingdan(){
+        $o = M('goods')->selectAll();
+        $this->assign('data',$o);
+        $this->assign('title','我的订单');
+        $this->display('lj_dingdan');
+    }
     function shopinglistall(){
         $o = M('goods')->selectAll();
         $this->assign('data',$o);
