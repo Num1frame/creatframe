@@ -10,6 +10,12 @@ class lj_shoping extends core{
         $this->assign('title','购物车');
         $this->display('lj_shoping');
     }
+    function shopinglistall(){
+        $o = M('goods')->selectAll();
+        $this->assign('data',$o);
+        $this->assign('title','商品列表');
+        $this->display('lj_shopinglist');
+    }
     function shopinglist(){
         $datas =M()->query("select * from goods where name like '%{$_REQUEST['key']}%' ");
         $this->assign('data',$datas);
