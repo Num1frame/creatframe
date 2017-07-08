@@ -34,33 +34,41 @@
 <div class="gj_main">
     <ul class="gj_nav">
         <li class="item">
-            <img src="<?php echo IMG_PATH?>gj_img/gj_search_img2.png" alt="" class="active">
-            <span>文字搜索</span>
+            <a href="#search1" id="search1-tab">
+                <img src="<?php echo IMG_PATH?>gj_img/gj_search_img2.png" alt="" class="active">
+                <span>文字搜索</span>
+            </a>
         </li>
         <li class="item">
-            <img src="<?php echo IMG_PATH?>gj_img/gj_search_img2.png" alt="">
-            <span>语音搜索</span>
+            <a href="#search2" id="search2-tab">
+                <img src="<?php echo IMG_PATH?>gj_img/gj_search_img2.png" alt="">
+                <span>语音搜索</span>
+            </a>
         </li>
         <li class="item">
-            <img src="<?php echo IMG_PATH?>gj_img/gj_search_img2.png" alt="">
-            <span>照片搜索</span>
+            <a href="#search3" id="search3-tab">
+                <img src="<?php echo IMG_PATH?>gj_img/gj_search_img2.png" alt="">
+                <span>照片搜索</span>
+            </a>
         </li>
         <li class="item">
-            <img src="<?php echo IMG_PATH?>gj_img/gj_search_img2.png" alt="">
-            <span>精准搜索</span>
+            <a href="#search4" id="search4-tab">
+                <img src="<?php echo IMG_PATH?>gj_img/gj_search_img2.png" alt="">
+                <span>精准搜索</span>
+            </a>
         </li>
     </ul>
     <ul class="gj_con">
-        <li class="content active">
+        <li class="content" id="search1" class="active">
             <?php include VIEW_PATH.'gj_search1.html'?>
         </li>
-        <li class="content">
+        <li class="content" id="search2">
             <?php include VIEW_PATH.'gj_search2.html'?>
         </li>
-        <li class="content">
+        <li class="content" id="search3">
             <?php include VIEW_PATH.'gj_search3.html'?>
         </li>
-        <li class="content">
+        <li class="content" id="search4">
             <?php include VIEW_PATH.'gj_search4.html'?>
         </li>
     </ul>
