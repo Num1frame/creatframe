@@ -48,7 +48,9 @@
             <ul>
                 <li>88888888888888</li>
                 <li>杜帅<span>18435106215</span></li>
-                <li><textarea name="" id="" cols="30" rows="10" style="height: 0.6rem;resize: none">太原市小店区平阳路学府街 凯通大厦309</textarea><span style="background: url(<?php echo IMG_PATH?>d_17.png) no-repeat center/100%"></span></li>
+                <li><textarea name="" id="" cols="30" rows="10"
+                              style="height: 0.6rem;resize: none">太原市小店区平阳路学府街 凯通大厦309</textarea><span
+                        style="background: url(<?php echo IMG_PATH?>d_17.png) no-repeat center/100%"></span></li>
                 <li>顺丰快递</li>
             </ul>
         </div>
@@ -61,8 +63,6 @@
     <div class="zhifu"><a href="<?php echo PHP_PATH?>lyx_state/lyx_pay">确认订单并支付</a></div>
 
 
-
-
     <div class="circle"></div>
     <ul class="huabian" style="background: url(<?php echo IMG_PATH?>d_huabian.png) no-repeat center/100%"></ul>
 </div>
@@ -72,16 +72,30 @@
 </div>
 </body>
 <script>
-$(window).on('load',function () {
-    let totalprice = localStorage.totalprice;
+    $(window).on('load', function () {
+        let totalprice = localStorage.totalprice;
+        let shuzu = JSON.parse(localStorage.shanpinxiangqing);
+        console.table(shuzu);
+        let name1 = shuzu[4].name;
+        let color1 = shuzu[2].color;
+        let size1 = shuzu[3].size;
+        let shuliang1 = shuzu[0].shuliang;
+        let zongjia1 = shuzu[1].zongjia;
 
-    $('.pay_list').css({left:'-0.1rem'});
-    $('.jiesuan').css({left:0});
+        $('.sofo_right ul li:first-child').html(name1);//name
+        $('.sofo_right ul li:nth-child(4) span:nth-child(1) i').html(color1);//color
+        $('.sofo_right ul li:nth-child(4) span:nth-child(2) i').html(size1);//size
+        $('.sofo_right ul li:nth-child(4) span:nth-child(3)').html(shuliang1);
+        $('.zongjia').html(zongjia1);
 
-    let prs = JSON.parse(totalprice)[0];
 
-    $('.jiesuan .zongjia').html(prs);
-})
+        $('.pay_list').css({left: '-0.1rem'});
+        $('.jiesuan').css({left: 0});
+
+        let prs = JSON.parse(totalprice)[0];
+
+        $('.jiesuan .zongjia').html(prs);
+    })
 
 </script>
 </html>

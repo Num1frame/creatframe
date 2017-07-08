@@ -51,7 +51,9 @@ window.onload = function(){
     console.log(color);
     console.log(size);
     console.log(name);
+    console.log(total);
     $('.total .pay').on('click',function(){
+        total = (shuliang * danjia).toFixed(2);
         shuzu = [
             {shuliang:shuliang},
             {zongjia:total},
