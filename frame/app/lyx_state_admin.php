@@ -14,7 +14,7 @@ class lyx_state_admin extends core{
         $this->display('lyx_state_admin');
     }
     function select(){
-        $data=M("state_view")->selectAll();
+        $data=M("state")->selectAll();
         echo json_encode($data);
     }
 }

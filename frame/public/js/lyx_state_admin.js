@@ -18,7 +18,7 @@ $(function () {
         data.forEach(function(v,i){
             let el=`
                     <tr data-id="${v.id}">
-                        <td>${v.she_name}</td>
+                        <td>${v.name}</td>
                         <td>${v.title}</td>
                         <td>${v.content}</td>
                         <td>${v.img}</td>
@@ -35,7 +35,7 @@ $(function () {
     $.ajax({
         url:"../lyx_state_admin/select",
         success:function(data){
-            console.log(data);
+            // console.log(data);
             render(JSON.parse(data));
         }
     });

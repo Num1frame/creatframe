@@ -38,11 +38,11 @@
                 <div></div>
             </div>
             <p class="zjt_Wraptwo">
-                胡艳Sliva
+                <?php echo $name?>
             </p>
             <p class="zjt_Wrapthree">
-                <a href="<?php echo PHP_PATH?>lzn_my/lzn_follow"> Ta的关注 <span class="zjt_num">1256</span> </a>&nbsp;&nbsp;
-                <a href="<?php echo PHP_PATH?>lzn_my/lzn_fans"> Ta的粉丝 <span class="zjt_num">2555</span></a>
+                <a href="<?php echo PHP_PATH?>lzn_my/lzn_follow"> Ta的关注 <span class="zjt_num"><?php echo $notice?></span> </a>&nbsp;&nbsp;
+                <a href="<?php echo PHP_PATH?>lzn_my/lzn_fans"> Ta的粉丝 <span class="zjt_num"><?php echo $fans?></span></a>
             </p>
         </div>
     </div>
@@ -66,9 +66,7 @@
             <img src="<?php echo IMG_PATH?>zjt_img/zjtdetails6.png" alt="">
         </div>
         <div>
-            <p>胡艳，女，籍贯：湖南。1987年6月获硕士学位。三级教授，硕士研究生导师，技术经济及管理博士。</p>
-            <p> 武汉市洪山区党外知识分子联谊会副会长，武汉市系统工程学会理事；</p>
-            <p>中国高校价值工程研究分会理事，中国高校技术经济研究分会委员；</p>
+            <p><?php echo $content?></p>
             <p> 湖北省科技型中小企业技术创新基金评审委员会专家，湖北省综合招投标中心招标评标专家，武汉市科技型企业技术创新基金暨重大产业化项目评审委员会专家。</p>
         </div>
         <!--
@@ -194,7 +192,7 @@
                         <img src="<?php echo IMG_PATH?>zjt_img/zjtdetails13.png" alt="">
                     </div>
                     <p class="zjt_demo1word">Arial</p>
-                    <p class="zjt_demo1word2">184,38 关注</p>
+                    <p class="zjt_demo1word2">1841,38 关注</p>
                 </div>
             </div>
         </div>

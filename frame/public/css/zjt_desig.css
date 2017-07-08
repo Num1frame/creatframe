@@ -174,3 +174,13 @@ body {
       border-radius: 0.2rem;
       border: 2px solid #eaa5a5;
       background: #e50000; }
+
+
+    .zjt_designImg{
+      width: 3.63rem;
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 0;
+      align-self: flex-end;
+      border-radius: 0.2rem;
+    }

@@ -74,7 +74,7 @@
     <ul class="zjt_designOne swiper-wrapper">
         <?php foreach ($data as $v):?>
         <li class="swiper-slide">
-            <a href="<?php echo PHP_PATH?>zjt_design/zjt_details">
+            <a href="<?php echo PHP_PATH?>zjt_design/zjt_details?id=<?php echo $v['id']?>">
                 <div>
                     <img class="zjt_text" src="<?php echo IMG_PATH?>zjt_img/zjtdesign2.png"/>
                     <img src="<?php echo $v['pic']?>" alt="">
