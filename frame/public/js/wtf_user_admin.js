@@ -75,6 +75,6 @@ $(function () {
                 location.reload();
             }
         })
-        return false;
+        // return false;
     })
 })
