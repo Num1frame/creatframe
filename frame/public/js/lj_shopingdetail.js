@@ -56,6 +56,7 @@ window.onload = function(){
             {size:size},
             {name:name},
         ];
+        cnosole.log(shuzu);
         localStorage.shanpinxiangqing = JSON.stringify(shuzu);
     })
 

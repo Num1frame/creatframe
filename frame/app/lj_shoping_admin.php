@@ -29,4 +29,12 @@ class lj_shoping_admin extends core{
     function del(){
         M()->query("delete from goods WHERE id='{$_REQUEST['id']}'");
     }
+    function update(){
+        $key = $_REQUEST['key'];
+        $data=M()->pdo->query("update goods set {$key}='$_REQUEST[value]' where id='$_REQUEST[id]'");
+        $data->execute();
+        echo $data->rowCount();
+    }
+
+
 }
