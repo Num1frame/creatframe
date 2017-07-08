@@ -17,7 +17,7 @@ class wtf_isboss extends core{
         $name=$_REQUEST['name'];
         $password=$_REQUEST['password'];
         $data=M()->querys("select * from boss where account = '$name'");
-        if($data['password']==$password){
+        if(isset($data['password'])&&$data['password']==$password){
             echo "ok";
         }else{
             echo "erroy";
