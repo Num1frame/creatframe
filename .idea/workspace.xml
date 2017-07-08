@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c799f60a-238d-47b7-8616-9b4b0a26aa64" name="默认的" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/app/lzn_my.php" afterPath="$PROJECT_DIR$/frame/app/lzn_my.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/app/views/zjt_details.html" afterPath="$PROJECT_DIR$/frame/app/views/zjt_details.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/farme.sql" afterPath="$PROJECT_DIR$/frame/farme.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/public/js/zjt_designmanage.js" afterPath="$PROJECT_DIR$/frame/public/js/zjt_designmanage.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,58 +17,74 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="lzn_fans_admin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frame/app/lzn_fans_admin.php">
+      <file leaf-file-name="zjt_designmanage.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frame/app/zjt_designmanage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="441">
+              <caret line="22" column="9" lean-forward="false" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
               <folding>
-                <marker date="1499477849812" expanded="true" signature="242:279" ph="select * fro... t_fans" />
-                <marker date="1499477849812" expanded="true" signature="400:470" ph="insert into t_fans... " />
-                <marker date="1499477849812" expanded="true" signature="520:567" ph="delete from " />
+                <element signature="e#24#37#0#PHP" expanded="true" />
+                <marker date="1499477849906" expanded="true" signature="267:308" ph="select * fro... zjt_design" />
+                <marker date="1499477849906" expanded="true" signature="396:447" ph="delete from " />
+                <marker date="1499477849906" expanded="true" signature="885:941" ph="insert into zjt_design... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lzn_my.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frame/app/lzn_my.php">
+      <file leaf-file-name="zjt_designmanage.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frame/app/views/zjt_designmanage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="35" column="24" lean-forward="true" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+            <state relative-caret-position="1239">
+              <caret line="59" column="18" lean-forward="false" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
               <folding>
-                <marker date="1499479834271" expanded="true" signature="293:330" ph="select * fro... t_follow" />
-                <marker date="1499479834271" expanded="true" signature="401:438" ph="select * fro... t_follow" />
-                <marker date="1499479834271" expanded="true" signature="510:547" ph="select * fro... t_follow" />
-                <marker date="1499479834271" expanded="true" signature="619:656" ph="select * fro... t_follow" />
-                <marker date="1499479834271" expanded="true" signature="834:869" ph="select * fro... t_fans" />
-                <marker date="1499479834271" expanded="true" signature="940:975" ph="select * fro... t_fans" />
-                <marker date="1499479834271" expanded="true" signature="1047:1082" ph="select * fro... t_fans" />
-                <marker date="1499479834271" expanded="true" signature="1154:1189" ph="select * fro... t_fans" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#div#0;n#div#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#table#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lzn_my.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frame/app/views/lzn_my.html">
+      <file leaf-file-name="zjt_designmanage.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frame/public/js/zjt_designmanage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1071">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="504">
+              <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+              <folding>
+                <marker date="1499491572574" expanded="true" signature="539:810" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frame/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lzn_follow.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frame/app/views/lzn_follow.html">
+      <file leaf-file-name="farme.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frame/farme.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="29" column="70" lean-forward="true" selection-start-line="29" selection-start-column="70" selection-end-line="29" selection-end-column="70" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="166">
+              <caret line="252" column="20" lean-forward="true" selection-start-line="252" selection-start-column="20" selection-end-line="252" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zjt_details.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frame/app/views/zjt_details.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="197" column="14" lean-forward="true" selection-start-line="197" selection-start-column="14" selection-end-line="197" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -77,7 +93,12 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+      <find>img/grd_img/grd6_07.png</find>
+      <find>grd_zhezhao</find>
       <find>middle</find>
+      <find>.zjt_design</find>
+      <find>.zjt_design .zjt_designOne&gt;li div:nth-of-type(1) img:nth-of-type(2)</find>
+      <find>img</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -86,17 +107,28 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/frame/app/zjt_design.php" />
         <option value="$PROJECT_DIR$/frame/app/views/wtf_boss.html" />
         <option value="$PROJECT_DIR$/frame/app/wtf_isboss.php" />
-        <option value="$PROJECT_DIR$/frame/farme.sql" />
-        <option value="$PROJECT_DIR$/frame/app/views/zjt_details.html" />
         <option value="$PROJECT_DIR$/frame/app/lzn_my.php" />
+        <option value="$PROJECT_DIR$/frame/app/views/grd_grzl.html" />
+        <option value="$PROJECT_DIR$/frame/public/css/grd_grzl.css" />
+        <option value="$PROJECT_DIR$/frame/public/css/zjt_desig.css" />
+        <option value="$PROJECT_DIR$/frame/app/zjt_design.php" />
+        <option value="$PROJECT_DIR$/frame/app/views/zjt_design.html" />
+        <option value="$PROJECT_DIR$/frame/app/views/zjt_details.html" />
+        <option value="$PROJECT_DIR$/frame/public/js/zjt_designmanage.js" />
+        <option value="$PROJECT_DIR$/frame/farme.sql" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>true</other-services-enabled>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
@@ -163,6 +195,24 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="creatframe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="creatframe" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frame" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -198,6 +248,9 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../www/ktv" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -210,6 +263,69 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpSpecConfigurationType" factoryName="PHPSpec">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -226,12 +342,12 @@
       <updated>1499413899945</updated>
       <workItem from="1499413901198" duration="187000" />
       <workItem from="1499476456615" duration="803000" />
-      <workItem from="1499477932432" duration="1736000" />
+      <workItem from="1499477932432" duration="10553000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3577000" />
+    <option name="totallyTimeSpent" value="12394000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -269,49 +385,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frame/app/zjt_designmanage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-          <folding>
-            <element signature="e#24#37#0#PHP" expanded="true" />
-            <marker date="1499477849906" expanded="true" signature="267:308" ph="select * fro... zjt_design" />
-            <marker date="1499477849906" expanded="true" signature="396:447" ph="delete from " />
-            <marker date="1499477849906" expanded="true" signature="885:941" ph="insert into zjt_design... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frame/public/js/zjt_designmanage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="51" column="45" lean-forward="false" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
-          <folding>
-            <marker date="1499477851468" expanded="true" signature="539:810" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frame/app/views/zjt_designmanage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#div#0;n#div#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frame/app/zjt_design.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frame/farme.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3570">
@@ -425,24 +498,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frame/public/css/zjt_desig.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="104" column="23" lean-forward="true" selection-start-line="104" selection-start-column="23" selection-end-line="104" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frame/app/views/zjt_design.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="82" column="21" lean-forward="true" selection-start-line="82" selection-start-column="21" selection-end-line="82" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/web-forms2.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="625" column="16" lean-forward="false" selection-start-line="625" selection-start-column="16" selection-end-line="625" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -451,13 +511,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="548" column="22" lean-forward="false" selection-start-line="548" selection-start-column="22" selection-end-line="548" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frame/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -506,7 +560,7 @@
         <state relative-caret-position="164">
           <caret line="15" column="15" lean-forward="false" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
           <folding>
-            <element signature="e#22#35#0#PHP" expanded="true" />
+            <element signature="e#22#35#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -519,19 +573,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frame/app/zjt_design.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frame/public/js/wtf_user_admin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1512">
           <caret line="72" column="47" lean-forward="false" selection-start-line="72" selection-start-column="47" selection-end-line="72" selection-end-column="47" />
           <folding>
-            <marker date="1499477851468" expanded="true" signature="568:845" ph="..." />
+            <marker date="1499483532142" expanded="true" signature="568:845" ph="..." />
           </folding>
         </state>
       </provider>
@@ -550,37 +597,152 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frame/farme.sql">
+    <entry file="file://$PROJECT_DIR$/frame/app/wtf_user_admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="205" column="13" lean-forward="true" selection-start-line="205" selection-start-column="13" selection-end-line="205" selection-end-column="13" />
+        <state relative-caret-position="318">
+          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <folding>
+            <element signature="e#6#83#0#PHP" expanded="false" />
+            <element signature="e#99#112#0#PHP" expanded="false" />
+            <marker date="1499477849890" expanded="true" signature="319:354" ph="select * fro... user" />
+            <marker date="1499477849890" expanded="true" signature="479:558" ph="insert into user... " />
+            <marker date="1499477849890" expanded="true" signature="608:653" ph="delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/lyx.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/app/views/lzn_my.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1071">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1499494698461" expanded="true" signature="3950:4079" ph="..." />
+            <marker date="1499494698461" expanded="true" signature="3950:4105" ph="..." />
+            <marker date="1499494698461" expanded="true" signature="3951:4048" ph="..." />
+            <marker date="1499494698461" expanded="false" signature="3996:4007" ph="..." />
+            <marker date="1499494698461" expanded="true" signature="4202:4841" ph="..." />
+            <marker date="1499494698461" expanded="true" signature="4211:4323" ph="..." />
+            <marker date="1499494698461" expanded="true" signature="4253:4318" ph="..." />
+            <marker date="1499494698461" expanded="true" signature="4332:4445" ph="..." />
+            <marker date="1499494698461" expanded="true" signature="4374:4440" ph="..." />
+            <marker date="1499494698461" expanded="true" signature="4454:4573" ph="..." />
+            <marker date="1499494698461" expanded="true" signature="4502:4568" ph="..." />
+            <marker date="1499494698461" expanded="true" signature="4597:4705" ph="..." />
+            <marker date="1499494698461" expanded="true" signature="4635:4700" ph="..." />
+            <marker date="1499494698461" expanded="true" signature="4714:4835" ph="..." />
+            <marker date="1499494698461" expanded="true" signature="4765:4830" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/public/css/grd_grzl.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="48" column="8" lean-forward="true" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/app/views/grd_grzl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="45" column="27" lean-forward="true" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/app/lzn_my.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="46" column="14" lean-forward="false" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
+          <folding>
+            <marker date="1499479834271" expanded="true" signature="293:330" ph="select * fro... t_follow" />
+            <marker date="1499479834271" expanded="true" signature="401:438" ph="select * fro... t_follow" />
+            <marker date="1499479834271" expanded="true" signature="510:547" ph="select * fro... t_follow" />
+            <marker date="1499479834271" expanded="true" signature="619:656" ph="select * fro... t_follow" />
+            <marker date="1499479834271" expanded="true" signature="834:869" ph="select * fro... t_fans" />
+            <marker date="1499479834271" expanded="true" signature="940:975" ph="select * fro... t_fans" />
+            <marker date="1499479834271" expanded="true" signature="1047:1082" ph="select * fro... t_fans" />
+            <marker date="1499479834271" expanded="true" signature="1154:1189" ph="select * fro... t_fans" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/app/lzn_fans_admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1499477849812" expanded="true" signature="242:279" ph="select * fro... t_fans" />
+            <marker date="1499477849812" expanded="true" signature="400:470" ph="insert into t_fans... " />
+            <marker date="1499477849812" expanded="true" signature="520:567" ph="delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/app/views/lzn_follow.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="29" column="70" lean-forward="true" selection-start-line="29" selection-start-column="70" selection-end-line="29" selection-end-column="70" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/public/css/zjt_desig.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="163" column="33" lean-forward="true" selection-start-line="163" selection-start-column="33" selection-end-line="163" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/block.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/app/zjt_design.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+          <folding>
+            <element signature="e#21#34#0#PHP" expanded="false" />
+            <marker date="1499485707648" expanded="true" signature="354:405" ph="select * fro... zjt_details" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/app/views/zjt_design.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="79" column="18" lean-forward="true" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frame/app/views/zjt_designmanage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="51" column="13" lean-forward="true" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+        <state relative-caret-position="1239">
+          <caret line="59" column="18" lean-forward="false" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#0;n#div#0;n#div#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#table#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frame/app/wtf_user_admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-          <folding>
-            <element signature="e#6#83#0#PHP" expanded="true" />
-            <element signature="e#99#112#0#PHP" expanded="true" />
-            <marker date="1499477849890" expanded="true" signature="319:354" ph="select * fro... user" />
-            <marker date="1499477849890" expanded="true" signature="479:558" ph="insert into user... " />
-            <marker date="1499477849890" expanded="true" signature="608:653" ph="delete from " />
           </folding>
         </state>
       </provider>
@@ -598,69 +760,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frame/lyx.sql">
+    <entry file="file://$PROJECT_DIR$/frame/public/js/zjt_designmanage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="504">
+          <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+          <folding>
+            <marker date="1499491572574" expanded="true" signature="539:810" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/farme.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="252" column="20" lean-forward="true" selection-start-line="252" selection-start-column="20" selection-end-line="252" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frame/app/views/zjt_details.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-          <folding>
-            <element signature="e#1794#1800#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frame/app/lzn_fans_admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1499477849812" expanded="true" signature="242:279" ph="select * fro... t_fans" />
-            <marker date="1499477849812" expanded="true" signature="400:470" ph="insert into t_fans... " />
-            <marker date="1499477849812" expanded="true" signature="520:567" ph="delete from " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frame/app/views/lzn_my.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1071">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="294">
+          <caret line="197" column="14" lean-forward="true" selection-start-line="197" selection-start-column="14" selection-end-line="197" selection-end-column="14" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frame/app/views/lzn_follow.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="29" column="70" lean-forward="true" selection-start-line="29" selection-start-column="70" selection-end-line="29" selection-end-column="70" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frame/app/lzn_my.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="35" column="24" lean-forward="true" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
-          <folding>
-            <marker date="1499479834271" expanded="true" signature="293:330" ph="select * fro... t_follow" />
-            <marker date="1499479834271" expanded="true" signature="401:438" ph="select * fro... t_follow" />
-            <marker date="1499479834271" expanded="true" signature="510:547" ph="select * fro... t_follow" />
-            <marker date="1499479834271" expanded="true" signature="619:656" ph="select * fro... t_follow" />
-            <marker date="1499479834271" expanded="true" signature="834:869" ph="select * fro... t_fans" />
-            <marker date="1499479834271" expanded="true" signature="940:975" ph="select * fro... t_fans" />
-            <marker date="1499479834271" expanded="true" signature="1047:1082" ph="select * fro... t_fans" />
-            <marker date="1499479834271" expanded="true" signature="1154:1189" ph="select * fro... t_fans" />
-          </folding>
         </state>
       </provider>
     </entry>

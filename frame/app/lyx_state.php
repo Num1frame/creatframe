@@ -10,7 +10,7 @@ use \core\core;
 class lyx_state extends core{
 //    动态
     function lyx_state(){
-        $state=M('state_view')->selectAll();
+        $state=M('state')->selectAll();
         $this->assign('title','动态');
         $this->assign('state',$state);
         $this->display("lyx_state");
@@ -23,7 +23,7 @@ class lyx_state extends core{
 //    详情
     function lyx_particulars(){
         $id=$_REQUEST["id"];
-        $state=M()->query("select * from state_view where id=$id");
+        $state=M()->query("select * from state where id=$id");
         $this->assign('state',$state);
         $this->assign('title','详情');
         $this->display("lyx_particulars");
@@ -35,7 +35,7 @@ class lyx_state extends core{
     }
     function lyx_atten(){
         $this->assign('title','我的关注');
-        $state=M()->query("select * from state_view where guanzhu=1");
+        $state=M()->query("select * from state where guanzhu=1");
         $this->assign('state',$state);
         $this->display("lyx_atten");
     }
