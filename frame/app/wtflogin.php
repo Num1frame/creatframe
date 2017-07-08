@@ -43,4 +43,9 @@ class wtflogin extends core{
         $pswd=md5($_REQUEST['password']);
         $data=M()->querys("insert into user (account,password) VALUES ('{$user}','{$pswd}')");
     }
+    function logout(){
+        unset($_COOKIE['login']);
+        setcookie('login',null,"-1",'/');
+        header('location:../wtf_isboss');
+    }
 }

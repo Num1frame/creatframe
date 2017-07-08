@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: WTF
- * Date: 2017/7/5
- * Time: 16:29
- */
 namespace app;
 
 use \core\db;
@@ -18,6 +12,7 @@ class wtf_isboss extends core{
         $password=$_REQUEST['password'];
         $data=M()->querys("select * from boss where account = '$name'");
         if(isset($data['password'])&&$data['password']==$password){
+            setcookie('login','true',time()+60*60*24*1,'/');
             echo "ok";
         }else{
             echo "erroy";

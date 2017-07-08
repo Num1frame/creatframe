@@ -4,6 +4,10 @@ use \core\db;
 use core\core;
 
 class lzn_follow_admin extends core{
+    function __construct()
+    {
+        check_login();
+    }
     function index(){
         $this->assign('title','关注管理');
         $this->display('lzn_follow_admin');

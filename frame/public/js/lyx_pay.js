@@ -8,5 +8,4 @@ $(function () {
             location.href='../grd_zfcg/index';
         }
     })
-
 })

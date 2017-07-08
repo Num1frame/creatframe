@@ -4,6 +4,10 @@ use \core\db;
 use core\core;
 
 class lzn_fans_admin extends core{
+    function __construct()
+    {
+        check_login();
+    }
     function index(){
         $this->assign('title','粉丝管理');
         $this->display('lzn_fans_admin');

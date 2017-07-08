@@ -10,6 +10,10 @@ use \core\db;
 use core\core;
 
 class wtf_user_admin extends core{
+    function __construct()
+    {
+        check_login();
+    }
     function index(){
         $this->assign('title','用户管理');
         $this->display('wtf_user_admin');
