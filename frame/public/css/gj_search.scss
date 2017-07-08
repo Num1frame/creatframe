@@ -58,22 +58,26 @@ html, body {
   margin: 1.72rem 0 0.24rem 0;
   @include flex1();
   li {
-    @include rect(25%, 0.65rem);
-    @include flex1();
-    position: relative;
-    img.active {
+    @include rect(25%, 0.65rem); //position: relative;
+    a{
+      @include rect(100%,100%);
+      position: relative;
+      @include flex1();
+      img.active {
       display: block;
     }
-    img {
-      position: absolute;
-      @include rect(1.35rem, 0.5rem);
-      display: none;
+        img {
+          position: absolute;
+          @include rect(1.35rem, 0.5rem);
+          display: none;
+        }
+        span {
+          font-size: 0.24rem;
+          color: #fff;
+          position: absolute;
+      }
     }
-    span {
-      font-size: 0.24rem;
-      color: #fff;
-      position: absolute;
-    }
+
   }
 }
 
