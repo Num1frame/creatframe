@@ -9,25 +9,32 @@
     <title><?php echo $title ;?></title>
     <script src="<?php echo JS_PATH ;?>jquery-3.2.1.js"></script>
     <script>
-        $(function(){
-            $('.dropdown-toggle').on('click',function(){
+        $(function() {
+            $('.dropdown-toggle1').on('click', function () {
                 $(this).next().toggle();
+                $("#dropdown-menu1").toggleClass("hide");
                 return false;
             })
-            $(document).on('click',function(){
+            $('.dropdown-toggle2').on('click', function () {
+                $(this).next().toggle();
+                $("#dropdown-menu2").toggleClass("hide");
+                return false;
+            })
+            $(document).on('click', function () {
                 $('.dropdown-menu').hide();
             })
-            var tip=$('.tip');
-            $(document).ajaxStart(function(){
-                tip.animate({width:'80%'})
+            var tip = $('.tip');
+            $(document).ajaxStart(function () {
+                tip.animate({width: '80%'})
             })
-            $(document).ajaxSuccess(function(){
-                tip.stop().animate({width:'100%'},function(){
-                    tip.css('width','0')
+            $(document).ajaxSuccess(function () {
+                tip.stop().animate({width: '100%'}, function () {
+                    tip.css('width', '0')
                 })
             })
-
         })
+
+
     </script>
     <style>
         .tip{
@@ -58,14 +65,30 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li class="<?php echo $title=='用户管理'?  ' active':'' ;?>"><a href="<?php echo PHP_PATH;?>wtf_user_admin ">用户管理 <span class="sr-only">(current)</span></a></li>
-                <li class="<?php echo $title=='主页商品分类'?  ' active':'' ;?>"><a href="<?php echo PHP_PATH;?>d_index_manger">主页商品分类</a></li>
-                <li class="<?php echo $title=='商品列表管理'?  ' active':'' ;?>"><a href="<?php echo PHP_PATH;?>lj_shoping_admin">商品列表</a></li>
-                <li class="<?php echo $title=='商品详情管理'?  ' active':'' ;?>"><a href="<?php echo PHP_PATH;?>lj_shopingdetail_admin">商品详情</a></li>
-                <li class="<?php echo $title=='商品标签'?  ' active':'' ;?>"><a href="<?php echo PHP_PATH?>gj_labelAdmin/index#list">商品标签</a></li>
                 <li class="<?php echo $title=='动态管理'?  ' active':'' ;?>"><a href="<?php echo PHP_PATH?>lyx_state_admin/index#list">动态管理</a></li>
                 <li class="<?php echo $title=='设计师管理'?  ' active':'' ;?>"><a href="<?php echo PHP_PATH?>zjt_designmanage/index">设计师管理</a></li>
-                <li class="<?php echo $title=='粉丝管理'?  ' active':'' ;?>"><a href="">粉丝管理</a></li>
-                <li class="<?php echo $title=='关注管理'?  ' active':'' ;?>"><a href="<?php echo PHP_PATH?>grd_guanzhumanage">关注管理</a></li>
+                <li class="dropdown1 <?php echo $title=='主页商品分类'? 'active' : '';?>" style="position: relative">
+                    <a href="javascript:;" class="dropdown-toggle1" data-toggle="dropdown"  aria-expanded="false" >
+                        商品管理
+                    </a>
+                    <span class="caret" style="z-index:9999999;position: absolute;right:5px;top:0;bottom:0;margin: auto"></span>
+                    <ul class="dropdown-menu hide"  id="dropdown-menu1" style="display: block">
+                        <li><a href="<?php echo PHP_PATH;?>d_index_manger">主页商品分类</a></li>
+                        <li><a href="<?php echo PHP_PATH;?>lj_shoping_admin">商品列表</a></li>
+                        <li><a href="<?php echo PHP_PATH;?>lj_shopingdetail_admin">商品详情</a></li>
+                        <li><a href="<?php echo PHP_PATH?>gj_labelAdmin/index">商品标签</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown2 <?php echo $title=='粉丝管理'? 'active' : '';?>" style="position: relative">
+                    <a href="javascript:;" class="dropdown-toggle2" data-toggle="dropdown"  aria-expanded="false" >
+                        用户好友管理
+                    </a>
+                    <span class="caret" style="z-index:9999999;position: absolute;right:5px;top:0;bottom:0;margin: auto"></span>
+                    <ul class="dropdown-menu hide" id="dropdown-menu2" style="display: block">
+                        <li class="<?php echo $title=='粉丝管理'?  ' active':'' ;?>"><a href="<?php echo PHP_PATH?>lzn_fans_admin">粉丝管理</a></li>
+                        <li class="<?php echo $title=='关注管理'?  ' active':'' ;?>"><a href="<?php echo PHP_PATH?>lzn_follow_admin">关注管理</a></li>
+                    </ul>
+                </li>
             </ul>
             <li style="list-style: none ;margin-top:15px" class="navbar-right"><a href="">退出登陆</a></li>
 

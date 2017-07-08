@@ -101,18 +101,6 @@ $(function () {
         location.href = "../gj_search/shopinglist1?key="+text;
     })
 
-    //选项卡
-    // var item = $(".gj_nav .item"),
-    //     img = $(".gj_nav .item img"),
-    //     con = $(".gj_con .content");
-    // item.on("click", function () {
-    //     let hash=(location.hash).slice(1);
-    //     console.log(".gj_nav .item #"+hash+"img");
-    //     img.removeClass("active");
-    //     $(".gj_nav .item #"+hash).find("img").addClass("active");
-    //     // con.removeClass("active");
-    //     // con.eq(item.index($(this))).addClass("active");
-    // })
 
     var item = $(".gj_nav .item"),
         img = $(".gj_nav .item img"),

@@ -1,0 +1,19 @@
+
+.toptitle{
+    padding-left: 18px;
+    font-weight: 700;
+    color: #563d7c;
+    background-color: transparent;
+    border-left: 2px solid #563d7c
+}
+.fenlei>li>a{
+    color:#000;
+}
+.fenlei>li>a.active{
+    padding-left: 18px;
+    font-weight: 700;
+    color: #563d7c;
+    background-color: transparent;
+    border-left: 2px solid #563d7c;
+}
+
