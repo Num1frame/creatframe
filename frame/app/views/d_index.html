@@ -11,9 +11,14 @@
     <link rel="stylesheet" href="<?php echo CSS_PATH?>d_index.css">
     <script src="<?php echo JS_PATH?>swiper-3.4.2.min.js"></script>
     <script src="<?php echo JS_PATH?>jquery.min.js"></script></head>
+    <script src="<?php echo JS_PATH?>d_index.js"></script></head>
 <style>
     a {
         text-decoration: none;
+    }
+    .list ul li a{
+        display: block;
+        color: #fff;
     }
 </style>
 <body>
@@ -38,14 +43,14 @@
 </div>
 <div class="list">
     <ul>
-        <li  style="background: url(<?php echo IMG_PATH?>d_03.png) no-repeat center/100%">商品分类</li>
-        <li >热门推荐</li>
-        <li >大神推荐</li>
-        <li >VR实景</li>
+        <li  style="background: url(<?php echo IMG_PATH?>d_03.png) no-repeat center/100%" ><a href="#index1">商品分类</a></li>
+        <li><a href="#index2">热门推荐</a></li>
+        <li ><a href="#index3">大神推荐</a></li>
+        <li ><a href="#index4">VR实景</a></li>
     </ul>
 </div>
 <div class="zhanshi">
-    <div class="fenlei active">
+    <div class="fenlei active" id="index1">
         <div class="bg" style="background: url(<?php echo IMG_PATH?>d_04.png) no-repeat center/80%">
             <p>商品分类</p>
         </div>
@@ -66,7 +71,7 @@
             </ul>
         </div>
     </div>
-    <div class="fenlei ">
+    <div class="fenlei" id="index2">
         <div class="bg bg2" style="background: url(<?php echo IMG_PATH?>d_15.png) no-repeat center/100%">
             <p>热门推荐</p>
             <h1>中式禅意风格</h1>
@@ -80,7 +85,7 @@
         </div>
 
     </div>
-    <div class="fenlei">
+    <div class="fenlei" id="index3">
         <div class="bg" style="background: url(<?php echo IMG_PATH?>d_04.png) no-repeat center/80%">
             <p>大神推荐</p>
         </div>
@@ -92,18 +97,17 @@
                         <img src="<?php echo $v['pic']?>" alt="">
                     </a>
                 </li>
-                <?php endforeach; ?>-->
+                <?php endforeach; ?>
                 <!--<li><img src="<?php echo IMG_PATH?>d_9.png" alt=""></li>-->
                 <!--<li><img src="<?php echo IMG_PATH?>d_10.png" alt=""></li>-->
                 <!--<li><img src="<?php echo IMG_PATH?>d_11.png" alt=""></li>-->
                 <!--<li><img src="<?php echo IMG_PATH?>d_12.png" alt=""></li>-->
                 <!--<li><img src="<?php echo IMG_PATH?>d_13.png" alt=""></li>-->
                 <!--<li><img src="<?php echo IMG_PATH?>d_14.png" alt=""></li>-->
-
             </ul>
         </div>
     </div>
-    <div class="fenlei ">
+    <div class="fenlei " id="index4">
         <div class="bg bg2" style="background: url(<?php echo IMG_PATH?>d_15.png) no-repeat center/100%">
             <p>VR实景</p>
             <h1>中式禅意风格</h1>
@@ -121,7 +125,7 @@
 
 </div>
 
-<!--<?php include VIEW_PATH.'footer.html'?>-->
+
 
 <ul class="footer">
     <li class="active"><a href="<?php echo PHP_PATH?>home/index">
@@ -160,7 +164,7 @@
         $(this).siblings().css({'background':''});
         $(this).css({'background':'url(<?php echo IMG_PATH?>d_03.png) no-repeat center/80%'});
 
-        $('.zhanshi .fenlei').removeClass('active').eq($(this).index()).addClass('active');
+//        $('.zhanshi .fenlei').removeClass('active').eq($(this).index()).addClass('active');
 
     })
   /*  $(".content .xxk").on("click","li",function(){

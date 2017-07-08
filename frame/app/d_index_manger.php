@@ -15,7 +15,7 @@ class d_index_manger extends core{
 
     }
     function add(){
-        M()->query("insert into d_homelist (id,pic) values ('{$_REQUEST['id']}','{$_REQUEST['pic']}')");
+        M()->query("insert into d_homelist (pic) values ('{$_REQUEST['pic']}')");
     }
 
 

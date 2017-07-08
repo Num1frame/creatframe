@@ -16,11 +16,8 @@ $(function () {
         tbodyEl.empty();
         data.forEach(function (v,i) {
             let el=`
-                    <tr data-id="${v.id}">
-                        <td style=""><input class="id" type="text" value="${v.id}" style="border: none;outline: none;border-bottom: 1px solid;text-align: center "></td>
+                    <tr data-id="${v.id}">                      
                         <td><input class="pic" type="text" value="${v.pic}" style="border: none;outline: none;border-bottom: 1px solid;text-align: center "></td>
-                        <td>${v.id}</td>
-                        <td>${v.pic}</td>
                         <td><a class="delete">删除</a></td>
                     </tr>
                    `;
@@ -44,7 +41,7 @@ $(function () {
             url:'d_index_manger/add',
             data:{id:id,pic:pic},
             success:function (data) {
-
+                location.href=location.pathname+'#list';
             }
         })
         return false;
