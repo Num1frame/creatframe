@@ -21,7 +21,7 @@ $(function () {
                         <td>${v.content}</td>
                         <td><a class="zjt_user_del" href="#">删除</a></td>
                     </tr>
-                    `
+                `
             $(el).appendTo(tbodyEl);
         })
     }

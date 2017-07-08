@@ -212,3 +212,53 @@ INSERT INTO t_fans(name, pic,aid,uid) VALUES
 ('酷锐U达','/creatframe/frame/public/img/lzn_img/lzn_my19.jpg','3','1'),
 ('Disigner','/creatframe/frame/public/img/lzn_img/lzn_my20.jpg','4','1'),
 ('Dave','/creatframe/frame/public/img/lzn_img/lzn_my19.jpg','4','1');
+
+
+-- phpMyAdmin SQL Dump
+-- version 4.1.14
+-- http://www.phpmyadmin.net
+--
+-- Host: 127.0.0.1
+-- Generation Time: 2017-07-08 08:20:06
+-- 服务器版本： 5.6.17
+-- PHP Version: 5.5.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- Database: `home`
+--
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `zjt_details`
+--
+
+CREATE TABLE IF NOT EXISTS `zjt_details` (
+  `id` int(12) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `pic` varchar(255) DEFAULT NULL,
+  `content` varchar(255) DEFAULT NULL,
+  `notice` int(12) DEFAULT NULL,
+  `fans` int(12) DEFAULT NULL,
+  `uid` int(12) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+
+--
+-- 转存表中的数据 `zjt_details`
+--
+
+INSERT INTO `zjt_details` (`id`, `name`, `pic`, `content`, `notice`, `fans`, `uid`) VALUES
+(1, '胡艳Silvia', '/creatframe/frame/public/img/zjt_img/zjtdesign3.png', '设计师Silvia，nacasa创始人兼设计师,拥有超过十年欧美高端家具品牌产品开发及设计经验.源于对民间手工艺的热爱,她的设计理念是将民间手工艺与当代时尚设计相结合,将手工艺继续传承', 2546, 25896, 1),
+(2, '江云Alice', '/creatframe/frame/public/img/zjt_img/zjtdetails13.png', '江云Alice,丰富的想象、创新能力和前瞻性是必不可少的，这是设计师与工程师的一大区别。nacasa创始人兼设计师,拥有超过十年欧美高端家具品牌产品开 发及设计经验.源于对民间手工艺的热爱,她的设计理念是将民间手工艺与当代时尚设计相结合', 25634, 85426, 2),
+(3, '戴斯Darcie', '/creatframe/frame/public/img/zjt_img/zjtdetails2.png', '戴斯Darcie,新设计师要不断磨练自己，经得起考验。在这个磨练的过程中我们更多的是要找准自己的定位和长处，必须要对自己苛刻要求，才能更好地提高自己', 28754, 58624, 3),
+(4, '张紫萱ailsa', '/creatframe/frame/public/img/d_1.jpg', ' 张紫萱ailsa,夕阳从窗外透进来。他的影子长长地映在地板上。脸上的镜片也被阳光晕染得熠熠生辉。就这么温暖,这么宁静。时间似乎凝固了,他审视着自己的作品', 35424, 47536, 4);
