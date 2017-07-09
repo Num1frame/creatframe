@@ -9,6 +9,10 @@ namespace app;
 use \core\db;
 use core\core;
 class lyx_state_admin extends core{
+    function __construct()
+    {
+        check_login();
+    }
     function index(){
         $this->assign('title','动态管理');
         $this->display('lyx_state_admin');

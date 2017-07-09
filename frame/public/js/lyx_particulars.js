@@ -33,6 +33,7 @@ $(function () {
             </li>
         `
         $(biaoqian).appendTo($('.pingcon'));
+        $('.myping').val('');
     })
 
 })
