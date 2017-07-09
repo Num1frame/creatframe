@@ -1,26 +1,52 @@
 <?php
 namespace app;
+use \core\core;
 use \core\db;
-use core\core;
 
 class lzn_fans_admin extends core{
-    function __construct()
-    {
-        check_login();
-    }
     function index(){
-        $this->assign('title','粉丝管理');
+        $this->assign('title','我的粉丝');
         $this->display('lzn_fans_admin');
+
     }
     function load(){
-        $data=M()->query('select * from t_fans ORDER BY id DESC ');
+        $data=M()->query('select  * from t_fans');
         echo json_encode($data);
     }
     function add(){
-        $pswd=md5($_REQUEST['pic']);
-        M()->query("insert into t_fans (name,pic) VALUES ('{$_REQUEST['name']}','{$pswd}')");
+        dump($_FILES);
+        $src=$_FILES['pic']['tmp_name'];
+//        dump($src);
+        $ext=explode('.',$_FILES['pic']['name'])[1];
+        $file_name=md5(time()).'.'.$ext;
+        $dist='public/upload/'.$file_name;
+        $name1='/creatframe/frame/public/upload/'.$file_name;
+        move_uploaded_file($src, $dist);
+
+
+
+        M()->query("insert into t_fans (name,pic,aid) values ('{$_REQUEST['name']}','$name1','{$_REQUEST['aid']}')");
     }
     function del(){
-        M()->query("delete from t_fans WHERE id='{$_REQUEST['id']}'");
+        $id=$_REQUEST['id'];
+        M()->query("delete from t_fans where id={$id}");
     }
+    function update(){
+        $id=$_REQUEST['id'];
+        $key=$_REQUEST['key'];
+        $val=$_REQUEST['val'];
+        $stmt=M()->pdo->prepare("update t_fans set {$key}=? where id=?");
+        $stmt->bindValue(1,$val);
+        $stmt->bindValue(2,$id);
+        $stmt->execute();
+        echo $stmt->rowCount();
+//        M()->querys("update d_index_manger set ('{$key}'='{$val}' where id={$id})");
+    }
+
+
+
+
+
+
 }
+
