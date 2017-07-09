@@ -6,6 +6,10 @@
 
  class zjt_designmanage extends core
  {
+     function __construct()
+     {
+         check_login();
+     }
      function index()
      {
          $this->assign('title', '设计师管理');
@@ -32,9 +36,17 @@
          $stmt =M()->query("insert into zjt_design (name,pic,content) values ('$_REQUEST[name]','$name','$_REQUEST[content]')");
      }
      function zjt_up(){
-         $key=$_REQUEST['key'];
+         /*$key=$_REQUEST['key'];
          $value=$_REQUEST['value'];
          $id=$_REQUEST['id'];
-         $data=M()->query("update zjt_design set ('{$key}'='{$value}' where id={$id}) ");
+         $data=M()->query("update zjt_design set ('{$key}'='{$value}' where id={$id}) ");*/
+         $id=$_REQUEST['id'];
+         $key=$_REQUEST['key'];
+         $val=$_REQUEST['value'];
+         $stmt=M()->pdo->prepare("update zjt_design set {$key}=? where id=?");
+         $stmt->bindValue(1,$val);
+         $stmt->bindValue(2,$id);
+         $stmt->execute();
+         echo $stmt->rowCount();
      }
  }
