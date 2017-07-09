@@ -20,13 +20,13 @@ $(function () {
                             <input type="" class="name" value="${v.name}">
                         </td>
                         <td>
-                            <img src="${v.pic}" alt="" style="height: 60px;width: 100px;">
+                            <img src="${v.pic}" alt="" style="width: 60px;">
                         </td>
                         <td>
                             <input type="" class="content" value="${v.content}">
                         </td>
                         <td>
-                            <a class="zjt_user_del" href="#">删除</a>
+                            <a class="zjt_user_del" href="#"href="javascript:void(0)">删除</a>
                         </td>
                     </tr>
                 `
@@ -54,7 +54,7 @@ $(function () {
     })
 
     //添加
-    $("#submit").on('click',function(){
+    $("button[type=submit]").on('click',function(){
         var form=$('form').serializeArray();
         var formData = new FormData($('#form').get(0));
         $.ajax({
@@ -73,6 +73,9 @@ $(function () {
     $('input[name=pic]').on('change',function(){
         $(this).prev().html($(this).val());
     })
+
+
+
 
     //修改
     tbodyEl.on('change','.name,.content',function(){

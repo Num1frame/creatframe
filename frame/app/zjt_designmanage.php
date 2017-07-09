@@ -35,6 +35,7 @@
          move_uploaded_file($src,$dist);
          $stmt =M()->query("insert into zjt_design (name,pic,content) values ('$_REQUEST[name]','$name','$_REQUEST[content]')");
      }
+
      function zjt_up(){
          /*$key=$_REQUEST['key'];
          $value=$_REQUEST['value'];
