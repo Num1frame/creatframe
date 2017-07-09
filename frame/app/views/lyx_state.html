@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="<?php echo CSS_PATH?>base.css">
     <script src="<?php echo JS_PATH?>jquery-3.2.1.js"></script>
     <script src="<?php echo JS_PATH?>lyx_state.js"></script>
+    <script src="<?php echo JS_PATH?>lyx_state_com.js"></script>
 </head>
 <body>
 <?php include VIEW_PATH.'header.html'?>
@@ -77,15 +78,15 @@
             </div>
         </div>
         <ul class="bot">
-            <li>
+            <li class="zan">
                 <img src="<?php echo IMG_PATH?>lyximg/lyx_bot1.png" alt="">
                 <span><?php echo $v['num1']?></span>
             </li>
-            <li>
+            <li class="yue">
                 <img src="<?php echo IMG_PATH?>lyximg/lyx_bot2.png" alt="">
                 <span><?php echo $v['num2']?></span>
             </li>
-            <li>
+            <li class="ping">
                 <img src="<?php echo IMG_PATH?>lyximg/lyx_bot3.png" alt="">
                 <span><?php echo $v['num3']?></span>
             </li>

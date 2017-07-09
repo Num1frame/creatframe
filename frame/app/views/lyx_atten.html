@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="<?php echo CSS_PATH?>base.css">
     <script src="<?php echo JS_PATH?>jquery-3.2.1.js"></script>
     <script src="<?php echo JS_PATH?>lyx_atten.js"></script>
+    <script src="<?php echo JS_PATH?>lyx_state_com.js"></script>
 </head>
 <body>
 <?php include VIEW_PATH.'header.html'?>
@@ -36,13 +37,13 @@
 <div class="main">
     <!--文章-->
     <?php foreach($state as $v):?>
-    <div class="cont">
+    <div class="cont" id="<?php echo $v['id']?>">
         <div class="peo">
             <div class="peoimg">
                 <img src="<?php echo IMG_PATH?>lyximg/lyx_peoimg.png" class="pimg">
             </div>
             <h1><?php echo $v['name']?></h1>
-            <a href="<?php echo PHP_PATH?>lyx_state/lyx_particulars?id=<?php echo $v['id']?>">
+            <a href="<?php echo PHP_PATH?>lyx_state/lyx_particulars?id=<?php echo $v['id']?>" class="yuedu">
                 <img src="<?php echo IMG_PATH?>lyximg/lyx_more.png" class="more">
             </a>
         </div>
@@ -74,11 +75,11 @@
             </div>
         </div>
         <ul class="bot">
-            <li>
+            <li class="zan">
                 <img src="<?php echo IMG_PATH?>lyximg/lyx_bot1.png" alt="">
                 <span><?php echo $v['num1']?></span>
             </li>
-            <li>
+            <li class="yue">
                 <img src="<?php echo IMG_PATH?>lyximg/lyx_bot2.png" alt="">
                 <span><?php echo $v['num2']?></span>
             </li>

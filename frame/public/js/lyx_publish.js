@@ -19,7 +19,19 @@ $(function () {
     $(".footer li").removeClass('active');
     $(".footer li:nth-child(2)").addClass('active');
 
-
+    // 发表
+    $(".right a").on('click',function () {
+        var val=$('.publish .text').val();
+        var title=val.slice(0,15);
+        $.ajax({
+            url:'../lyx_state/lyx_fabiao',
+            data:{val:val,title:title},
+            success:function(data){
+                window.location.href='../lyx_state/lyx_state';
+            }
+        })
+    })
+    
 
 
 

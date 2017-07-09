@@ -33,23 +33,4 @@ $(function () {
     })
 
 
-    // $('.main').on('click','.yuedu',function () {
-    //     var id=$(this).parentsUntil(".cont").parent().attr("id");
-    //     var yuedu=$(this).html();
-    //
-    //     let that=this;
-    //     $.ajax({
-    //         url:'../lyx_state/lyx_guanzhu',
-    //         data:{id:id},
-    //         success:function(data){
-    //             that.remove();
-    //         }
-    //     })
-    // })
-
-
-
-
-
-
 })

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="<?php echo CSS_PATH?>base.css">
     <script src="<?php echo JS_PATH?>jquery-3.2.1.js"></script>
     <script src="<?php echo JS_PATH?>lyx_particulars.js"></script>
+    <script src="<?php echo JS_PATH?>lyx_state_com.js"></script>
 </head>
 <body>
 <?php include VIEW_PATH.'header.html'?>
@@ -33,7 +34,7 @@
     <div class="right"><a href="#"><img src="<?php echo IMG_PATH?>lj_header2.png" alt=""></a></div>
 </div>
 <div class="main">
-    <div class="cont">
+    <div class="cont" id="<?php echo $state[0]['id']?>">
         <div class="peo">
             <div class="peoimg">
                 <img src="<?php echo IMG_PATH?>lyximg/lyx_peoimg.png" class="pimg">
@@ -70,7 +71,7 @@
             </div>
         </div>
         <ul class="bot">
-            <li>
+            <li class="zan">
                 <img src="<?php echo IMG_PATH?>lyximg/lyx_bot1.png" alt="">
                 <span><?php echo $state[0]['num1']?></span>
             </li>
@@ -137,7 +138,7 @@
     <div class="p_di">
         <div>
             <img src="<?php echo IMG_PATH?>lyximg/lyx_p_di1.png" class="yuyin">
-            <input type="text" name="con">
+            <input type="text" name="con" class="myping">
             <img src="<?php echo IMG_PATH?>lyximg/lyx_p_di2.png" alt="">
             <img src="<?php echo IMG_PATH?>lyximg/lyx_p_di3.png" class="p_more">
         </div>
