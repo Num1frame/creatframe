@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c799f60a-238d-47b7-8616-9b4b0a26aa64" name="默认的" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/app/zjt_designmanage.php" afterPath="$PROJECT_DIR$/frame/app/zjt_designmanage.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/public/js/zjt_designmanage.js" afterPath="$PROJECT_DIR$/frame/public/js/zjt_designmanage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame/public/js/lzn_follow_admin.js" afterPath="$PROJECT_DIR$/frame/public/js/lzn_follow_admin.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zjt_designmanage.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="zjt_designmanage.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frame/public/js/zjt_designmanage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="71" column="6" lean-forward="true" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="6" />
+            <state relative-caret-position="-630">
+              <caret line="33" column="10" lean-forward="true" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
               <folding>
                 <marker date="1499611400152" expanded="true" signature="539:1157" ph="..." />
                 <marker date="1499611400152" expanded="true" signature="609:714" ph="..." />
@@ -43,6 +42,18 @@
                 <marker date="1499611400152" expanded="true" signature="893:1004" ph="..." />
                 <marker date="1499611400152" expanded="true" signature="1033:1131" ph="..." />
                 <marker date="1499611400152" expanded="true" signature="3288:3559" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lzn_follow_admin.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frame/public/js/lzn_follow_admin.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="52" column="12" lean-forward="true" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
+              <folding>
+                <marker date="1499611615422" expanded="true" signature="539:806" ph="..." />
               </folding>
             </state>
           </provider>
@@ -95,6 +106,7 @@
         <option value="$PROJECT_DIR$/frame/app/views/zjt_designmanage.html" />
         <option value="$PROJECT_DIR$/frame/app/zjt_designmanage.php" />
         <option value="$PROJECT_DIR$/frame/public/js/zjt_designmanage.js" />
+        <option value="$PROJECT_DIR$/frame/public/js/lzn_follow_admin.js" />
       </list>
     </option>
   </component>
@@ -349,12 +361,12 @@
       <workItem from="1499476456615" duration="803000" />
       <workItem from="1499477932432" duration="30967000" />
       <workItem from="1499604863102" duration="198000" />
-      <workItem from="1499605376134" duration="2336000" />
+      <workItem from="1499605376134" duration="2543000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35342000" />
+    <option name="totallyTimeSpent" value="35549000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -392,14 +404,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frame/app/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frame/public/js/wtf_user_admin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1512">
@@ -734,8 +738,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frame/public/js/zjt_designmanage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="71" column="6" lean-forward="true" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="6" />
+        <state relative-caret-position="-630">
+          <caret line="33" column="10" lean-forward="true" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
           <folding>
             <marker date="1499611400152" expanded="true" signature="539:1157" ph="..." />
             <marker date="1499611400152" expanded="true" signature="609:714" ph="..." />
@@ -744,6 +748,16 @@
             <marker date="1499611400152" expanded="true" signature="893:1004" ph="..." />
             <marker date="1499611400152" expanded="true" signature="1033:1131" ph="..." />
             <marker date="1499611400152" expanded="true" signature="3288:3559" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/public/js/lzn_follow_admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="52" column="12" lean-forward="true" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
+          <folding>
+            <marker date="1499611615422" expanded="true" signature="539:806" ph="..." />
           </folding>
         </state>
       </provider>
