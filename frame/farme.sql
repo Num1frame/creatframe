@@ -1,5 +1,3 @@
-
-
 --后台登陆页    王腾飞
 DROP TABLE IF EXISTS boss;
 CREATE TABLE boss(
